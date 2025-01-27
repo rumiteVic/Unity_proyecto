@@ -16,6 +16,8 @@ public class Movimiento : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<Collider2D>();
+        player.isTrigger = false;
     }
 
     // Update is called once per frame
@@ -28,6 +30,15 @@ public class Movimiento : MonoBehaviour
         {
             rb.AddForce(Vector2.up * impulso, ForceMode2D.Impulse);
             suelo = false;
+        }
+
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            player.isTrigger = true;
+        }
+        else
+        {
+            player.isTrigger = false;
         }
     }
     void OnCollisionEnter2D(Collision2D collision){
