@@ -9,7 +9,6 @@ public class Movimiento : MonoBehaviour
     public float speed;
     public float impulso;
     public bool suelo;
-
     public Rigidbody2D rb;
     
     // Start is called before the first frame update
@@ -21,13 +20,9 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
         horizontal = Input.GetAxis("Horizontal");
-        
         Vector3 direccion = new Vector3(horizontal, 0);
-
         transform.position += direccion * speed * Time.deltaTime;
-
         if(Input.GetKeyDown(KeyCode.UpArrow) && suelo)
         {
             rb.AddForce(Vector2.up * impulso, ForceMode2D.Impulse);
