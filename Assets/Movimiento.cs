@@ -10,7 +10,8 @@ public class Movimiento : MonoBehaviour
     public float impulso;
     public bool suelo;
     public Rigidbody2D rb;
-    
+    public Collider2D player;
+
     // Start is called before the first frame update
     void Start()
     {
