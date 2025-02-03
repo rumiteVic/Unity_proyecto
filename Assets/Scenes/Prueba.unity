@@ -894,6 +894,7 @@ MonoBehaviour:
   suelo: 0
   rb: {fileID: 2637335094117872694}
   player: {fileID: 514444404163641151}
+  player1: {fileID: 0}
 --- !u!114 &6277238865927706342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c125c44add59642aea1f49ac7e0f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackArea: {fileID: 1234896498}
+  attackArea: {fileID: 3531082078543139061}
 --- !u!212 &6895275057887041361
 SpriteRenderer:
   m_ObjectHideFlags: 0

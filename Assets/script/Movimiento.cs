@@ -12,6 +12,10 @@ public class Movimiento : MonoBehaviour
     public Rigidbody2D rb;
     public Collider2D player;
 
+    private Dash playerdash;
+    public GameObject player1;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +39,19 @@ public class Movimiento : MonoBehaviour
         if(Input.GetKey(KeyCode.DownArrow))
         {
             player.isTrigger = true;
+            if (player1.transform.localScale.y == 1f)
+            {
+                player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 0.5f, transform.localScale.z);
+            }
         }
         else
         {
             player.isTrigger = false;
+            if (player1.transform.localScale.y < 1f)
+            {
+                player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2f, transform.localScale.z);
+            }
         }
-
 
     }
     void OnCollisionEnter2D(Collision2D collision){
