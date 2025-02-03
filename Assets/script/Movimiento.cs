@@ -9,6 +9,8 @@ public class Movimiento : MonoBehaviour
     public float speed;
     public float impulso;
     public bool suelo;
+    public bool jump = false;
+
     public Rigidbody2D rb;
     public Collider2D player;
 
@@ -28,11 +30,23 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        Vector3 direccion = new Vector3(horizontal, 0);
-        transform.position += direccion * speed * Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.UpArrow) && suelo)
+
+        if (horizontal > 0){
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+        if (horizontal < 0)
         {
-            rb.AddForce(Vector2.up * impulso, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+        if (horizontal == 0)
+        {
+            rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && suelo)
+        {
+            rb.velocity = new Vector2(0.0f, impulso);
             suelo = false;
         }
 
@@ -41,6 +55,7 @@ public class Movimiento : MonoBehaviour
             player.isTrigger = true;
             if (player1.transform.localScale.y == 1f)
             {
+                rb.velocity = new Vector2(0.0f, -1.0f);
                 player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 0.5f, transform.localScale.z);
             }
         }

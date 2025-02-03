@@ -889,12 +889,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8012428810442f4faa6849df29bc6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  impulso: 15
+  speed: 4
+  impulso: 8.5
   suelo: 0
+  jump: 0
   rb: {fileID: 2637335094117872694}
   player: {fileID: 514444404163641151}
-  player1: {fileID: 0}
+  player1: {fileID: 4869597304969006074}
 --- !u!114 &6277238865927706342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c125c44add59642aea1f49ac7e0f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackArea: {fileID: 3531082078543139061}
+  attackArea: {fileID: 1234896498}
 --- !u!212 &6895275057887041361
 SpriteRenderer:
   m_ObjectHideFlags: 0
