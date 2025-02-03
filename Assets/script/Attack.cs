@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
 
     public Transform attackArea;
-    private float cooldown = 1f;
+    private float cooldown = 0.5f;
+    float currTime = 0f;
+    bool isAttack = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,19 +18,26 @@ public class Attack : MonoBehaviour
     }
     void Update()
     {
-        StartCoroutine(attack());
+        attack();
     }
 
-    // Update is called once per frame
-    private IEnumerator attack()
+    void attack()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            attackArea.gameObject.SetActive(true);
-            Debug.Log("Pressed left click.");
-            yield return new WaitForSeconds(cooldown);
-            attackArea.gameObject.SetActive(false);
+            isAttack = true;
         }
-
+        if (isAttack)
+        {
+            currTime += Time.deltaTime;
+            attackArea.gameObject.SetActive(true);
+            if (currTime >= cooldown)
+            {
+                Debug.Log("what");
+                attackArea.gameObject.SetActive(false);
+                isAttack = false;
+                currTime = 0f;
+            }
+        }
     }
 }
