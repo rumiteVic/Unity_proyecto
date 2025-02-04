@@ -18,7 +18,6 @@ public class Movimiento : MonoBehaviour
     public GameObject player1;
     
 
-
     // Start is called before the first frame update
     void Start()
     {
