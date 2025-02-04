@@ -16,6 +16,7 @@ public class Movimiento : MonoBehaviour
 
     private Dash playerdash;
     public GameObject player1;
+    
 
 
     // Start is called before the first frame update
@@ -75,4 +76,5 @@ public class Movimiento : MonoBehaviour
             suelo = true;
         }
     }
+    
 }
