@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,6 +8,7 @@ public class Habilidades_Luz : MonoBehaviour
 {
     public GameObject muroDeLuz;
     public GameObject jaula;
+    public GameObject bala;
     float dirige = 2;
     float izDe;
     float horizontal;
@@ -34,17 +36,17 @@ public class Habilidades_Luz : MonoBehaviour
             izDe = 1f;
         }
 
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                muro = true;
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            muro = true;
                 
-            }
-            if (muro)
-            {
-                Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
-                GameObject tempMuro = Instantiate(muroDeLuz, direccion, transform.rotation);
-                muro = false;
-                Destroy(tempMuro, 7);
+        }
+        if (muro)
+        {
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
+            GameObject tempMuro = Instantiate(muroDeLuz, direccion, transform.rotation);
+            muro = false;
+            Destroy(tempMuro, 7);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -60,5 +62,5 @@ public class Habilidades_Luz : MonoBehaviour
         }
     }
 
-    
+
 }
