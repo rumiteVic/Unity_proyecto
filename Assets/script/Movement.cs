@@ -41,4 +41,12 @@ public class Movement : MonoBehaviour
             direction = (currentDestination.position - transform.position).normalized;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+      if(collision.tag == "Player")
+        {
+            collision.GetComponent<Movimiento>().Muerte();
+        }
+    }
 }
