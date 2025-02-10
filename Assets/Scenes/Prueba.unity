@@ -682,6 +682,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
+  currentDestination: {fileID: 0}
+  direction: {x: 0, y: 0}
 --- !u!61 &1895302825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1202,11 +1204,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: 0
+  vertical: 0
   speed: 10
   impulso: 15
   suelo: 0
   rb: {fileID: 2637335094117872694}
   player: {fileID: 514444404163641151}
+  playerdash: {fileID: 0}
 --- !u!114 &6277238865927706342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,9 +1236,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ac0e5685d1abf4b93ad97ef05b8578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  player: {fileID: 0}
+  basegravity: 0
   dashingtime: 0.2
   dashforce: 20
   timecandash: 1
+  isdashing: 0
+  candash: 1
 --- !u!212 &6895275057887041361
 SpriteRenderer:
   m_ObjectHideFlags: 0
