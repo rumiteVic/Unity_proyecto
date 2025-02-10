@@ -10,6 +10,7 @@ public class Proyectil : MonoBehaviour
     public float speed = 5;
     float horizontal;
     float izDe;
+    bool derecha = true;
 
 
     // Start is called before the first frame update
@@ -18,15 +19,18 @@ public class Proyectil : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         if (horizontal < 0)
         {
+            derecha = false;
+        }
+        else if(horizontal > 0)
+        {
+            derecha = true;
+        }
+
+        if(derecha){
+            izDe =1f;
+        }
+        if(!derecha){
             izDe = -1f;
-        }
-        else if (horizontal > 0)
-        {
-            izDe = 1f;
-        }
-        else
-        {
-            izDe = 1f;
         }
         rb = GetComponent<Rigidbody2D>();
 

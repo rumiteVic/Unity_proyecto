@@ -6,17 +6,20 @@ using UnityEngine;
 
 public class Habilidades_Luz : MonoBehaviour
 {
+    public Rigidbody2D rb;
     public GameObject muroDeLuz;
     public GameObject jaula;
     public GameObject bala;
+    public float speed;
     float dirige = 2;
     float izDe;
     float horizontal;
     bool muro;
+    public bool derecha;
     // Start is called before the first frame update
     void Start()
     {
-        
+        derecha = true;
     }
 
     // Update is called once per frame
@@ -25,15 +28,18 @@ public class Habilidades_Luz : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         if (horizontal < 0)
         {
-            izDe = -1f;
+            derecha = false;
         }
         else if(horizontal > 0)
         {
-            izDe = 1f;
+            derecha = true;
         }
-        else
-        {
-            izDe = 1f;
+
+        if(derecha){
+            izDe =1f;
+        }
+        if(!derecha){
+            izDe = -1f;
         }
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -59,6 +65,14 @@ public class Habilidades_Luz : MonoBehaviour
             GameObject tempMuro = Instantiate(jaula, direccion, transform.rotation);
             muro = false;
             Destroy(tempMuro, 7);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
+            rb = GetComponent<Rigidbody2D>();
+
+            rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
+            Destroy(objeto, 2);
         }
     }
 

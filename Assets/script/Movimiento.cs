@@ -33,10 +33,12 @@ public class Movimiento : MonoBehaviour
 
         if (horizontal > 0){
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            transform.localRotation = Quaternion.Euler(0,0,0);
         }
         if (horizontal < 0)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            transform.localRotation = Quaternion.Euler(0,180,0);
         }
         if (horizontal == 0)
         {
