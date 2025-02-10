@@ -62,8 +62,8 @@ public class Movimiento : MonoBehaviour
 
     public void Muerte()
     {
-        Life.instance.vidas = Life.instance.vidas - 1;
-        if (Life.instance.vidas > 0)
+        Life.instance.currentVidas = Life.instance.currentVidas - 1;
+        if (Life.instance.currentVidas > 0)
         {
             transform.position = new Vector3(0, 0);
             rb.velocity = new Vector3(0, 0);
