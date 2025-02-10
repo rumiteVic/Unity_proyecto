@@ -23,5 +23,9 @@ public class MeActivo : MonoBehaviour
         {
             col.isTrigger = false;
         }
+        if (collision.tag == "ProyectilOscuro")
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
     }
 }

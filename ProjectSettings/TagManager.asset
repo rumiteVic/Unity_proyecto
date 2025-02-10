@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Muro
   - Proyectil
+  - ProyectilOscuro
   layers:
   - Default
   - TransparentFX

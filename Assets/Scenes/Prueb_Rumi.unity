@@ -190,7 +190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &265164604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 826098670}
   - component: {fileID: 826098669}
   - component: {fileID: 826098672}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1129,6 +1129,10 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2044773933645661373, guid: b764d0b621e2ebc4e86dd6dd9bd62d83, type: 3}
+      propertyPath: balaOscura
+      value: 
+      objectReference: {fileID: 544569969398622076, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
     - target: {fileID: 5315090732773987938, guid: b764d0b621e2ebc4e86dd6dd9bd62d83, type: 3}
       propertyPath: m_Name
       value: Player

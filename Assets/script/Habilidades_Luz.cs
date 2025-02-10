@@ -10,6 +10,7 @@ public class Habilidades_Luz : MonoBehaviour
     public GameObject muroDeLuz;
     public GameObject jaula;
     public GameObject bala;
+    public GameObject balaOscura;
     public float speed;
     float dirige = 2;
     float izDe;
@@ -73,6 +74,14 @@ public class Habilidades_Luz : MonoBehaviour
 
             rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
             Destroy(objeto, 2);
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
+            rb = GetComponent<Rigidbody2D>();
+
+            rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
+            Destroy(objetoOscuro, 2);
         }
     }
 
