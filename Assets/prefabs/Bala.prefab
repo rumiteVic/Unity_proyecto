@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7618233675156575774}
   - component: {fileID: 4162297186108226913}
   - component: {fileID: 7195002136548299257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala
   m_TagString: Proyectil
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!70 &7195002136548299257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ TagManager:
   - Muro
   - Proyectil
   - ProyectilOscuro
+  - SpawnGround
   layers:
   - Default
   - TransparentFX

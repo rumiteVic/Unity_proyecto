@@ -49,5 +49,9 @@ public class Proyectil : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.tag == "SpawnGround")
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -78,6 +78,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.V))
         {
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
+           
             rb = GetComponent<Rigidbody2D>();
 
             rb.velocity = new Vector2(izDe * speed, rb.velocity.y);

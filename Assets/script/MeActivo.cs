@@ -10,6 +10,7 @@ public class MeActivo : MonoBehaviour
     void Start()
     {
         col.isTrigger = true;
+        suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 0.5f);
     }
 
     // Update is called once per frame
@@ -22,10 +23,12 @@ public class MeActivo : MonoBehaviour
         if (collision.tag == "Proyectil")
         {
             col.isTrigger = false;
+            suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 100f);
         }
         if (collision.tag == "ProyectilOscuro")
         {
-            GetComponent<Collider2D>().enabled = false;
+            col.isTrigger = true;
+            suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 0.5f);
         }
     }
 }
