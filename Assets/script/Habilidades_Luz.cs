@@ -42,7 +42,7 @@ public class Habilidades_Luz : MonoBehaviour
         if(!derecha){
             izDe = -1f;
         }
-
+        //El muro
         if (Input.GetKeyDown(KeyCode.S))
         {
             muro = true;
@@ -55,6 +55,8 @@ public class Habilidades_Luz : MonoBehaviour
             muro = false;
             Destroy(tempMuro, 7);
         }
+
+        //Jaula
         if (Input.GetKeyDown(KeyCode.Q))
         {
             muro = true;
@@ -67,6 +69,7 @@ public class Habilidades_Luz : MonoBehaviour
             muro = false;
             Destroy(tempMuro, 7);
         }
+        //Bala normal
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
@@ -75,6 +78,7 @@ public class Habilidades_Luz : MonoBehaviour
             rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
             Destroy(objeto, 2);
         }
+        //Bala oscura
         if (Input.GetKeyDown(KeyCode.V))
         {
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);

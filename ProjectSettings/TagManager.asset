@@ -10,6 +10,7 @@ TagManager:
   - Proyectil
   - ProyectilOscuro
   - SpawnGround
+  - Jaula
   layers:
   - Default
   - TransparentFX
