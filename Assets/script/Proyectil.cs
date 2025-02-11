@@ -21,15 +21,17 @@ public class Proyectil : MonoBehaviour
         {
             derecha = false;
         }
-        else if(horizontal > 0)
+        else if (horizontal > 0)
         {
             derecha = true;
         }
 
-        if(derecha){
-            izDe =1f;
+        if (derecha)
+        {
+            izDe = 1f;
         }
-        if(!derecha){
+        if (!derecha)
+        {
             izDe = -1f;
         }
         rb = GetComponent<Rigidbody2D>();
