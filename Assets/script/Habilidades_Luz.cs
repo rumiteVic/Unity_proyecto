@@ -11,11 +11,13 @@ public class Habilidades_Luz : MonoBehaviour
     public GameObject jaula;
     public GameObject bala;
     public GameObject balaOscura;
+    public Movimiento suelo;
     public float speed;
     float dirige = 2;
     float izDe;
     float horizontal;
     bool muro;
+    bool capa;
     public bool derecha;
     // Start is called before the first frame update
     void Start()
@@ -73,6 +75,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
+            objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             rb = GetComponent<Rigidbody2D>();
 
             rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
@@ -82,12 +85,19 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.V))
         {
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
-           
+           objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             rb = GetComponent<Rigidbody2D>();
 
             rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
             Destroy(objetoOscuro, 2);
         }
+
+        //Capa Oscuridad, supongo
+
+        if(Input.GetKeyDown(KeyCode.B)){
+
+        }
+    
     }
 
 
