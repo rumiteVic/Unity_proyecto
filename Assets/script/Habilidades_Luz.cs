@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Habilidades_Luz : MonoBehaviour
 {
-    public Rigidbody2D rb;
     public GameObject muroDeLuz;
     public GameObject jaula;
     public GameObject bala;
@@ -76,9 +75,6 @@ public class Habilidades_Luz : MonoBehaviour
         {
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
-            rb = GetComponent<Rigidbody2D>();
-
-            rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
             Destroy(objeto, 2);
         }
         //Bala oscura
@@ -86,9 +82,6 @@ public class Habilidades_Luz : MonoBehaviour
         {
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
            objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
-            rb = GetComponent<Rigidbody2D>();
-
-            rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
             Destroy(objetoOscuro, 2);
         }
 
