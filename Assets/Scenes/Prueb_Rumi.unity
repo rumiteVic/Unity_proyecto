@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3eb29e309da5b442a0b9249cc7844af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5617548933518235063}
+  player: {fileID: 559970699}
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 0.125
 --- !u!1 &265164603
@@ -443,6 +443,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &559970696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6977207489269146569, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+  m_PrefabInstance: {fileID: 1687583333372514591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8012428810442f4faa6849df29bc6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &559970699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4905422107440617191, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+  m_PrefabInstance: {fileID: 1687583333372514591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &826098668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1238,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: jaula
+      value: 
+      objectReference: {fileID: 1756417832107868699, guid: 9892eb82835128a418fc21a405706e55, type: 3}
+    - target: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: suelo
+      value: 
+      objectReference: {fileID: 559970696}
+    - target: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: balaOscura
+      value: 
+      objectReference: {fileID: 544569969398622076, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
     - target: {fileID: 3623603401829645673, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
       propertyPath: m_Name
       value: Zenith

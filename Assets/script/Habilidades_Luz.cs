@@ -7,9 +7,7 @@ using UnityEngine;
 public class Habilidades_Luz : MonoBehaviour
 {
     public GameObject muroDeLuz;
-    public GameObject jaula;
     public GameObject bala;
-    public GameObject balaOscura;
     public Movimiento suelo;
     public float speed;
     float dirige = 2;
@@ -56,20 +54,7 @@ public class Habilidades_Luz : MonoBehaviour
             muro = false;
             Destroy(tempMuro, 7);
         }
-
-        //Jaula
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            muro = true;
-
-        }
-        if (muro)
-        {
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y);
-            GameObject tempMuro = Instantiate(jaula, direccion, transform.rotation);
-            muro = false;
-            Destroy(tempMuro, 7);
-        }
+ 
         //Bala normal
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -77,13 +62,7 @@ public class Habilidades_Luz : MonoBehaviour
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 2);
         }
-        //Bala oscura
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
-           objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
-            Destroy(objetoOscuro, 2);
-        }
+     
 
         //Capa Oscuridad, supongo
 
