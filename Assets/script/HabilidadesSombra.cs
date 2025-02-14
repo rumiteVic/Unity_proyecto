@@ -6,14 +6,17 @@ public class HabilidadesSombra : MonoBehaviour
 {
     public GameObject jaula;
     public GameObject balaOscura;
-    public Movimiento suelo;
+    public Movimiento suelin;
+    public bool suelo;
     public float speed;
     float dirige = 2;
     float izDe;
     float horizontal;
-    bool muro;
-    bool capa;
+    bool jaulaa;
+    public bool capa = false;
     public bool derecha;
+    float cooldown = 0f;
+    float fin = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,17 +47,17 @@ public class HabilidadesSombra : MonoBehaviour
         
 
         //Jaula
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
         {
-            muro = true;
+            jaulaa = true;
 
         }
-        if (muro)
+        if (jaulaa)
         {
             Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y);
-            GameObject tempMuro = Instantiate(jaula, direccion, transform.rotation);
-            muro = false;
-            Destroy(tempMuro, 7);
+            GameObject tempJaula = Instantiate(jaula, direccion, transform.rotation);
+            jaulaa = false;
+            Destroy(tempJaula, 7);
         }
         //Bala oscura
         if (Input.GetKeyDown(KeyCode.Space))
@@ -66,9 +69,17 @@ public class HabilidadesSombra : MonoBehaviour
 
         //Capa Oscuridad, supongo
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) &&cooldown == 0)
         {
-
+            capa = true;
+            
+        }
+        if(capa){
+            cooldown += Time.deltaTime;
+            if(cooldown >= fin){
+                cooldown = 0;
+                capa = false;
+            }
         }
     }
 }

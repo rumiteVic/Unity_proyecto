@@ -5,7 +5,6 @@ using UnityEngine;
 public class ChangeLight : MonoBehaviour
 {
     public bool siLuz = true;
-    public GameObject zenith;
     public GameObject luz;
     public GameObject oscuridad;
     public Habilidades_Luz lucecita;

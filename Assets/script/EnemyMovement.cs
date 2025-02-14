@@ -28,7 +28,6 @@ public class EnemyMovement : MonoBehaviour
             currTime += Time.deltaTime;
             if (currTime >= cooldown)
             {
-                Debug.Log("what");
                 rebaja = false;
                 currTime = 0f;
             }

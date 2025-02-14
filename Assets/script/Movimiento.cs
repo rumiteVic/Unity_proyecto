@@ -10,10 +10,10 @@ public class Movimiento : MonoBehaviour
     public float impulso;
     public bool suelo;
     public bool jump = false;
-
     public Rigidbody2D rb;
     public Collider2D player;
-
+    public HabilidadesSombra sombra;
+    public ChangeLight change;
     private Dash playerdash;
     public GameObject player1;
     
@@ -46,7 +46,7 @@ public class Movimiento : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && suelo)
+        if (Input.GetKey(KeyCode.UpArrow) && suelo)
         {
             rb.velocity = new Vector2(0.0f, impulso);
             suelo = false;
@@ -72,11 +72,18 @@ public class Movimiento : MonoBehaviour
 
     }
     void OnCollisionEnter2D(Collision2D collision){
-        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
         {
             suelo = true;
         }
+    }    
+    void OnTriggerStay2D(Collider2D collision){
+        if(collision.gameObject.tag == "escala" && sombra.capa){
+            Debug.Log("holi");
+            suelo = true;
+            if(change.siLuz){
+                sombra.capa = false;
+            }
+        }
     }
-    
 }

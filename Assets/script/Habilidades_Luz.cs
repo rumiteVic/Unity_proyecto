@@ -8,7 +8,7 @@ public class Habilidades_Luz : MonoBehaviour
 {
     public GameObject muroDeLuz;
     public GameObject bala;
-    public Movimiento suelo;
+    public Movimiento suelin;
     public float speed;
     float dirige = 2;
     float izDe;
@@ -16,6 +16,7 @@ public class Habilidades_Luz : MonoBehaviour
     bool muro;
     bool capa;
     public bool derecha;
+    public bool suelo;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +43,7 @@ public class Habilidades_Luz : MonoBehaviour
             izDe = -1f;
         }
         //El muro
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
         {
             muro = true;
                 
