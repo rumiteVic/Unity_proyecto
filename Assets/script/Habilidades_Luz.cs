@@ -18,6 +18,17 @@ public class Habilidades_Luz : MonoBehaviour
     bool capa;
     public bool derecha;
     public bool suelo;
+
+    //Cooldown muro
+    bool murCol;
+    float currTimMur = 0f;
+    float finMur = 8f;
+
+    //Cooldows bala
+    bool balCol;
+    float currTimBal = 0f;
+    float finBala = 3f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,25 +56,43 @@ public class Habilidades_Luz : MonoBehaviour
         }
         
         //El muro
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimMur == 0)
         {
-            muro = true;
-                
+            muro = true; 
         }
         if (muro)
         {
+            murCol = true;
             Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
             GameObject tempMuro = Instantiate(muroDeLuz, direccion, transform.rotation);
             muro = false;
             Destroy(tempMuro, 7);
         }
+
+        if(murCol)
+        {
+            currTimMur += Time.deltaTime;
+            if(currTimMur  >= finMur){
+                currTimMur  = 0;
+                murCol = false;
+            }
+        }
  
         //Bala normal
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
+            balCol = true;
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 2);
+        }
+        if(balCol)
+        {
+            currTimBal += Time.deltaTime;
+            if(currTimBal  >= finBala){
+                currTimBal  = 0;
+                balCol = false;
+            }
         }
 
         //Explotemos algo
