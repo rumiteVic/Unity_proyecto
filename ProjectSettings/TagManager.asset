@@ -13,6 +13,7 @@ TagManager:
   - Jaula
   - escala
   - BOOM
+  - BOOMOSC
   layers:
   - Default
   - TransparentFX

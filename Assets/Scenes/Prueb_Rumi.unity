@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 265164605}
   rebaja: 0
+  exPlosion: 0
 --- !u!50 &265164605
 Rigidbody2D:
   serializedVersion: 4
@@ -358,7 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 265164604}
-  noMovement: 0
 --- !u!114 &355302469 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
@@ -1172,6 +1172,10 @@ PrefabInstance:
       propertyPath: balaOscura
       value: 
       objectReference: {fileID: 544569969398622076, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
+    - target: {fileID: 604191907553409296, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: boomOscuridad
+      value: 
+      objectReference: {fileID: 1326671407541604865, guid: b805a8554d978b94ba1c53ec46fea0f7, type: 3}
     - target: {fileID: 3623603401829645673, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
       propertyPath: m_Name
       value: Zenith

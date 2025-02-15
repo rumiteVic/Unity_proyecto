@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2759944728100179176}
   m_Layer: 0
   m_Name: boomOscuridad
-  m_TagString: BOOM
+  m_TagString: BOOMOSC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

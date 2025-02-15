@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SiJaula : MonoBehaviour
+public class NoMovement : MonoBehaviour
 {
     public EnemyMovement enemy;
     public bool noMovement;
@@ -43,4 +43,13 @@ public class SiJaula : MonoBehaviour
             enemy.enabled = false;
         }
     }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "BOOMOSC"){
+            noMovement = true;
+            enemy.enabled = false;
+        }
+
+    }
+
 }
