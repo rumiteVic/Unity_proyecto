@@ -9,6 +9,8 @@ public class ChangeLight : MonoBehaviour
     public GameObject oscuridad;
     public Habilidades_Luz lucecita;
     public HabilidadesSombra sombra;
+    float cooldownUsoCapa;
+    bool capa;
 
 
     // Start is called before the first frame update
@@ -30,7 +32,6 @@ public class ChangeLight : MonoBehaviour
             {
                 siLuz=true;
             }
-
         }
 
         if (siLuz)
@@ -39,6 +40,8 @@ public class ChangeLight : MonoBehaviour
             sombra.enabled = false;
             luz.gameObject.SetActive(true);
             lucecita.enabled=true;
+            sombra.cooldownUsoCapa = 0f;
+            sombra.capa = false;
         }
         if (!siLuz)
         {

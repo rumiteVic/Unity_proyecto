@@ -42,8 +42,9 @@ public class Habilidades_Luz : MonoBehaviour
         if(!derecha){
             izDe = -1f;
         }
+        
         //El muro
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.X) &&suelin.suelo)
         {
             muro = true;
                 
@@ -57,21 +58,11 @@ public class Habilidades_Luz : MonoBehaviour
         }
  
         //Bala normal
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 2);
         }
-     
-
-        //Capa Oscuridad, supongo
-
-        if(Input.GetKeyDown(KeyCode.B)){
-
-        }
-    
     }
-
-
 }

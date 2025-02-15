@@ -13,9 +13,9 @@ public class HabilidadesSombra : MonoBehaviour
     float izDe;
     float horizontal;
     bool jaulaa;
-    public bool capa = false;
+    public bool capa;
     public bool derecha;
-    float cooldown = 0f;
+    public float cooldownUsoCapa = 0f;
     float fin = 5f;
     // Start is called before the first frame update
     void Start()
@@ -27,27 +27,14 @@ public class HabilidadesSombra : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        if (horizontal < 0)
-        {
-            derecha = false;
-        }
-        else if (horizontal > 0)
-        {
-            derecha = true;
-        }
-
-        if (derecha)
-        {
-            izDe = 1f;
-        }
-        if (!derecha)
-        {
-            izDe = -1f;
-        }
+        if (horizontal < 0) {derecha = false;}
+        else if (horizontal > 0) {derecha = true;}
+        if (derecha) {izDe = 1f;}
+        if (!derecha) {izDe = -1f;}
         
 
         //Jaula
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.X) &&suelin.suelo)
         {
             jaulaa = true;
 
@@ -60,7 +47,7 @@ public class HabilidadesSombra : MonoBehaviour
             Destroy(tempJaula, 7);
         }
         //Bala oscura
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
             objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
@@ -69,17 +56,23 @@ public class HabilidadesSombra : MonoBehaviour
 
         //Capa Oscuridad, supongo
 
-        if (Input.GetKeyDown(KeyCode.B) &&cooldown == 0)
+        if (Input.GetKeyDown(KeyCode.B) &&cooldownUsoCapa  == 0)
         {
             capa = true;
             
         }
         if(capa){
-            cooldown += Time.deltaTime;
-            if(cooldown >= fin){
-                cooldown = 0;
+            cooldownUsoCapa  += Time.deltaTime;
+            if(cooldownUsoCapa  >= fin){
+                cooldownUsoCapa  = 0;
                 capa = false;
             }
+        }
+
+        //Explotemos algo
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+        
         }
     }
 }
