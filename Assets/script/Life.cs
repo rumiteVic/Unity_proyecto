@@ -21,11 +21,12 @@ public class Life : MonoBehaviour
     private void Start()
     {
         currentVidas = maxVidas;
+        slider.maxValue = maxVidas;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        slider.value = currentVidas;
     }
 }
