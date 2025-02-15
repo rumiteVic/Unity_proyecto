@@ -16,8 +16,26 @@ public class HabilidadesSombra : MonoBehaviour
     bool jaulaa;
     public bool capa;
     public bool derecha;
+
+    //Tiempo de uso de capa
     public float cooldownUsoCapa = 0f;
     float fin = 5f;
+
+    //Cooldown capa
+    bool capCol;
+    float currTimCap = 0f;
+    float finCap = 12f;
+
+    //Cooldown jaula
+    bool jauCol;
+    float currTimJau = 0f;
+    float finJau = 8f;
+
+    //Cooldows bala
+    bool balCol;
+    float currTimBal = 0f;
+    float finBala = 3f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +53,10 @@ public class HabilidadesSombra : MonoBehaviour
         
 
         //Jaula
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimJau == 0)
         {
             jaulaa = true;
+            jauCol = true;
         }
         if (jaulaa)
         {
@@ -46,26 +65,54 @@ public class HabilidadesSombra : MonoBehaviour
             jaulaa = false;
             Destroy(tempJaula, 7);
         }
-        //Bala oscura
-        if (Input.GetKeyDown(KeyCode.Z))
+
+        if(jauCol)
         {
+            currTimJau += Time.deltaTime;
+            if(currTimJau  >= finJau){
+                currTimJau  = 0;
+                jauCol = false;
+            }
+        }
+
+        //Bala oscura
+        if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
+        {
+            balCol = true;
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
             objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objetoOscuro, 2);
         }
+        
+        if(balCol)
+        {
+            currTimBal += Time.deltaTime;
+            if(currTimBal  >= finBala){
+                currTimBal  = 0;
+                balCol = false;
+            }
+        }
 
         //Capa Oscuridad, supongo
 
-        if (Input.GetKeyDown(KeyCode.B) &&cooldownUsoCapa  == 0)
+        if (Input.GetKeyDown(KeyCode.B) && currTimCap == 0)
         {
             capa = true;
-            
+            capCol = true;
         }
         if(capa){
             cooldownUsoCapa  += Time.deltaTime;
             if(cooldownUsoCapa  >= fin){
                 cooldownUsoCapa  = 0;
                 capa = false;
+            }
+        }
+        if(capCol)
+        {
+            currTimCap += Time.deltaTime;
+            if(currTimCap  >= finCap){
+                currTimCap  = 0;
+                capCol = false;
             }
         }
 
