@@ -8,6 +8,7 @@ public class Habilidades_Luz : MonoBehaviour
 {
     public GameObject muroDeLuz;
     public GameObject bala;
+    public GameObject boomLuz;
     public Movimiento suelin;
     public float speed;
     float dirige = 2;
@@ -44,7 +45,7 @@ public class Habilidades_Luz : MonoBehaviour
         }
         
         //El muro
-        if (Input.GetKeyDown(KeyCode.X) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
         {
             muro = true;
                 
@@ -63,6 +64,14 @@ public class Habilidades_Luz : MonoBehaviour
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 2);
+        }
+
+        //Explotemos algo
+        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo)
+        {
+            GameObject booooLuz = Instantiate(boomLuz, transform.position, transform.rotation);
+            booooLuz.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
+            Destroy(booooLuz, 10);
         }
     }
 }

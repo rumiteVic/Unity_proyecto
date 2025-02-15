@@ -6,6 +6,7 @@ public class HabilidadesSombra : MonoBehaviour
 {
     public GameObject jaula;
     public GameObject balaOscura;
+    public GameObject boomOscuridad;
     public Movimiento suelin;
     public bool suelo;
     public float speed;
@@ -34,10 +35,9 @@ public class HabilidadesSombra : MonoBehaviour
         
 
         //Jaula
-        if (Input.GetKeyDown(KeyCode.X) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo)
         {
             jaulaa = true;
-
         }
         if (jaulaa)
         {
@@ -70,9 +70,11 @@ public class HabilidadesSombra : MonoBehaviour
         }
 
         //Explotemos algo
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo)
         {
-        
+            GameObject booooOsc = Instantiate(boomOscuridad, transform.position, transform.rotation);
+            booooOsc.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
+            Destroy(booooOsc, 10);
         }
     }
 }

@@ -1228,6 +1228,10 @@ PrefabInstance:
       propertyPath: suelin
       value: 
       objectReference: {fileID: 559970696}
+    - target: {fileID: 6434081499670892386, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
+      propertyPath: boomLuz
+      value: 
+      objectReference: {fileID: 1326671407541604865, guid: e718c6b933283d343ab241fb81c0da44, type: 3}
     - target: {fileID: 6977207489269146569, guid: d5b093bd0341530459ba7a467600efb0, type: 3}
       propertyPath: capaa
       value: 

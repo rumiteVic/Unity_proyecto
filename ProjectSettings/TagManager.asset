@@ -12,6 +12,7 @@ TagManager:
   - SpawnGround
   - Jaula
   - escala
+  - BOOM
   layers:
   - Default
   - TransparentFX
