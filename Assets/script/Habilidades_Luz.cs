@@ -24,10 +24,15 @@ public class Habilidades_Luz : MonoBehaviour
     float currTimMur = 0f;
     float finMur = 8f;
 
-    //Cooldows bala
+    //Cooldowns bala
     bool balCol;
     float currTimBal = 0f;
     float finBala = 3f;
+
+    //Cooldowns explosion
+    bool explCol;
+    float currTimExpl = 0f;
+    float finexPl = 15f;
 
     // Start is called before the first frame update
     void Start()
@@ -96,11 +101,21 @@ public class Habilidades_Luz : MonoBehaviour
         }
 
         //Explotemos algo
-        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo)
+        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo &&currTimExpl == 0)
         {
+            explCol = true;
             GameObject booooLuz = Instantiate(boomLuz, transform.position, transform.rotation);
             booooLuz.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
             Destroy(booooLuz, 10);
+        }
+
+        if(explCol)
+        {
+            currTimExpl += Time.deltaTime;
+            if(currTimExpl  >= finexPl){
+                currTimExpl  = 0;
+                explCol = false;
+            }
         }
     }
 }
