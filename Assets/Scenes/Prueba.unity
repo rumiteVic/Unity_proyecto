@@ -1805,7 +1805,7 @@ GameObject:
   - component: {fileID: 6895275057887041361}
   - component: {fileID: 772253152722846801}
   m_Layer: 0
-  m_Name: Square
+  m_Name: suelo
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1935,8 +1935,8 @@ MonoBehaviour:
   speed: 8
   impulso: 12
   suelo: 0
-  rb: {fileID: 0}
-  player: {fileID: 0}
+  rb: {fileID: 2637335094117872694}
+  player: {fileID: 514444404163641151}
 --- !u!212 &6895275057887041361
 SpriteRenderer:
   m_ObjectHideFlags: 0
