@@ -5,7 +5,7 @@ using UnityEngine;
 public class Dash : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Movimiento player;
+    public Movimiento player;
     private float basegravity;
 
     [Header("Dash")]
