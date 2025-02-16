@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -81,7 +80,7 @@ public class Movimiento : MonoBehaviour
         {
             suelo = true;
         }
-        if(collision.gameObject.tag == "Abismo"){
+        else if(collision.gameObject.tag == "Abismo"){
             Muerte();
         }
     }    
@@ -91,6 +90,9 @@ public class Movimiento : MonoBehaviour
             if(change.siLuz){
                 sombra.capa = false;
             }
+        }
+        else if(collision.gameObject.tag == "Abismo"){
+            Muerte();
         }
     }
 

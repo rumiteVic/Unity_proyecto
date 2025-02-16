@@ -18,12 +18,12 @@ public class Movement : MonoBehaviour
     float cooldown = 2f;
 
     float currTimeExL;
-    float cooldownBL = 7f;
+    float cooldownBL = 9f;
     public bool exPlosion;
 
     public bool expl2;
     float currTimeExL2;
-    float cooldownBL2 = 7f;
+    float cooldownBL2 = 9f;
     float totalDamage;
 
     public bool jau;
@@ -116,19 +116,16 @@ public class Movement : MonoBehaviour
         }
         else if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC")
         {
-            //totalDamage = 10f;
-            //Muerte();
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "AttackPlayer")
-        {
-            totalDamage = 3f;
+            totalDamage = 7f;
             Muerte();
         }
         else if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
             totalDamage = 1f;
+            Muerte();
+        }
+        else if(collision.gameObject.tag == "AttackPlayer")
+        {
+            totalDamage = 3f;
             Muerte();
         }
     }
@@ -150,7 +147,7 @@ public class Movement : MonoBehaviour
         }
         else if(collision.gameObject.tag == "Jaula")
         {
-
+            jau = true;
         }
     
     }

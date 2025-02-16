@@ -46,11 +46,22 @@ public class Proyectil : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
         }
-        if (collision.tag == "SpawnGround")
+        if (collision.gameObject.tag == "SpawnGround")
+        {
+            Destroy(gameObject);
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "SpawnGround")
         {
             Destroy(gameObject);
         }
