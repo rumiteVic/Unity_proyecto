@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour
     public GameObject destination1;
     public GameObject destination2;
     private Transform currentDestination;
-    public Collider2D noDamage;
     Vector2 direction;
     public bool rebaja;
     float currTime;
@@ -19,6 +18,7 @@ public class Movement : MonoBehaviour
     float cooldown = 2f;
     float cooldownBL = 5f;
     public bool exPlosion;
+    float totalDamage;
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +45,9 @@ public class Movement : MonoBehaviour
         else if (exPlosion)
         {
             speed = 0.2f;
-            noDamage.enabled = false;
             currTimeExL += Time.deltaTime;
             if (currTimeExL >= cooldownBL)
             {
-                noDamage.enabled = true;
                 exPlosion = false;
                 currTimeExL = 0f;
             }
@@ -84,15 +82,38 @@ public class Movement : MonoBehaviour
         {
             collision.GetComponent<Movimiento>().Muerte();
         }
+        else if(collision.gameObject.tag == "AttackPlayer")
+        {
+            totalDamage = 3f;
+            Muerte();
+        }
+        else if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
+            totalDamage = 1f;
+            Muerte();
+        }
+        else if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC"){
+            totalDamage = 8f;
+            Muerte();
+        }
     }
     void OnTriggerStay2D(Collider2D collision){
         if(collision.gameObject.tag == "BOOM")
         {
             exPlosion = true;
         }
-        if (collision.gameObject.tag == "Muro")
+        else if (collision.gameObject.tag == "Muro")
         {
-            rebaja = true;            
+            rebaja = true;
+            totalDamage = 0.1f;
+            Muerte();            
+        }
+    }
+    public void Muerte()
+    {
+        EnemyLife.instance.currentVidas = EnemyLife.instance.currentVidas - totalDamage;
+        if (EnemyLife.instance.currentVidas < 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

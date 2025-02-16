@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static EnemyLife instance; 
+
+    public float maxVidas = 20;
+    public float currentVidas;
+
+    void Awake()
     {
+
+        instance = this; 
         
+    }
+    private void Start()
+    {
+        currentVidas = maxVidas;
     }
 
     // Update is called once per frame
