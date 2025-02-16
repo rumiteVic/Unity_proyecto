@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject destination1;
     public GameObject destination2;
+    public Collider2D col;
     private Transform currentDestination;
     Vector2 direction;
     public bool rebaja;
@@ -45,10 +46,12 @@ public class Movement : MonoBehaviour
         else if (exPlosion)
         {
             speed = 0.2f;
+            col.enabled = false;
             currTimeExL += Time.deltaTime;
             if (currTimeExL >= cooldownBL)
             {
                 exPlosion = false;
+                col.enabled = true;
                 currTimeExL = 0f;
             }
         }
