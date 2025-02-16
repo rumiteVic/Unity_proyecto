@@ -12,6 +12,8 @@ TagManager:
   - BOOMOSC
   - Proyectil
   - BOOM
+  - escala
+  - SpawnGround
   layers:
   - Default
   - TransparentFX
