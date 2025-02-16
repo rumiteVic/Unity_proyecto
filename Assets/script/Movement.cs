@@ -15,11 +15,20 @@ public class Movement : MonoBehaviour
     Vector2 direction;
     public bool rebaja;
     float currTime;
-    float currTimeExL;
     float cooldown = 2f;
-    float cooldownBL = 5f;
+
+    float currTimeExL;
+    float cooldownBL = 7f;
     public bool exPlosion;
+
+    public bool expl2;
+    float currTimeExL2;
+    float cooldownBL2 = 7f;
     float totalDamage;
+
+    public bool jau;
+    float currTimeJau;
+    float cooldownJau = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -50,16 +59,36 @@ public class Movement : MonoBehaviour
             currTimeExL += Time.deltaTime;
             if (currTimeExL >= cooldownBL)
             {
-                exPlosion = false;
                 col.enabled = true;
+                exPlosion = false;
                 currTimeExL = 0f;
+            }
+        }
+        else if(expl2)
+        {
+            speed = 0f;
+            currTimeExL2 += Time.deltaTime;
+            if (currTimeExL2 >= cooldownBL2)
+            {
+                expl2 = false;
+                currTimeExL2 = 0f;
+            }
+        }
+        else if(jau)
+        {
+            speed = 0f;
+            currTimeJau += Time.deltaTime;
+            if (currTimeJau >= cooldownJau)
+            {
+                jau = false;
+                currTimeJau = 0f;
             }
         }
         else
         {
+            col.enabled = true;
             speed = 5f;
         }
-        
         
         rb.velocity = direction*speed;
         ChangeDirection();
@@ -85,7 +114,15 @@ public class Movement : MonoBehaviour
         {
             collision.GetComponent<Movimiento>().Muerte();
         }
-        else if(collision.gameObject.tag == "AttackPlayer")
+        else if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC")
+        {
+            //totalDamage = 10f;
+            //Muerte();
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "AttackPlayer")
         {
             totalDamage = 3f;
             Muerte();
@@ -94,22 +131,28 @@ public class Movement : MonoBehaviour
             totalDamage = 1f;
             Muerte();
         }
-        else if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC"){
-            totalDamage = 8f;
-            Muerte();
-        }
     }
     void OnTriggerStay2D(Collider2D collision){
-        if(collision.gameObject.tag == "BOOM")
+
+        if (collision.gameObject.tag == "Muro")
+        {
+            rebaja = true;
+            totalDamage = 0.03f;
+            Muerte();            
+        }
+        else if(collision.gameObject.tag == "BOOM")
         {
             exPlosion = true;
         }
-        else if (collision.gameObject.tag == "Muro")
+        else if(collision.gameObject.tag == "BOOMOSC")
         {
-            rebaja = true;
-            totalDamage = 0.1f;
-            Muerte();            
+            expl2 = true;
         }
+        else if(collision.gameObject.tag == "Jaula")
+        {
+
+        }
+    
     }
     public void Muerte()
     {
