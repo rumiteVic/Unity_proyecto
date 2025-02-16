@@ -81,6 +81,9 @@ public class Movimiento : MonoBehaviour
         {
             suelo = true;
         }
+        if(collision.gameObject.tag == "Abismo"){
+            Muerte();
+        }
     }    
     void OnTriggerStay2D(Collider2D collision){
         if(collision.gameObject.tag == "escala" && sombra.capa){

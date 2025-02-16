@@ -15,6 +15,7 @@ TagManager:
   - escala
   - SpawnGround
   - AttackPlayer
+  - Abismo
   layers:
   - Default
   - TransparentFX
