@@ -14,7 +14,7 @@ public class Win : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Win"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             text.gameObject.SetActive(true);
         }
