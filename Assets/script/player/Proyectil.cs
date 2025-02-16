@@ -5,7 +5,6 @@ using UnityEngine;
 public class Proyectil : MonoBehaviour
 {
     public GameObject bala;
-    public GameObject player;
     public Rigidbody2D rb;
     public float speed = 5;
     float horizontal;

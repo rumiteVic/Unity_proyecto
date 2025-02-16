@@ -12,6 +12,12 @@ public class Movement : MonoBehaviour
     public GameObject destination2;
     private Transform currentDestination;
     Vector2 direction;
+    public bool rebaja;
+    float currTime;
+    float currTimeExL;
+    float cooldown = 2f;
+    float cooldownBL = 5f;
+    public bool exPlosion;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +30,33 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (rebaja)
+        {
+            speed = 0.5f;
+            currTime += Time.deltaTime;
+            if (currTime >= cooldown)
+            {
+                rebaja = false;
+                currTime = 0f;
+            }
+        }
+
+        else if (exPlosion)
+        {
+            speed = 0.2f;
+            currTimeExL += Time.deltaTime;
+            if (currTimeExL >= cooldownBL)
+            {
+                exPlosion = false;
+                currTimeExL = 0f;
+            }
+        }
+        else
+        {
+            speed = 5f;
+        }
+        
+        
         rb.velocity = direction*speed;
         ChangeDirection();
     }
@@ -47,6 +80,16 @@ public class Movement : MonoBehaviour
       if(collision.tag == "Player")
         {
             collision.GetComponent<Movimiento>().Muerte();
+        }
+    }
+    void OnTriggerStay2D(Collider2D collision){
+        if(collision.gameObject.tag == "BOOM")
+        {
+            exPlosion = true;
+        }
+        if (collision.gameObject.tag == "Muro")
+        {
+            rebaja = true;            
         }
     }
 }

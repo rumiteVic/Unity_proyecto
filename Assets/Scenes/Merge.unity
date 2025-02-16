@@ -1212,6 +1212,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   destination1: {fileID: 966831980}
   destination2: {fileID: 1473324408}
+  rebaja: 0
+  exPlosion: 0
 --- !u!50 &1266497095
 Rigidbody2D:
   serializedVersion: 4
@@ -1268,7 +1270,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1938,6 +1940,7 @@ GameObject:
   - component: {fileID: 1895302820}
   - component: {fileID: 1895302824}
   - component: {fileID: 1895302825}
+  - component: {fileID: 1895302826}
   m_Layer: 0
   m_Name: Un bicho
   m_TagString: Enemy
@@ -2001,7 +2004,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2100,6 +2103,8 @@ MonoBehaviour:
   rb: {fileID: 1895302820}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
+  rebaja: 0
+  exPlosion: 0
 --- !u!61 &1895302825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2145,6 +2150,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1895302826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895302819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831ea8799f5919a4799baea4d092a3b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1895302824}
+  noMovement: 0
 --- !u!1 &2028544889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,11 +2984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6628303478989437775, guid: 85b3d4e32ff4ebd4da1ae5feddee4dab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.09
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 6628303478989437775, guid: 85b3d4e32ff4ebd4da1ae5feddee4dab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.01
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: 6628303478989437775, guid: 85b3d4e32ff4ebd4da1ae5feddee4dab, type: 3}
       propertyPath: m_LocalPosition.z
