@@ -1212,6 +1212,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   destination1: {fileID: 966831980}
   destination2: {fileID: 1473324408}
+  noDamage: {fileID: 0}
   rebaja: 0
   exPlosion: 0
 --- !u!50 &1266497095
@@ -2103,6 +2104,7 @@ MonoBehaviour:
   rb: {fileID: 1895302820}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
+  noDamage: {fileID: 1895302821}
   rebaja: 0
   exPlosion: 0
 --- !u!61 &1895302825

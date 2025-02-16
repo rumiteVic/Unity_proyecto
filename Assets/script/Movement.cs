@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public GameObject destination1;
     public GameObject destination2;
     private Transform currentDestination;
+    public Collider2D noDamage;
     Vector2 direction;
     public bool rebaja;
     float currTime;
@@ -44,9 +45,11 @@ public class Movement : MonoBehaviour
         else if (exPlosion)
         {
             speed = 0.2f;
+            noDamage.enabled = false;
             currTimeExL += Time.deltaTime;
             if (currTimeExL >= cooldownBL)
             {
+                noDamage.enabled = true;
                 exPlosion = false;
                 currTimeExL = 0f;
             }
