@@ -2892,8 +2892,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319501634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.374378, y: 19.6, z: 0}
-  m_LocalScale: {x: 107.991356, y: 22.778353, z: 1}
+  m_LocalPosition: {x: 22.374378, y: 21.7204, z: 0}
+  m_LocalScale: {x: 107.991356, y: 21.147205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107934955}
@@ -3694,7 +3694,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6981132, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6981132, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4419,7 +4419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762585988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.2674, y: -69, z: 0}
+  m_LocalPosition: {x: 22.2674, y: -66.8898, z: 0}
   m_LocalScale: {x: 0.9985531, y: 2.5963397, z: 0.3336}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4472,7 +4472,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 500.54962, y: 45.430107}
+  m_Size: {x: 500.54962, y: 47.055653}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4688,7 +4688,7 @@ MonoBehaviour:
   destination2: {fileID: 1076524103}
   col: {fileID: 1895302821}
   rebaja: 0
-  exPlosion: 1
+  exPlosion: 0
   expl2: 0
   jau: 0
 --- !u!114 &1895302827
@@ -6108,7 +6108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6981132, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6981132, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6192,6 +6192,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ac0e5685d1abf4b93ad97ef05b8578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7205734483727584652}
+  dashingtime: 0.2
+  dashforce: 20
+  dashcd: 1
+  isdashing: 0
+  dashOnCD: 0
+  timer: 0
 --- !u!114 &7205734483727584654
 MonoBehaviour:
   m_ObjectHideFlags: 0
