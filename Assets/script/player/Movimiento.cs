@@ -14,14 +14,12 @@ public class Movimiento : MonoBehaviour
     public Collider2D player;
     public HabilidadesSombra sombra;
     public ChangeLight change;
-    private Dash playerdash;
     public GameObject player1;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        playerdash = GetComponent<Dash>();
         player = GetComponent<Collider2D>();
         player.isTrigger = false;
     }
@@ -61,6 +59,7 @@ public class Movimiento : MonoBehaviour
                 player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 0.5f, transform.localScale.z);
             }
         }
+
         else
         {
             player.isTrigger = false;
@@ -68,10 +67,6 @@ public class Movimiento : MonoBehaviour
             {
                 player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2f, transform.localScale.z);
             }
-        }
-        if (playerdash.Isdashing)
-        {
-
         }
 
     }

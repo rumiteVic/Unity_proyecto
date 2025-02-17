@@ -100,9 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bala: {fileID: 544569969398622076}
-  player: {fileID: 5315090732773987938, guid: b764d0b621e2ebc4e86dd6dd9bd62d83, type: 3}
   rb: {fileID: 4162297186108226913}
   speed: 50
+  exPlosion: 0
+  expl2: 0
 --- !u!50 &4162297186108226913
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +130,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!70 &7195002136548299257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

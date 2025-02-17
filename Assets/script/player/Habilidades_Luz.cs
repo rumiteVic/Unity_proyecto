@@ -89,7 +89,7 @@ public class Habilidades_Luz : MonoBehaviour
             balCol = true;
             GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
-            Destroy(objeto, 2);
+            Destroy(objeto, 10);
         }
         if(balCol)
         {

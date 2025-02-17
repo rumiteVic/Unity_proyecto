@@ -86,7 +86,7 @@ public class HabilidadesSombra : MonoBehaviour
             balCol = true;
             GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
             objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
-            Destroy(objetoOscuro, 2);
+            Destroy(objetoOscuro, 10);
         }
         
         if(balCol)
