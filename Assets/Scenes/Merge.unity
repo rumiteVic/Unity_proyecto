@@ -492,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 397558077}
+  life: {fileID: 397558075}
   destination1: {fileID: 1831131603}
   destination2: {fileID: 190257284}
   col: {fileID: 397558078}
@@ -2165,6 +2166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 1164207019}
+  life: {fileID: 1164207017}
   destination1: {fileID: 369454793}
   destination2: {fileID: 507604386}
   col: {fileID: 1164207020}
@@ -2346,6 +2348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 1266497095}
+  life: {fileID: 1266497099}
   destination1: {fileID: 966831980}
   destination2: {fileID: 1473324408}
   col: {fileID: 1266497096}
@@ -2930,6 +2933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 1411766583}
+  life: {fileID: 1411766581}
   destination1: {fileID: 851088872}
   destination2: {fileID: 267702777}
   col: {fileID: 1411766584}
@@ -4285,11 +4289,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 1895302820}
+  life: {fileID: 1895302827}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
   col: {fileID: 1895302821}
   rebaja: 0
-  exPlosion: 0
+  exPlosion: 1
   expl2: 0
   jau: 0
 --- !u!114 &1895302827

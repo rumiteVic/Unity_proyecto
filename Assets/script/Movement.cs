@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public float speed;
 
     public Rigidbody2D rb;
+    public EnemyLife life;
     public GameObject destination1;
     public GameObject destination2;
     public Collider2D col;
@@ -153,8 +154,8 @@ public class Movement : MonoBehaviour
     }
     public void Muerte()
     {
-        EnemyLife.instance.currentVidas = EnemyLife.instance.currentVidas - totalDamage;
-        if (EnemyLife.instance.currentVidas < 0)
+        life.currentVidas = life.currentVidas - totalDamage;
+        if (life.currentVidas < 0)
         {
             Destroy(gameObject);
         }
