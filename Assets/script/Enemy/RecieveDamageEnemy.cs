@@ -5,10 +5,9 @@ using UnityEngine;
 public class RecieveDamageEnemy : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject enemy;
     public Collider2D enemycoll;
     public EnemyLife life;
-    float totalDamage;
+    public Enemy enemy;
     void Start()
     {
         enemycoll = GetComponent<Collider2D>();
@@ -24,17 +23,19 @@ public class RecieveDamageEnemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC")
         {
-            totalDamage = 7f;
-            Muerte();
+            life.totalDamage = 7f;
+            life.Muerte();
         }
         else if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
-            totalDamage = 1f;
-            Muerte();
+            enemy.canNotSee = true;
+            life.totalDamage = 1f;
+            life.Muerte();
         }
-        else if(collision.gameObject.tag == "AttackPlayer")
+        else if(collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad")
         {
-            totalDamage = 3f;
-            Muerte();
+            life.totalDamage = 3f;
+            if(collision.gameObject.tag == "AttackPlayerLuz") enemy.rebaja = true;
+            life.Muerte();
         }
     }
     void OnTriggerStay2D(Collider2D collision){
@@ -42,18 +43,10 @@ public class RecieveDamageEnemy : MonoBehaviour
 
         if (collision.gameObject.tag == "Muro")
         {
-            totalDamage = 0.03f;
-            Muerte();            
+            life.totalDamage = 0.03f;
+            life.Muerte();            
         }
    
-    }
-    public void Muerte()
-    {
-        life.currentVidas = life.currentVidas - totalDamage;
-        if (life.currentVidas < 0)
-        {
-            Destroy(enemy);
-        }
     }
 
 }

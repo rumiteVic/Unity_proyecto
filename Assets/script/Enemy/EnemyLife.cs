@@ -6,6 +6,8 @@ public class EnemyLife : MonoBehaviour
 {
     public float maxVidas = 20;
     public float currentVidas;
+    public GameObject enemy;
+    public float totalDamage;
 
     void Awake()
     {
@@ -20,5 +22,13 @@ public class EnemyLife : MonoBehaviour
     void Update()
     {
         
+    }
+    public void Muerte()
+    {
+        currentVidas = currentVidas - totalDamage;
+        if (currentVidas < 0)
+        {
+            Destroy(enemy);
+        }
     }
 }

@@ -13,11 +13,12 @@ TagManager:
   - BOOM
   - escala
   - SpawnGround
-  - AttackPlayer
   - Abismo
   - Win
   - EnemyDamageSensor
   - AttackEnemy
+  - AttackPlayerLuz
+  - AttackPlayerOscuridad
   layers:
   - Default
   - TransparentFX

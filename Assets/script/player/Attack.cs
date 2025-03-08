@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-
-    public Transform attackArea;
+    public Transform attackAreaLuz;
+    public Transform attackAreaOscuridad;
+    public ChangeLight change;
     private float cooldown = 0.25f;
     float currTime = 0f;
     bool isAttack = false;
@@ -17,7 +18,8 @@ public class Attack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        attackArea.gameObject.SetActive(false);
+        attackAreaLuz.gameObject.SetActive(false);
+        attackAreaOscuridad.gameObject.SetActive(false);
 
     }
     void Update()
@@ -31,7 +33,8 @@ public class Attack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X) && currAtt == 0)
         {
             isAttack = true;
-            attackArea.gameObject.SetActive(true);
+            if(change.siLuz)attackAreaLuz.gameObject.SetActive(true);
+            else attackAreaOscuridad.gameObject.SetActive(true);
             isAttacking = true;
         }
         if (isAttack)
@@ -40,8 +43,8 @@ public class Attack : MonoBehaviour
 
             if (currTime >= cooldown)
             {
-                Debug.Log("what");
-                attackArea.gameObject.SetActive(false);
+                if(change.siLuz)attackAreaLuz.gameObject.SetActive(false);
+                else attackAreaOscuridad.gameObject.SetActive(false);
                 isAttack = false;
                 currTime = 0f;
             }

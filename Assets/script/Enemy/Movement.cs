@@ -10,8 +10,8 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject destination1;
     public GameObject destination2;
-    public Collider2D col;
     private Transform currentDestination;
+    public Enemy enemy;
     Vector2 direction;
 
     // Start is called before the first frame update
@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {        
+        if(!enemy.rebaja)speed = 5;
         rb.velocity = direction*speed;
         ChangeDirection();
     }
