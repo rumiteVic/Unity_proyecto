@@ -79,7 +79,7 @@ public class Proyectil : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "EnemyDamageSensor")
         {
             Destroy(gameObject);
         }
@@ -90,7 +90,7 @@ public class Proyectil : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "EnemyDamageSensor")
         {
             Destroy(gameObject);
         }
@@ -101,7 +101,6 @@ public class Proyectil : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D collision)
     {
-
        if (collision.gameObject.tag == "BOOM")
         {
             exPlosion = true;

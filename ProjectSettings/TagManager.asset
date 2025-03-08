@@ -17,6 +17,7 @@ TagManager:
   - Abismo
   - Win
   - EnemyDamageSensor
+  - AttackEnemy
   layers:
   - Default
   - TransparentFX

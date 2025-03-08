@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
     public float speed;
 
     public Rigidbody2D rb;
-    public EnemyLife life;
     public GameObject destination1;
     public GameObject destination2;
     public Collider2D col;
