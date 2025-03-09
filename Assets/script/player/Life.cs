@@ -9,8 +9,11 @@ public class Life : MonoBehaviour
 
     public int maxVidas = 3;
     public int currentVidas;
-
     public Slider slider;
+    int vidas = 3;
+    float currTime = 0f;
+    float cooldown = 8f;
+    bool changeVida;
 
     void Awake()
     {
@@ -22,11 +25,24 @@ public class Life : MonoBehaviour
     {
         currentVidas = maxVidas;
         slider.maxValue = maxVidas;
+        vidas = currentVidas;
     }
 
     // Update is called once per frame
     void Update()
     {
         slider.value = currentVidas;
+        if(changeVida){
+            currentVidas = vidas;
+            changeVida = false;
+        }
+        currTime += Time.deltaTime;
+        if(currTime >= cooldown){
+            vidas = currentVidas;
+            currTime = 0;
+        }
+    }
+    public void RecuperarVida(){
+        changeVida = true;
     }
 }

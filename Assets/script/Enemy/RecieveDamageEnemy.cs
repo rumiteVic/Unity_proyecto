@@ -8,6 +8,7 @@ public class RecieveDamageEnemy : MonoBehaviour
     public Collider2D enemycoll;
     public EnemyLife life;
     public Enemy enemy;
+    public Movement movimiento;
     void Start()
     {
         enemycoll = GetComponent<Collider2D>();
@@ -21,9 +22,10 @@ public class RecieveDamageEnemy : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC")
+        if(collision.gameObject.tag == "BOOM")
         {
             life.totalDamage = 7f;
+            enemy.canNotMove = true;
             life.Muerte();
         }
         else if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
@@ -37,16 +39,29 @@ public class RecieveDamageEnemy : MonoBehaviour
             if(collision.gameObject.tag == "AttackPlayerLuz") enemy.rebaja = true;
             life.Muerte();
         }
+        else if(collision.gameObject.tag == "Escudo"){
+            movimiento.ReinicioTiempo();
+        }
     }
-    void OnTriggerStay2D(Collider2D collision){
-
-
+    private void OnTriggerStay2D(Collider2D collision){
         if (collision.gameObject.tag == "Muro")
         {
             life.totalDamage = 0.03f;
+            enemy.muro = true;
             life.Muerte();            
+        }
+        else if (collision.gameObject.tag == "BOOM")
+        {
+            enemy.canNotMove = true;          
         }
    
     }
-
+    private void OnTriggerExit2D(Collider2D collision){
+        if(collision.CompareTag("Muro")){
+            enemy.muro = false;
+        }
+        if(collision.CompareTag("BOOM")){
+            enemy.canNotMove = false;
+        }
+    }
 }

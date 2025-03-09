@@ -6,27 +6,38 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
     public float speed;
-
+    public Transform enemigo;
     public Rigidbody2D rb;
     public GameObject destination1;
     public GameObject destination2;
     private Transform currentDestination;
     public Enemy enemy;
     Vector2 direction;
-
+    float cooldown = 5;
+    float x;
+    float y;
+    float currTime = 0;
     // Start is called before the first frame update
     void Start()
     {
         currentDestination = destination1.transform;
         rb = GetComponent<Rigidbody2D>();
         direction = (currentDestination.position - transform.position).normalized;
+        x = enemigo.position.x;
+        y = enemigo.position.y;
     }
     
     // Update is called once per frame
     void Update()
     {        
-        if(!enemy.rebaja)speed = 5;
+        if(!enemy.rebaja && !enemy.muro &&!enemy.canNotMove)speed = 5;
         rb.velocity = direction*speed;
+        currTime += Time.deltaTime;
+        if(currTime >= cooldown){
+            x = enemigo.position.x;
+            y = enemigo.position.y;
+            currTime = 0;
+        }
         ChangeDirection();
     }
 
@@ -42,5 +53,9 @@ public class Movement : MonoBehaviour
             currentDestination = destination1.transform;
             direction = (currentDestination.position - transform.position).normalized;
         }
+    }
+
+    public void ReinicioTiempo(){
+        transform.position = new Vector3(x, y);
     }
 }

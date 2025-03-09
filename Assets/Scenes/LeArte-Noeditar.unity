@@ -880,6 +880,7 @@ MonoBehaviour:
   enemycoll: {fileID: 276594509}
   life: {fileID: 1895302827}
   enemy: {fileID: 1895302828}
+  movimiento: {fileID: 1895302824}
 --- !u!1 &313080616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +1311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561334934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -14.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2437,7 +2438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978585644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.79456294, y: 0, z: 0}
+  m_LocalPosition: {x: 0.79456294, y: -14.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2468,7 +2469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076524103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.25, y: -1.03, z: 0}
+  m_LocalPosition: {x: 22.58, y: -1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2876,7 +2877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274434979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4887794, y: 0, z: 0}
+  m_LocalPosition: {x: 1.4887794, y: -14.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4365,7 +4366,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.002723217, y: -0.002722919}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4376,7 +4377,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.1}
+  m_Size: {x: 0.95296, y: 0.9856347}
   m_EdgeRadius: 0
 --- !u!212 &1895302822
 SpriteRenderer:
@@ -4460,6 +4461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  enemigo: {fileID: 1895302823}
   rb: {fileID: 1895302820}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
@@ -4498,6 +4500,8 @@ MonoBehaviour:
   dealDamage: 0
   canNotSee: 0
   rebaja: 0
+  canNotMove: 0
+  muro: 0
 --- !u!1 &1955758891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,6 +5444,7 @@ GameObject:
   - component: {fileID: 7205734483727584652}
   - component: {fileID: 7205734483727584653}
   - component: {fileID: 7205734483727584654}
+  - component: {fileID: 7205734483727584655}
   m_Layer: 6
   m_Name: Zenith
   m_TagString: Player
@@ -5462,7 +5467,9 @@ MonoBehaviour:
   muroDeLuz: {fileID: 7259600016385135631, guid: 8820d12dca82ee1409981fbcc4cae6d0, type: 3}
   bala: {fileID: 544569969398622076, guid: 176d786ebd27d3e4a9b744b16d9c854b, type: 3}
   boomLuz: {fileID: 1326671407541604865, guid: e718c6b933283d343ab241fb81c0da44, type: 3}
+  escudoJau: {fileID: 1756417832107868699, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
   suelin: {fileID: 7205734483727584652}
+  life: {fileID: 7205734483727584655}
   speed: 20
   derecha: 0
   suelo: 0
@@ -6240,6 +6247,21 @@ MonoBehaviour:
   oscuridad: {fileID: 773997584428974465}
   lucecita: {fileID: 758073571795652256}
   sombra: {fileID: 6200959644074531008}
+--- !u!114 &7205734483727584655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727695142665187595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecb430f1b2b43642bfca8006d6b26d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVidas: 3
+  currentVidas: 0
+  slider: {fileID: 572078533}
 --- !u!4 &7693675612600459233
 Transform:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ TagManager:
   - AttackEnemy
   - AttackPlayerLuz
   - AttackPlayerOscuridad
+  - Escudo
   layers:
   - Default
   - TransparentFX

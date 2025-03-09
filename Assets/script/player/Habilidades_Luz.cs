@@ -9,7 +9,9 @@ public class Habilidades_Luz : MonoBehaviour
     public GameObject muroDeLuz;
     public GameObject bala;
     public GameObject boomLuz;
+    public GameObject escudoJau;
     public Movimiento suelin;
+    public Life life;
     public float speed;
     float dirige = 2;
     float izDe;
@@ -33,6 +35,12 @@ public class Habilidades_Luz : MonoBehaviour
     bool explCol;
     float currTimExpl = 0f;
     float finexPl = 15f;
+
+    //Cooldowns escudo
+    bool escudo;
+    bool usoEscudo;
+    float currTimEsc = 0f;
+    float finEsc = 8f;
 
     // Start is called before the first frame update
     void Start()
@@ -115,6 +123,30 @@ public class Habilidades_Luz : MonoBehaviour
             if(currTimExpl  >= finexPl){
                 currTimExpl  = 0;
                 explCol = false;
+            }
+        }
+
+        //Escudo pero sin ser un escudo
+        if (Input.GetKeyDown(KeyCode.B) && currTimEsc == 0)
+        {
+            escudo = true;
+            life.RecuperarVida(); 
+        }
+        if (escudo)
+        {
+            usoEscudo = true;
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
+            GameObject tempEscudo = Instantiate(escudoJau, direccion, transform.rotation);
+            escudo = false;
+            Destroy(tempEscudo, 5);
+        }
+
+        if(usoEscudo)
+        {
+            currTimEsc += Time.deltaTime;
+            if(currTimEsc  >= finEsc){
+                currTimEsc  = 0;
+                usoEscudo = false;
             }
         }
     }
