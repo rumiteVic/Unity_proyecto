@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
+    public Life life;
     public float horizontal;
+    public float izde;
     float vertical;
     public float speed;
     public float impulso;
@@ -32,11 +34,13 @@ public class Movimiento : MonoBehaviour
         if (horizontal > 0){
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,0,0);
+            izde = 1f;
         }
         if (horizontal < 0)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,180,0);
+            izde = -1f;
         }
         if (horizontal == 0)
         {
@@ -101,6 +105,7 @@ public class Movimiento : MonoBehaviour
         }
         else
         {
+            Debug.Log(life.currentVidas);
             Destroy(gameObject);
         }
     }

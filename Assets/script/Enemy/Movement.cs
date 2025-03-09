@@ -11,12 +11,16 @@ public class Movement : MonoBehaviour
     public GameObject destination1;
     public GameObject destination2;
     private Transform currentDestination;
+    public Movimiento player;
     public Enemy enemy;
     Vector2 direction;
     float cooldown = 5;
     float x;
     float y;
     float currTime = 0;
+    public bool empujado;
+    float currTime1 = 0f;
+    float cooldown2 = 0.3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,16 @@ public class Movement : MonoBehaviour
             y = enemigo.position.y;
             currTime = 0;
         }
+        Vector2 direccion = new Vector2 (player.izde * 500f, 0);
+        if(empujado){
+             rb.AddForce(direccion);
+             currTime1 += Time.deltaTime;
+             if(currTime1 >= cooldown2){
+                currTime1 = 0f;
+                empujado = false;
+             }
+        }
+       
         ChangeDirection();
     }
 

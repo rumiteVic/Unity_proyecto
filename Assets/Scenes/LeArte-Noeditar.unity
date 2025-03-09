@@ -995,7 +995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &494024765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1355,7 +1355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -765.7, y: -89.5}
+  m_AnchoredPosition: {x: -765.7, y: 0}
   m_SizeDelta: {x: 223.27466, y: 27.909302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572078533
@@ -1403,9 +1403,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 127910420}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 3
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3037,6 +3037,7 @@ MonoBehaviour:
   maxVidas: 3
   currentVidas: 0
   slider: {fileID: 572078533}
+  vidas: 3
 --- !u!4 &1354418892
 Transform:
   m_ObjectHideFlags: 0
@@ -4119,7 +4120,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -4133,7 +4134,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4465,7 +4466,9 @@ MonoBehaviour:
   rb: {fileID: 1895302820}
   destination1: {fileID: 313080616}
   destination2: {fileID: 1076524103}
+  player: {fileID: 7205734483727584652}
   enemy: {fileID: 1895302828}
+  empujado: 0
 --- !u!114 &1895302827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5444,7 +5447,6 @@ GameObject:
   - component: {fileID: 7205734483727584652}
   - component: {fileID: 7205734483727584653}
   - component: {fileID: 7205734483727584654}
-  - component: {fileID: 7205734483727584655}
   m_Layer: 6
   m_Name: Zenith
   m_TagString: Player
@@ -5469,7 +5471,7 @@ MonoBehaviour:
   boomLuz: {fileID: 1326671407541604865, guid: e718c6b933283d343ab241fb81c0da44, type: 3}
   escudoJau: {fileID: 1756417832107868699, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
   suelin: {fileID: 7205734483727584652}
-  life: {fileID: 7205734483727584655}
+  life: {fileID: 1354418891}
   speed: 20
   derecha: 0
   suelo: 0
@@ -6201,7 +6203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf23e9231554344db7c59142213ce46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: {fileID: 1354418891}
   horizontal: 0
+  izde: 0
   speed: 4
   impulso: 10
   suelo: 0
@@ -6247,21 +6251,6 @@ MonoBehaviour:
   oscuridad: {fileID: 773997584428974465}
   lucecita: {fileID: 758073571795652256}
   sombra: {fileID: 6200959644074531008}
---- !u!114 &7205734483727584655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727695142665187595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecb430f1b2b43642bfca8006d6b26d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVidas: 3
-  currentVidas: 0
-  slider: {fileID: 572078533}
 --- !u!4 &7693675612600459233
 Transform:
   m_ObjectHideFlags: 0

@@ -10,21 +10,19 @@ public class Life : MonoBehaviour
     public int maxVidas = 3;
     public int currentVidas;
     public Slider slider;
-    int vidas = 3;
+    public int vidas = 3;
     float currTime = 0f;
     float cooldown = 8f;
     bool changeVida;
 
     void Awake()
     {
-
         instance = this; 
-        
     }
     private void Start()
     {
-        currentVidas = maxVidas;
         slider.maxValue = maxVidas;
+        currentVidas = maxVidas;
         vidas = currentVidas;
     }
 

@@ -37,6 +37,7 @@ public class RecieveDamageEnemy : MonoBehaviour
         {
             life.totalDamage = 3f;
             if(collision.gameObject.tag == "AttackPlayerLuz") enemy.rebaja = true;
+            if(collision.gameObject.tag == "AttackPlayerOscuridad") movimiento.empujado = true;
             life.Muerte();
         }
         else if(collision.gameObject.tag == "Escudo"){

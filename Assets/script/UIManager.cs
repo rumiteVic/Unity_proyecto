@@ -16,7 +16,6 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-
         if(lifes.currentVidas <= 0)
         {
            restart.gameObject.SetActive(true);
