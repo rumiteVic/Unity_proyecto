@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1385774519744830241}
   - component: {fileID: 2759944728100179176}
   - component: {fileID: -2835713393694973049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoomLuz
   m_TagString: BOOM
   m_Icon: {fileID: 0}

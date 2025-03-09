@@ -18,6 +18,9 @@ public class Movimiento : MonoBehaviour
     public ChangeLight change;
     public GameObject player1;
 
+    float currTimSal = 0f;
+    float cooldownSalt = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,10 +51,18 @@ public class Movimiento : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.UpArrow) && suelo)
+        if (Input.GetKey(KeyCode.UpArrow) && suelo && currTimSal == 0f)
         {
             rb.velocity = new Vector2(0.0f, impulso);
+            jump = true;
             suelo = false;
+        }
+        if(jump){
+            currTimSal += Time.deltaTime;
+            if(currTimSal >= cooldownSalt){
+                currTimSal = 0f;
+                jump = false;
+            }
         }
 
         if(Input.GetKey(KeyCode.DownArrow))
@@ -84,13 +95,7 @@ public class Movimiento : MonoBehaviour
         }
     }    
     void OnTriggerStay2D(Collider2D collision){
-        if(collision.gameObject.tag == "escala" && sombra.capa){
-            suelo = true;
-            if(change.siLuz){
-                sombra.capa = false;
-            }
-        }
-        else if(collision.gameObject.tag == "Abismo"){
+        if(collision.gameObject.tag == "Abismo"){
             Muerte();
         }
     }

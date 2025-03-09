@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7786147636697848794}
   - component: {fileID: 4748825746962039968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563392713255214690}
   - component: {fileID: 8071807696392936472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 523243889126002400}
   - component: {fileID: 7491801301804439856}
   - component: {fileID: -6193333325329104803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Escudo
   m_TagString: Escudo
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756417832107868699}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0754645, y: -0.8326807, z: -0.06929842}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8542273105887377171}
   - component: {fileID: 3197656181431361093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953744397559509221}
   - component: {fileID: 5550133503640422760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5006356179228692527}
   - component: {fileID: 798656868363220881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2052701833810277495}
   - component: {fileID: 6974299632414020340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palo (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

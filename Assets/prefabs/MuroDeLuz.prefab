@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 917544486955008839}
   - component: {fileID: 5610514800558175422}
   - component: {fileID: 2177812180679104602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MuroDeLuz
   m_TagString: Muro
   m_Icon: {fileID: 0}

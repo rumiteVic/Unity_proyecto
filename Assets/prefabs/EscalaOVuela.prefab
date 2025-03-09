@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5323722415768423947}
   - component: {fileID: 420158134185829891}
   - component: {fileID: 5212286319874449733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EscalaOVuela
   m_TagString: escala
   m_Icon: {fileID: 0}

@@ -95,7 +95,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
             balCol = true;
-            GameObject objeto = Instantiate(bala, transform.position, transform.rotation);
+            GameObject objeto = Instantiate(bala, transform.position * izDe, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 10);
         }
@@ -135,7 +135,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (escudo)
         {
             usoEscudo = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y +0.5f);
             GameObject tempEscudo = Instantiate(escudoJau, direccion, transform.rotation);
             escudo = false;
             Destroy(tempEscudo, 5);

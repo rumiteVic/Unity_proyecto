@@ -107,11 +107,17 @@ public class HabilidadesSombra : MonoBehaviour
         }
         if(capa){
             cooldownUsoCapa  += Time.deltaTime;
+
+            suelin.suelo = true;
+
+
             if(cooldownUsoCapa  >= fin){
                 cooldownUsoCapa  = 0;
                 capa = false;
+                suelin.suelo = false;
             }
         }
+        
         if(capCol)
         {
             currTimCap += Time.deltaTime;
