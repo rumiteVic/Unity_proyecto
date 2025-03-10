@@ -5,7 +5,7 @@ using UnityEngine;
 public class AgujeroNegro : MonoBehaviour
 {
     // Start is called before the first frame update
-    float fuerzaAtraccion = 250f;
+    float fuerzaAtraccion = 50f;
     void Start()
     {
         
@@ -20,7 +20,7 @@ public class AgujeroNegro : MonoBehaviour
     {
         if (other.attachedRigidbody != null)
         {
-            Vector2 direccion = (transform.position - other.transform.position).normalized;
+            Vector2 direccion = (transform.position - other.transform.position);
             other.attachedRigidbody.AddForce(direccion * fuerzaAtraccion);
         }
     }
