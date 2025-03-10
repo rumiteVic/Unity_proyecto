@@ -29,7 +29,7 @@ public class HabilidadesSombra : MonoBehaviour
     //Cooldown jaula
     bool jauCol;
     float currTimJau = 0f;
-    float finJau = 8f;
+    float finJau = 10f;
 
     //Cooldows bala
     bool balCol;
@@ -53,8 +53,8 @@ public class HabilidadesSombra : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         if (horizontal < 0) {derecha = false;}
         if (horizontal > 0) {derecha = true;}
-        if (derecha) {izDe = -1f;}
-        if (!derecha) {izDe = 1f;}
+        if (!derecha) {izDe = -1f;}
+        if (derecha) {izDe = 1f;}
         
 
         //Jaula
@@ -65,10 +65,10 @@ public class HabilidadesSombra : MonoBehaviour
         }
         if (jaulaa)
         {
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 0.8f);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 2f);
             GameObject tempJaula = Instantiate(jaula, direccion, transform.rotation);
             jaulaa = false;
-            Destroy(tempJaula, 7);
+            Destroy(tempJaula, 4);
         }
 
         if(jauCol)

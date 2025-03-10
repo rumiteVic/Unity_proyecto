@@ -21,6 +21,7 @@ TagManager:
   - AttackPlayerOscuridad
   - Escudo
   - DamageSensor
+  - Gravitacional
   layers:
   - Default
   - TransparentFX

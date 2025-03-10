@@ -18,8 +18,14 @@ public class Movimiento : MonoBehaviour
     public ChangeLight change;
     public GameObject player1;
 
-    float currTimSal = 0f;
-    float cooldownSalt = 0.5f;
+    bool agachar;
+    bool agaching;
+
+    float currTim = 0f;
+    float cooldown = 0.5f;
+
+    float currTim1 = 0f;
+    float cooldown1 = 0.8f;
     //Animation haha
     public Animator animatorLuz;
     public Animator animatorOsc;
@@ -61,36 +67,41 @@ public class Movimiento : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.UpArrow) && suelo && currTimSal == 0f)
+        if (Input.GetKey(KeyCode.UpArrow) && suelo && currTim == 0f)
         {
             rb.velocity = new Vector2(0.0f, impulso);
             jump = true;
             suelo = false;
         }
         if(jump){
-            currTimSal += Time.deltaTime;
-            if(currTimSal >= cooldownSalt){
-                currTimSal = 0f;
+            currTim += Time.deltaTime;
+            if(currTim >= cooldown){
+                currTim = 0f;
                 jump = false;
             }
         }
 
-        if(Input.GetKey(KeyCode.DownArrow))
+        if(Input.GetKey(KeyCode.DownArrow) && agachar)
         {
             player.isTrigger = true;
+            agaching = true;
+            agachar = false;
             if (player1.transform.localScale.y == 1f)
             {
                 rb.velocity = new Vector2(0.0f, -1.0f);
                 player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 0.5f, transform.localScale.z);
             }
         }
-
-        else
-        {
-            player.isTrigger = false;
-            if (player1.transform.localScale.y < 1f)
-            {
-                player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2f, transform.localScale.z);
+        if(agaching){
+            currTim1 += Time.deltaTime;
+            if(currTim1 >= cooldown1){
+                currTim1 = 0f;
+                agaching = false;
+                player.isTrigger = false;
+                if (player1.transform.localScale.y < 1f)
+                {
+                    player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2f, transform.localScale.z);
+                }
             }
         }
 
@@ -99,6 +110,7 @@ public class Movimiento : MonoBehaviour
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
         {
             suelo = true;
+            agachar = true;
         }
         else if(collision.gameObject.tag == "Abismo"){
             Muerte();
@@ -107,6 +119,13 @@ public class Movimiento : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "Abismo"){
             Muerte();
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision){
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
+        {
+            suelo = false;
+            agachar = false;
         }
     }
 

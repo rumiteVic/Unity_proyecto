@@ -9,6 +9,9 @@ public class RecieveDamageEnemy : MonoBehaviour
     public EnemyLife life;
     public Enemy enemy;
     public Movement movimiento;
+    float currTime = 0f;
+    float cooldown = 0.4f;
+    public bool recibe = false;
     void Start()
     {
         enemycoll = GetComponent<Collider2D>();
@@ -17,7 +20,11 @@ public class RecieveDamageEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if(recibe){
+            life.totalDamage = 2f;
+            recibe = false;
+            life.Muerte();
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,6 +50,12 @@ public class RecieveDamageEnemy : MonoBehaviour
         else if(collision.gameObject.tag == "Escudo"){
             movimiento.ReinicioTiempo();
         }
+        else if (collision.gameObject.tag == "Gravitacional"){
+            movimiento.vuela = true;
+        }
+        else if (collision.gameObject.tag == "Ground"){
+            movimiento.normal = true;
+        }
     }
     private void OnTriggerStay2D(Collider2D collision){
         if (collision.gameObject.tag == "Muro")
@@ -55,6 +68,15 @@ public class RecieveDamageEnemy : MonoBehaviour
         {
             enemy.canNotMove = true;          
         }
+        else if(collision.gameObject.tag == "BOOMOSC"){
+            movimiento.normal = true;
+            currTime += Time.deltaTime;
+            if(currTime >= cooldown){
+                life.totalDamage = 0.3f;
+                currTime = 0f;
+                life.Muerte();
+            }
+        }
    
     }
     private void OnTriggerExit2D(Collider2D collision){
@@ -63,6 +85,9 @@ public class RecieveDamageEnemy : MonoBehaviour
         }
         if(collision.CompareTag("BOOM")){
             enemy.canNotMove = false;
+        }
+        if(collision.CompareTag("BOOMOSC")){
+            currTime = 0f;
         }
     }
 }

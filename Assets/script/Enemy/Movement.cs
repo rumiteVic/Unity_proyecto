@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     private Transform currentDestination;
     public Movimiento player;
     public Enemy enemy;
+    public RecieveDamageEnemy recibe;
     Vector2 direction;
     float cooldown = 5;
     float x;
@@ -21,6 +22,12 @@ public class Movement : MonoBehaviour
     public bool empujado;
     float currTime1 = 0f;
     float cooldown2 = 0.3f;
+
+    float currTime2 = 0f;
+    float cooldown3 = 0.1f;
+
+    public bool vuela = false;
+    public bool normal = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +41,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {        
-        if(!enemy.rebaja && !enemy.muro &&!enemy.canNotMove)speed = 5;
+        if(!enemy.rebaja && !enemy.muro &&!enemy.canNotMove && !vuela)speed = 5;
         rb.velocity = direction*speed;
         currTime += Time.deltaTime;
         if(currTime >= cooldown){
@@ -42,7 +49,7 @@ public class Movement : MonoBehaviour
             y = enemigo.position.y;
             currTime = 0;
         }
-        Vector2 direccion = new Vector2 (player.izde * 500f, 0);
+        Vector2 direccion = new Vector2 (player.izde * 50f, 0);
         if(empujado){
              rb.AddForce(direccion);
              currTime1 += Time.deltaTime;
@@ -50,6 +57,21 @@ public class Movement : MonoBehaviour
                 currTime1 = 0f;
                 empujado = false;
              }
+        }
+        if(vuela){
+            rb.gravityScale = -700;
+            currTime2 += Time.deltaTime;
+            speed = 0f;
+            if(currTime2 >= cooldown3){
+                rb.gravityScale = 300;
+                currTime2 = 0f;
+                vuela = false;
+                recibe.recibe = true;
+            }
+        }
+        if(normal){
+            rb.gravityScale = 1f;
+            normal = false;
         }
        
         ChangeDirection();
