@@ -76,7 +76,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (muro)
         {
             murCol = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y + 1.5f);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y);
             GameObject tempMuro = Instantiate(muroDeLuz, direccion, transform.rotation);
             muro = false;
             Destroy(tempMuro, 7);
@@ -95,7 +95,8 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
             balCol = true;
-            GameObject objeto = Instantiate(bala, transform.position * izDe, transform.rotation);
+            Vector2 direccion = new Vector2(transform.position.x * izDe, transform.position.y - 0.5f);
+            GameObject objeto = Instantiate(bala, direccion, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 10);
         }
@@ -112,7 +113,8 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo &&currTimExpl == 0)
         {
             explCol = true;
-            GameObject booooLuz = Instantiate(boomLuz, transform.position, transform.rotation);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 1f);
+            GameObject booooLuz = Instantiate(boomLuz, direccion, transform.rotation);
             booooLuz.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
             Destroy(booooLuz, 10);
         }
@@ -135,7 +137,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (escudo)
         {
             usoEscudo = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y +0.5f);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 0.8f);
             GameObject tempEscudo = Instantiate(escudoJau, direccion, transform.rotation);
             escudo = false;
             Destroy(tempEscudo, 5);

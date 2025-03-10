@@ -65,7 +65,7 @@ public class HabilidadesSombra : MonoBehaviour
         }
         if (jaulaa)
         {
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 0.8f);
             GameObject tempJaula = Instantiate(jaula, direccion, transform.rotation);
             jaulaa = false;
             Destroy(tempJaula, 7);
@@ -84,7 +84,8 @@ public class HabilidadesSombra : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
             balCol = true;
-            GameObject objetoOscuro = Instantiate(balaOscura, transform.position, transform.rotation);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 0.5f);
+            GameObject objetoOscuro = Instantiate(balaOscura, direccion, transform.rotation);
             objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objetoOscuro, 10);
         }
@@ -131,7 +132,8 @@ public class HabilidadesSombra : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo && currTimExpl == 0)
         {
             explCol = true;
-            GameObject booooOsc = Instantiate(boomOscuridad, transform.position, transform.rotation);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 1f);
+            GameObject booooOsc = Instantiate(boomOscuridad, direccion, transform.rotation);
             booooOsc.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
             Destroy(booooOsc, 10);
         }
