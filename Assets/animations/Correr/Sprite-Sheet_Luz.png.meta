@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee14e00e985de7d44b53e472bf9f4bf1
+guid: 808c749e4cfec1649b768ae31ae8736b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AjFP5_0
+      name: Sprite-Sheet_Luz_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 64
-        height: 64
+        y: 420
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f8d9682a68872848acbd3bd3f735f28
-      internalID: 1563155061
+      spriteID: 7dccdd5b695f91e46bdeeb5565d6e98b
+      internalID: -1486578955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_1
+      name: Sprite-Sheet_Luz_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
+        x: 420
+        y: 420
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0690f5b9f204a84abc3e33b2afa075f
-      internalID: 455837895
+      spriteID: 4ea908276e197f5499ea01212c9a243e
+      internalID: -1011524235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_2
+      name: Sprite-Sheet_Luz_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
+        x: 840
+        y: 420
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b987839dc84ac3c4190e5ff8b964c8a3
-      internalID: -1447080203
+      spriteID: 47622f1fee3d4b14894b8b3aabd33992
+      internalID: -1901523736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_3
+      name: Sprite-Sheet_Luz_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 64
-        height: 64
+        x: 1260
+        y: 420
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0807dd00fc75e3c4e9ce651e410f5a4f
-      internalID: 1739557869
+      spriteID: 204b595a9d022384b948f02a5e085952
+      internalID: -1930645719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_4
+      name: Sprite-Sheet_Luz_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
+        x: 1680
+        y: 420
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,167 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c1f00bf35ea9f4fb9311f65bccdd00
-      internalID: 463472616
+      spriteID: 6a627be451e6e434b83a09f9f9191579
+      internalID: 1364199739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b4444cb4b07e6b42bd31adf2ecef425
-      internalID: 638377748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9dafdd62d084744b8f0386009f479df
-      internalID: 436962335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 478d8cc14766241428b55b8bf4bf47f3
-      internalID: -58472475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abc3491d11815ae4ea8896f0b8657e77
-      internalID: 2118034974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2507943b3e59bc9409c9aa7495aa8544
-      internalID: 1579270200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_10
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2a68de40f2b55a42b7593182a8b9e67
-      internalID: -769484658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_11
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ead72350784e6f4a9c06c1032638a25
-      internalID: -1024155109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AjFP5_12
+      name: Sprite-Sheet_Luz_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fea52383eed1574f8e4dd9a9fa62ca9
-      internalID: 1313616470
+      spriteID: c66b8ac06e602184f99b3cc090d062dc
+      internalID: 508255840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_13
+      name: Sprite-Sheet_Luz_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 420
         y: 0
-        width: 64
-        height: 64
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99844b386eb94794694fe8c66d3bcfc1
-      internalID: -1611024309
+      spriteID: bada6cffb20ece048b4f36be902dc37d
+      internalID: 110280469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_14
+      name: Sprite-Sheet_Luz_7
       rect:
         serializedVersion: 2
-        x: 128
+        x: 840
         y: 0
-        width: 64
-        height: 64
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac22322ace97674582581a3406ab7ac
-      internalID: 335810997
+      spriteID: dba0fcd5c7578794e85e9dbd9bdd5cee
+      internalID: -516107686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AjFP5_15
+      name: Sprite-Sheet_Luz_8
       rect:
         serializedVersion: 2
-        x: 192
+        x: 1260
         y: 0
-        width: 64
-        height: 64
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,8 +318,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c751bb9ad6c4914b80acb8c41cb0587
-      internalID: -1507975782
+      spriteID: 84b75569f673fe948aeeffe79f1a99c9
+      internalID: 970808302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Sheet_Luz_9
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d34734849d52242a4772f2534f07e1
+      internalID: -1648218266
       vertices: []
       indices: 
       edges: []
@@ -482,22 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AjFP5_0: 1563155061
-      AjFP5_1: 455837895
-      AjFP5_10: -769484658
-      AjFP5_11: -1024155109
-      AjFP5_12: 1313616470
-      AjFP5_13: -1611024309
-      AjFP5_14: 335810997
-      AjFP5_15: -1507975782
-      AjFP5_2: -1447080203
-      AjFP5_3: 1739557869
-      AjFP5_4: 463472616
-      AjFP5_5: 638377748
-      AjFP5_6: 436962335
-      AjFP5_7: -58472475
-      AjFP5_8: 2118034974
-      AjFP5_9: 1579270200
+      Sprite-Sheet_Luz_0: -1486578955
+      Sprite-Sheet_Luz_1: -1011524235
+      Sprite-Sheet_Luz_2: -1901523736
+      Sprite-Sheet_Luz_3: -1930645719
+      Sprite-Sheet_Luz_4: 1364199739
+      Sprite-Sheet_Luz_5: 508255840
+      Sprite-Sheet_Luz_6: 110280469
+      Sprite-Sheet_Luz_7: -516107686
+      Sprite-Sheet_Luz_8: 970808302
+      Sprite-Sheet_Luz_9: -1648218266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
