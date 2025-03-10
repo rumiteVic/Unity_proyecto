@@ -49,7 +49,7 @@ public class Proyectil : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (exPlosion)
+        if (exPlosion)
         {
             speed = 0.2f;
             currTimeExL += Time.deltaTime;
@@ -101,7 +101,7 @@ public class Proyectil : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D collision)
     {
-       if (collision.gameObject.tag == "BOOM")
+        if (collision.gameObject.tag == "BOOM")
         {
             exPlosion = true;
         }

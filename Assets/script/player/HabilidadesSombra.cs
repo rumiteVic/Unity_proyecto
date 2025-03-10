@@ -52,9 +52,9 @@ public class HabilidadesSombra : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         if (horizontal < 0) {derecha = false;}
-        else if (horizontal > 0) {derecha = true;}
-        if (derecha) {izDe = 1f;}
-        if (!derecha) {izDe = -1f;}
+        if (horizontal > 0) {derecha = true;}
+        if (derecha) {izDe = -1f;}
+        if (!derecha) {izDe = 1f;}
         
 
         //Jaula
