@@ -20,6 +20,9 @@ public class Movimiento : MonoBehaviour
 
     float currTimSal = 0f;
     float cooldownSalt = 0.5f;
+    //Animation haha
+    public Animator animatorLuz;
+    public Animator animatorOsc;
 
     // Start is called before the first frame update
     void Start()
@@ -38,16 +41,23 @@ public class Movimiento : MonoBehaviour
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,0,0);
             izde = 1f;
+            animatorLuz.SetBool("isRunning", true);
+            animatorOsc.SetBool("isRunning", true);
+
         }
         if (horizontal < 0)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,180,0);
             izde = -1f;
+            animatorLuz.SetBool("isRunning", true);
+            animatorOsc.SetBool("isRunning", true);
         }
         if (horizontal == 0)
         {
             rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
+            animatorLuz.SetBool("isRunning", false);
+            animatorOsc.SetBool("isRunning", false);
         }
 
 
@@ -94,7 +104,7 @@ public class Movimiento : MonoBehaviour
             Muerte();
         }
     }    
-    void OnTriggerStay2D(Collider2D collision){
+    void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "Abismo"){
             Muerte();
         }
@@ -102,7 +112,7 @@ public class Movimiento : MonoBehaviour
 
     public void Muerte()
     {
-        Life.instance.currentVidas = Life.instance.currentVidas - 1;
+        Life.instance.currentVidas -= 1;
         if (Life.instance.currentVidas > 0)
         {
             transform.position = new Vector3(0, 0);
