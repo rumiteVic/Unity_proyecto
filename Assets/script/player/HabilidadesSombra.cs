@@ -28,7 +28,6 @@ public class HabilidadesSombra : MonoBehaviour
     //Cooldown jaula
     bool jauCol;
     float currTimJau = 0f;
-    float finJau = 10f;
 
     //Cooldows bala
     bool balCol;
@@ -73,7 +72,8 @@ public class HabilidadesSombra : MonoBehaviour
         if(jauCol)
         {
             currTimJau += Time.deltaTime;
-            if(currTimJau  >= finJau){
+            if(currTimJau  >= finCap)
+            {
                 currTimJau  = 0;
                 jauCol = false;
             }
