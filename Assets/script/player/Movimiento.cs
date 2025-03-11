@@ -17,6 +17,7 @@ public class Movimiento : MonoBehaviour
     public HabilidadesSombra sombra;
     public ChangeLight change;
     public GameObject player1;
+    public Dash dash;
 
     bool agachar;
     bool agaching;
@@ -44,7 +45,7 @@ public class Movimiento : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
 
         if (horizontal > 0){
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            if(!dash.isdashing) rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,0,0);
             izde = 1f;
             animatorLuz.SetBool("isRunning", true);
@@ -53,7 +54,7 @@ public class Movimiento : MonoBehaviour
         }
         if (horizontal < 0)
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            if(!dash.isdashing)rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,180,0);
             izde = -1f;
             animatorLuz.SetBool("isRunning", true);
@@ -61,7 +62,7 @@ public class Movimiento : MonoBehaviour
         }
         if (horizontal == 0)
         {
-            rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
+            if(!dash.isdashing)rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
             animatorLuz.SetBool("isRunning", false);
             animatorOsc.SetBool("isRunning", false);
         }

@@ -12,7 +12,6 @@ public class Habilidades_Luz : MonoBehaviour
     public GameObject escudoJau;
     public Movimiento suelin;
     public Life life;
-    public float speed;
     float dirige = 2;
     float izDe;
     float horizontal;

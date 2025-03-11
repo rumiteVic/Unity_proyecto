@@ -4445,6 +4445,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf23e9231554344db7c59142213ce46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4302354011658522904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5092952789214210732, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+  m_PrefabInstance: {fileID: 5347613807439687593}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ac0e5685d1abf4b93ad97ef05b8578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4325304291095324763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4518,6 +4529,10 @@ PrefabInstance:
       propertyPath: life
       value: 
       objectReference: {fileID: 1354418891}
+    - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5716247353094173450, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4566,6 +4581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zenith
       objectReference: {fileID: 0}
+    - target: {fileID: 7451446702580401433, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 4302354011658522904}
     - target: {fileID: 7451446702580401433, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: life
       value: 

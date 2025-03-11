@@ -9,7 +9,6 @@ public class HabilidadesSombra : MonoBehaviour
     public GameObject boomOscuridad;
     public Movimiento suelin;
     public bool suelo;
-    public float speed;
     float dirige = 2;
     float izDe;
     float horizontal;
