@@ -18,7 +18,7 @@ public class AgujeroNegro : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.attachedRigidbody != null)
+        if (other.attachedRigidbody != null && !other.CompareTag("Player"))
         {
             Vector2 direccion = (transform.position - other.transform.position);
             other.attachedRigidbody.AddForce(direccion * fuerzaAtraccion);

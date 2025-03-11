@@ -130,6 +130,20 @@ public class Movimiento : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("BOOM"))
+        {
+            speed = 4f;
+        }
+    }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "BOOM")
+        {
+            speed = 7.5f;
+        }
+    }
     public void Muerte()
     {
         Life.instance.currentVidas -= 1;

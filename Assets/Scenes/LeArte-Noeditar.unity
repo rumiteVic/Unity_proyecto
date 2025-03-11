@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 127910420}
   - component: {fileID: 127910422}
   - component: {fileID: 127910421}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139698217}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 494024768}
   - component: {fileID: 494024767}
   - component: {fileID: 494024766}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572078532}
   - component: {fileID: 572078533}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 928943585}
   - component: {fileID: 928943587}
   - component: {fileID: 928943586}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2117,7 @@ GameObject:
   - component: {fileID: 1141630452}
   - component: {fileID: 1141630451}
   - component: {fileID: 1141630455}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2442,7 +2442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1319653757}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2743,7 +2743,7 @@ GameObject:
   - component: {fileID: 1435961930}
   - component: {fileID: 1435961932}
   - component: {fileID: 1435961931}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2949,7 +2949,7 @@ GameObject:
   - component: {fileID: 1659085260}
   - component: {fileID: 1659085259}
   - component: {fileID: 1659085258}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4114,7 +4114,7 @@ GameObject:
   - component: {fileID: 2115216812}
   - component: {fileID: 2115216814}
   - component: {fileID: 2115216813}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4468,6 +4468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta
       objectReference: {fileID: 0}
+    - target: {fileID: 5423577659912416102, guid: e340634414f897c42bfa6b5c7fff06b0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6905357725035672757, guid: e340634414f897c42bfa6b5c7fff06b0, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -4589,6 +4593,10 @@ PrefabInstance:
       propertyPath: life
       value: 
       objectReference: {fileID: 1354418891}
+    - target: {fileID: 8947810800436385461, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 192
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
