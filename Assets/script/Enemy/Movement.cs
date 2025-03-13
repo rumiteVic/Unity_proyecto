@@ -82,11 +82,13 @@ public class Movement : MonoBehaviour
         if (Vector2.Distance(transform.position, currentDestination.position) < 1.5f && currentDestination.position == destination1.transform.position)
         {
             currentDestination = destination2.transform;
+            transform.localRotation = Quaternion.Euler(0,180,0);
             direction = (currentDestination.position - transform.position).normalized;
         }
         else if(Vector2.Distance(transform.position, currentDestination.position) < 1.5f && currentDestination.position == destination2.transform.position)
         {
             currentDestination = destination1.transform;
+            transform.localRotation = Quaternion.Euler(0,0,0);
             direction = (currentDestination.position - transform.position).normalized;
         }
     }
