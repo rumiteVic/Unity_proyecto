@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eb173a635a891045bdefd8506b5de9b
+guid: 463eeef41dfc7e24a9ee77ec6feba69f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,97 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 421
-        width: 497
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d4f9656ca1cb934eaa684ae50541d5f
-      internalID: 838697023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet osc-Attack_1
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 421
-        width: 497
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30ceb0be18abb654d9af192a1466a8ae
-      internalID: 711161366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet osc-Attack_2
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 421
-        width: 497
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa80cf5bf13064f49abedbb17af712a3
-      internalID: -1307797114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet osc-Attack_3
-      rect:
-        serializedVersion: 2
-        x: 1491
-        y: 421
-        width: 497
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f41c530adbad864ba7c3c93931d1e46
-      internalID: -432375801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet osc-Attack_4
+      name: recieve_damage-zenith_osc_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 497
-        height: 421
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a06b435230464c48b40a9836e8f79f7
-      internalID: -1075703388
+      spriteID: 3872057c297aea442a31d08114c8a3f6
+      internalID: -833571018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_5
+      name: recieve_damage-zenith_osc_1
       rect:
         serializedVersion: 2
-        x: 497
+        x: 420
         y: 0
-        width: 497
-        height: 421
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d05ba448cdbeacc4da55e1100ca3b27d
-      internalID: 674265196
+      spriteID: 37979b50ce3974e49b021dbd4e2f6c7a
+      internalID: -775000214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_6
+      name: recieve_damage-zenith_osc_2
       rect:
         serializedVersion: 2
-        x: 994
+        x: 840
         y: 0
-        width: 497
-        height: 421
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 207b7417b290af542b83e9e951e0f630
-      internalID: -1335767402
+      spriteID: 603d14e3e1116424e805a9340a93dc05
+      internalID: -617540698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_7
+      name: recieve_damage-zenith_osc_3
       rect:
         serializedVersion: 2
-        x: 1491
+        x: 1260
         y: 0
-        width: 497
-        height: 421
+        width: 420
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +187,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d38e898e549f154aa608206d82f480a
-      internalID: -908845954
+      spriteID: c125cd1583f74374a96fef9f57381b2c
+      internalID: -988610253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recieve_damage-zenith_osc_4
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3021f994468d2c540b114eed2b699d03
+      internalID: 1777610969
       vertices: []
       indices: 
       edges: []
@@ -288,14 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite sheet osc-Attack_0: 838697023
-      sprite sheet osc-Attack_1: 711161366
-      sprite sheet osc-Attack_2: -1307797114
-      sprite sheet osc-Attack_3: -432375801
-      sprite sheet osc-Attack_4: -1075703388
-      sprite sheet osc-Attack_5: 674265196
-      sprite sheet osc-Attack_6: -1335767402
-      sprite sheet osc-Attack_7: -908845954
+      recieve_damage-zenith_osc_0: -833571018
+      recieve_damage-zenith_osc_1: -775000214
+      recieve_damage-zenith_osc_2: -617540698
+      recieve_damage-zenith_osc_3: -988610253
+      recieve_damage-zenith_osc_4: 1777610969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
