@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7097419956850912226}
   - component: {fileID: 3276759213710295349}
   - component: {fileID: 2372614377481178488}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: AgujeroNegro
   m_TagString: BOOMOSC
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

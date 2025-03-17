@@ -106,6 +106,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,8 +143,8 @@ TextureImporter:
         y: 421
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,8 +164,8 @@ TextureImporter:
         y: 421
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,8 +185,8 @@ TextureImporter:
         y: 421
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,8 +206,8 @@ TextureImporter:
         y: 421
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +223,12 @@ TextureImporter:
       name: sprite sheet luz-Attack_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,8 +248,8 @@ TextureImporter:
         y: 0
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,8 +269,8 @@ TextureImporter:
         y: 0
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,8 +290,8 @@ TextureImporter:
         y: 0
         width: 497
         height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,6 +299,27 @@ TextureImporter:
       bones: []
       spriteID: 757f587a0f918bf418e5deedb8830eef
       internalID: -1809241011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet luz-Attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1988
+        height: 842
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cf671a167baaf42be7787126fac0ba
+      internalID: -661380681
       vertices: []
       indices: 
       edges: []
@@ -296,6 +343,7 @@ TextureImporter:
       sprite sheet luz-Attack_5: -782182540
       sprite sheet luz-Attack_6: -975935728
       sprite sheet luz-Attack_7: -1809241011
+      sprite sheet luz-Attack_8: -661380681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
