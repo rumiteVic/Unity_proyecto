@@ -26,7 +26,7 @@ public class EnemyLife : MonoBehaviour
     public void Muerte()
     {
         currentVidas = currentVidas - totalDamage;
-        if (currentVidas < 0)
+        if (currentVidas <= 0)
         {
             Destroy(enemy);
         }

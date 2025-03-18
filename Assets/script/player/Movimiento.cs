@@ -158,7 +158,7 @@ public class Movimiento : MonoBehaviour
         Life.instance.currentVidas -= 1;
         if (Life.instance.currentVidas > 0)
         {
-            transform.position = new Vector3(0, 0);
+         
             rb.velocity = new Vector3(0, 0);
         }
         else
