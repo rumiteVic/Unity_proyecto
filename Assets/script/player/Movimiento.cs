@@ -106,6 +106,15 @@ public class Movimiento : MonoBehaviour
             }
         }
 
+        if (sombra.capa)
+        {
+            rb.gravityScale = 0.4f;
+        }
+        else if(!sombra.capa)
+        {
+            rb.gravityScale = 1f;
+        }
+
     }
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
