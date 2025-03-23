@@ -73,6 +73,8 @@ public class Movimiento : MonoBehaviour
             rb.velocity = new Vector2(0.0f, impulso);
             jump = true;
             suelo = false;
+            animatorOsc.SetTrigger("jump");
+            animatorLuz.SetTrigger("jump");
         }
         if(jump){
             currTim += Time.deltaTime;
@@ -155,6 +157,8 @@ public class Movimiento : MonoBehaviour
     }
     public void Muerte()
     {
+        animatorOsc.SetTrigger("recieveDamage");
+        animatorLuz.SetTrigger("recieveDamage");
         Life.instance.currentVidas -= 1;
         if (Life.instance.currentVidas > 0)
         {

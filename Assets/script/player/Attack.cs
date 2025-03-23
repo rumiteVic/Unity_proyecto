@@ -15,6 +15,9 @@ public class Attack : MonoBehaviour
     bool isAttacking = false;
     float currAtt = 0f;
 
+    public Animator animatorLuz;
+    public Animator animatorOsc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +39,9 @@ public class Attack : MonoBehaviour
             if(change.siLuz)attackAreaLuz.gameObject.SetActive(true);
             else attackAreaOscuridad.gameObject.SetActive(true);
             isAttacking = true;
+            animatorOsc.SetTrigger("attack");
+            animatorLuz.SetTrigger("attack");
+            
         }
         if (isAttack)
         {
