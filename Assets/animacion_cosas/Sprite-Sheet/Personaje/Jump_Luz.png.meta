@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a7e910bb263b24f93940ebf51228a7
-      internalID: -2025563988
+      spriteID: d5135c4d45630e34685ba8c0c1aafb7d
+      internalID: -1457160993
       vertices: []
       indices: 
       edges: []
@@ -145,56 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe223e8f32fca964092636406f4a0ded
-      internalID: -214442202
+      spriteID: 93cd27e3520400245ae73b318f429ce3
+      internalID: 2059001049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Jump_Luz_2
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 420
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32b9e4f3d8498fd4f83fa038a5f62587
-      internalID: 2042560947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_Luz_3
-      rect:
-        serializedVersion: 2
-        x: 1260
-        y: 420
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: feb54ca1f398ed64d906e83278389b08
-      internalID: -1130076230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_Luz_4
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7336f99915d65499fffa931f6d44b8
-      internalID: -1288090523
+      spriteID: 22e66ab8c5f3afb43aafff4310dbf842
+      internalID: 720947752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Luz_5
+      name: Jump_Luz_3
       rect:
         serializedVersion: 2
         x: 420
@@ -229,29 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa077508a7951e047a673ed2b1bd7ca4
-      internalID: 2085161697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_Luz_6
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b68e457fddbdcc740a9c7900660c4160
-      internalID: 1836800836
+      spriteID: 719e21b6b8a124f4a80afbe36fb70580
+      internalID: 784968660
       vertices: []
       indices: 
       edges: []
@@ -267,13 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_Luz_0: -2025563988
-      Jump_Luz_1: -214442202
-      Jump_Luz_2: 2042560947
-      Jump_Luz_3: -1130076230
-      Jump_Luz_4: -1288090523
-      Jump_Luz_5: 2085161697
-      Jump_Luz_6: 1836800836
+      Jump_Luz_0: -1457160993
+      Jump_Luz_1: 2059001049
+      Jump_Luz_2: 720947752
+      Jump_Luz_3: 784968660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

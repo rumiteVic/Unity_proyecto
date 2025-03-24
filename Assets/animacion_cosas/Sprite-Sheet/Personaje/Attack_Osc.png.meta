@@ -106,37 +106,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_0
+      name: Attack_Osc_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4f9656ca1cb934eaa684ae50541d5f
-      internalID: 838697023
+      spriteID: de5803ecf64f80d439cce12d7ac5a037
+      internalID: -1555808706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_1
+      name: Attack_Osc_1
       rect:
         serializedVersion: 2
         x: 497
@@ -171,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ceb0be18abb654d9af192a1466a8ae
-      internalID: 711161366
+      spriteID: eca9adb091f98d14d83a6b6e30b7b1d4
+      internalID: 918987221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_2
+      name: Attack_Osc_2
       rect:
         serializedVersion: 2
         x: 994
@@ -192,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa80cf5bf13064f49abedbb17af712a3
-      internalID: -1307797114
+      spriteID: 30133b6cb11aa82479e12b605fd98cd5
+      internalID: -2095775958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_3
+      name: Attack_Osc_3
       rect:
         serializedVersion: 2
         x: 1491
@@ -213,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f41c530adbad864ba7c3c93931d1e46
-      internalID: -432375801
+      spriteID: 3d884c34e00dcf4478249ee3feaf6ffb
+      internalID: -1055577707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_4
+      name: Attack_Osc_4
       rect:
         serializedVersion: 2
         x: 0
@@ -234,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a06b435230464c48b40a9836e8f79f7
-      internalID: -1075703388
+      spriteID: c92384f83b52d494db7422cd0aa0177c
+      internalID: 1773665718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_5
+      name: Attack_Osc_5
       rect:
         serializedVersion: 2
         x: 497
@@ -255,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d05ba448cdbeacc4da55e1100ca3b27d
-      internalID: 674265196
+      spriteID: 06003904ce25ca44c851a744298e9d08
+      internalID: -410803902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet osc-Attack_6
+      name: Attack_Osc_6
       rect:
         serializedVersion: 2
         x: 994
@@ -276,29 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 207b7417b290af542b83e9e951e0f630
-      internalID: -1335767402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet osc-Attack_7
-      rect:
-        serializedVersion: 2
-        x: 1491
-        y: 0
-        width: 497
-        height: 421
-      alignment: 9
-      pivot: {x: 0.35, y: 0.54}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d38e898e549f154aa608206d82f480a
-      internalID: -908845954
+      spriteID: 5790856d6837c6d448f079e678b040c1
+      internalID: 1910302532
       vertices: []
       indices: 
       edges: []
@@ -314,14 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite sheet osc-Attack_0: 838697023
-      sprite sheet osc-Attack_1: 711161366
-      sprite sheet osc-Attack_2: -1307797114
-      sprite sheet osc-Attack_3: -432375801
-      sprite sheet osc-Attack_4: -1075703388
-      sprite sheet osc-Attack_5: 674265196
-      sprite sheet osc-Attack_6: -1335767402
-      sprite sheet osc-Attack_7: -908845954
+      Attack_Osc_0: -1555808706
+      Attack_Osc_1: 918987221
+      Attack_Osc_2: -2095775958
+      Attack_Osc_3: -1055577707
+      Attack_Osc_4: 1773665718
+      Attack_Osc_5: -410803902
+      Attack_Osc_6: 1910302532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

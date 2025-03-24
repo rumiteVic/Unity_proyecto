@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ceb8fdbd86c7d6d4088041997ccf7809
+guid: d8773185f6aa6e54bb8980888716b767
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: recieve_damage-zenith_luz_0
+      name: Recieve_Luz_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd436798a1dff054c9c57966b48ec4d7
+      internalID: 1875429086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recieve_Luz_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 420
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e854f47daf6aa5a48bd5810393ac746a
+      internalID: -301595219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recieve_Luz_2
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887d7d4871b770c45952aa13205edd5f
-      internalID: -1764125268
+      spriteID: d0c8a14e161719f4ca5a68f9e94d837c
+      internalID: -1464688726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recieve_damage-zenith_luz_1
+      name: Recieve_Luz_3
       rect:
         serializedVersion: 2
         x: 420
@@ -145,71 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b08e9f2de8a571c4390eec61f1669a8f
-      internalID: -251306471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_luz_2
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 436e0011654305a4d8d7ccc36f301d4a
-      internalID: 1456089965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_luz_3
-      rect:
-        serializedVersion: 2
-        x: 1260
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1f896868565d24ab3f74457656838b
-      internalID: 1344898157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_luz_4
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75c9eb44e79365345ab4ac48411f8e64
-      internalID: -1945698000
+      spriteID: 213e8bc0aef6ac84d81685821d00b52a
+      internalID: -7781768
       vertices: []
       indices: 
       edges: []
@@ -225,11 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      recieve_damage-zenith_luz_0: -1764125268
-      recieve_damage-zenith_luz_1: -251306471
-      recieve_damage-zenith_luz_2: 1456089965
-      recieve_damage-zenith_luz_3: 1344898157
-      recieve_damage-zenith_luz_4: -1945698000
+      Recieve_Luz_0: 1875429086
+      Recieve_Luz_1: -301595219
+      Recieve_Luz_2: -1464688726
+      Recieve_Luz_3: -7781768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

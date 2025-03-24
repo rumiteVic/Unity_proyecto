@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 463eeef41dfc7e24a9ee77ec6feba69f
+guid: f2755ab4a00fcde4abf9c36269e0d83e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: recieve_damage-zenith_osc_0
+      name: Recieve_Osc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca30ecee7d80444a8ed340c0ce75868
+      internalID: -1465812602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recieve_Osc_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 420
+        width: 420
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7113d521e02b512468098c1b4c99a441
+      internalID: 1871404415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recieve_Osc_2
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3872057c297aea442a31d08114c8a3f6
-      internalID: -833571018
+      spriteID: c8c514b584cd80f479d8186d1558a335
+      internalID: -2035725210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recieve_damage-zenith_osc_1
+      name: Recieve_Osc_3
       rect:
         serializedVersion: 2
         x: 420
@@ -145,71 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37979b50ce3974e49b021dbd4e2f6c7a
-      internalID: -775000214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_osc_2
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 603d14e3e1116424e805a9340a93dc05
-      internalID: -617540698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_osc_3
-      rect:
-        serializedVersion: 2
-        x: 1260
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c125cd1583f74374a96fef9f57381b2c
-      internalID: -988610253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: recieve_damage-zenith_osc_4
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 420
-        height: 420
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3021f994468d2c540b114eed2b699d03
-      internalID: 1777610969
+      spriteID: 8603e853998db9046956841b1be4ab5c
+      internalID: -1317630658
       vertices: []
       indices: 
       edges: []
@@ -225,11 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      recieve_damage-zenith_osc_0: -833571018
-      recieve_damage-zenith_osc_1: -775000214
-      recieve_damage-zenith_osc_2: -617540698
-      recieve_damage-zenith_osc_3: -988610253
-      recieve_damage-zenith_osc_4: 1777610969
+      Recieve_Osc_0: -1465812602
+      Recieve_Osc_1: 1871404415
+      Recieve_Osc_2: -2035725210
+      Recieve_Osc_3: -1317630658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

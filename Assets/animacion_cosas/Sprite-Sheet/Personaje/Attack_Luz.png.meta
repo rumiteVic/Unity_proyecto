@@ -106,37 +106,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite sheet luz-Attack_0
+      name: Attack_Luz_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,17 +124,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 485169b8b846d07418c6da2d00481252
-      internalID: -2060751990
+      spriteID: b3a5c38a6bb80144eae893fa26a32e04
+      internalID: 204579517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet luz-Attack_1
+      name: Attack_Luz_1
       rect:
         serializedVersion: 2
-        x: 497
+        x: 495
         y: 421
         width: 497
         height: 421
@@ -171,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0efdd159136e94491710f94e8b2410
-      internalID: -2123569039
+      spriteID: 82c0a75e378b134479af7a5ff60816a7
+      internalID: -1654843289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet luz-Attack_2
+      name: Attack_Luz_2
       rect:
         serializedVersion: 2
         x: 994
@@ -192,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1291a756bf8ddba4ca30dc90152b456c
-      internalID: 1245366939
+      spriteID: 1b588a27308e6ea4c84e4594cc6097a6
+      internalID: 1584553518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet luz-Attack_3
+      name: Attack_Luz_3
       rect:
         serializedVersion: 2
         x: 1491
@@ -213,113 +187,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d7ebc8569f9b84f8df8a8941d6a11a
-      internalID: -567053082
+      spriteID: f61bbbc494a45aa46ba4700a9dcad464
+      internalID: -405006051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite sheet luz-Attack_4
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 497
-        height: 421
-      alignment: 9
-      pivot: {x: 0.35, y: 0.54}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bdcf663f9ec61245867a31d358c1ba2
-      internalID: -1538104735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet luz-Attack_5
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 0
-        width: 497
-        height: 421
-      alignment: 9
-      pivot: {x: 0.35, y: 0.54}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b3d4f6c3838b8c4a92143d54a0c9220
-      internalID: -782182540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet luz-Attack_6
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 0
-        width: 497
-        height: 421
-      alignment: 9
-      pivot: {x: 0.35, y: 0.54}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d54b77453b98e24887e792580c0300c
-      internalID: -975935728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet luz-Attack_7
-      rect:
-        serializedVersion: 2
-        x: 1491
-        y: 0
-        width: 497
-        height: 421
-      alignment: 9
-      pivot: {x: 0.35, y: 0.54}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 757f587a0f918bf418e5deedb8830eef
-      internalID: -1809241011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite sheet luz-Attack_8
+      name: Attack_Luz_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1988
-        height: 842
+        y: 2
+        width: 497
+        height: 421
       alignment: 9
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7cf671a167baaf42be7787126fac0ba
-      internalID: -661380681
+      spriteID: 5bf53d4351975a9408d0bd6b6d2e151c
+      internalID: 258509586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Luz_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 497
+        height: 421
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23703d6464e7bb6469eda2fb28ad611a
+      internalID: 2002876352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Luz_6
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 0
+        width: 497
+        height: 421
+      alignment: 9
+      pivot: {x: 0.35, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e67fbff89feeab40b7941cbb4408c95
+      internalID: 213446298
       vertices: []
       indices: 
       edges: []
@@ -335,15 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite sheet luz-Attack_0: -2060751990
-      sprite sheet luz-Attack_1: -2123569039
-      sprite sheet luz-Attack_2: 1245366939
-      sprite sheet luz-Attack_3: -567053082
-      sprite sheet luz-Attack_4: -1538104735
-      sprite sheet luz-Attack_5: -782182540
-      sprite sheet luz-Attack_6: -975935728
-      sprite sheet luz-Attack_7: -1809241011
-      sprite sheet luz-Attack_8: -661380681
+      Attack_Luz_0: 204579517
+      Attack_Luz_1: -1654843289
+      Attack_Luz_2: 1584553518
+      Attack_Luz_3: -405006051
+      Attack_Luz_4: 258509586
+      Attack_Luz_5: 2002876352
+      Attack_Luz_6: 213446298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -125,11 +125,15 @@ public class Movimiento : MonoBehaviour
             agachar = true;
         }
         else if(collision.gameObject.tag == "Abismo"){
+            Vector2 direc = new Vector2 (-4, -1);
+            transform.position = direc;
             Muerte();
         }
     }    
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "Abismo"){
+            Vector2 direc = new Vector2 (-4, -1);
+            transform.position = direc;
             Muerte();
         }
     }
