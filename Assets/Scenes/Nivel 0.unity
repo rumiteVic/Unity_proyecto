@@ -3231,6 +3231,10 @@ PrefabInstance:
       propertyPath: life
       value: 
       objectReference: {fileID: 1354418891}
+    - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: boomLuz
+      value: 
+      objectReference: {fileID: 3111981469210548407, guid: fb24aae05a2d4554583cb8d74b8947f5, type: 3}
     - target: {fileID: 5716247353094173450, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: m_RootOrder
       value: 6
