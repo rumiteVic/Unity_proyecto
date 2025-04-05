@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel 1.unity
     guid: f3ba279730d5d384ba3fc69a3b6fe8d7
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.unity
+    guid: 7b494eb3617aaed4982860aca3aaecf6
   - enabled: 0
     path: Assets/Scenes/Merge.unity
     guid: 819b7f5668eee9e47890fb8a4f644fd0
   - enabled: 0
     path: Assets/Scenes/LeArte.unity
     guid: 33e4a7f4d831a2c428e55ade2541c333
-  - enabled: 0
-    path: Assets/Scenes/Nivel 2.unity
-    guid: 7b494eb3617aaed4982860aca3aaecf6
   m_configObjects: {}

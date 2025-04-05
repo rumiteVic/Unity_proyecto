@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2595056616997099132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3471439, y: -0.77, z: 0}
+  m_LocalPosition: {x: 1.3471439, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3766849003493530381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3471439, y: -0.77, z: 0}
+  m_LocalPosition: {x: 1.3471439, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377,7 +377,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0043579936, y: -0.0065369606}
+  m_Offset: {x: -0.004357934, y: 0.5268412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -388,7 +388,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0653697, y: 1.0610118}
+  m_Size: {x: 1.1375043, y: 2.120554}
   m_EdgeRadius: 0
 --- !u!1 &4746771578163334520
 GameObject:
@@ -512,13 +512,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muroDeLuz: {fileID: 7259600016385135631, guid: 8820d12dca82ee1409981fbcc4cae6d0, type: 3}
   bala: {fileID: 544569969398622076, guid: 176d786ebd27d3e4a9b744b16d9c854b, type: 3}
-  boomLuz: {fileID: 1326671407541604865, guid: e718c6b933283d343ab241fb81c0da44, type: 3}
-  escudoJau: {fileID: 1756417832107868699, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
+  boomLuz: {fileID: 3111981469210548407, guid: fb24aae05a2d4554583cb8d74b8947f5, type: 3}
+  escudoJau: {fileID: 8278084348071848523, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
   suelin: {fileID: 7451446702580401433}
   life: {fileID: 0}
-  speed: 0
   derecha: 0
   suelo: 0
+  animatorLuz: {fileID: 1568288708244338411}
+  proyec: {fileID: 7618233675156575774, guid: 176d786ebd27d3e4a9b744b16d9c854b, type: 3}
 --- !u!1 &5488308469359170703
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,15 +640,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a3e119dbf6a8640a9ddcb0a8d958d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaula: {fileID: 2779810755759554150, guid: c0efb5c8bd9e6ed408fd156c3ad75d3b, type: 3}
+  jaula: {fileID: 2012447964620362781, guid: ba2d9e30ac520354ea5ed99b932b51df, type: 3}
   balaOscura: {fileID: 544569969398622076, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
-  boomOscuridad: {fileID: 4550857608665308470, guid: b805a8554d978b94ba1c53ec46fea0f7, type: 3}
+  boomOscuridad: {fileID: 5845228760672845823, guid: a871d07c5fa113442a4e1a48681a8c0e, type: 3}
   suelin: {fileID: 7451446702580401433}
+  proyec: {fileID: 7618233675156575774, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
   suelo: 0
-  speed: 0
   capa: 0
   derecha: 0
   cooldownUsoCapa: 0
+  animatorOsc: {fileID: 21470072563093926}
 --- !u!1 &5777333369284215096
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +777,8 @@ MonoBehaviour:
   attackAreaLuz: {fileID: 1873001983941124942}
   attackAreaOscuridad: {fileID: 3002369271104887030}
   change: {fileID: 615909331561625656}
+  animatorLuz: {fileID: 1568288708244338411}
+  animatorOsc: {fileID: 21470072563093926}
 --- !u!114 &7451446702580401433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,6 +803,7 @@ MonoBehaviour:
   sombra: {fileID: 7584460559825978655}
   change: {fileID: 615909331561625656}
   player1: {fileID: 5777333369284215096}
+  dash: {fileID: 5092952789214210732}
   animatorLuz: {fileID: 1568288708244338411}
   animatorOsc: {fileID: 21470072563093926}
 --- !u!114 &5092952789214210732
