@@ -5,8 +5,8 @@ using UnityEngine;
 public class Explosion : MonoBehaviour
 {
 
-    Vector2 maxCrecimiento = new Vector2 (1.3f,1.3f);
-    float crece = 5f;
+    public Vector2 maxCrecimiento = new Vector2 (1.3f,1.3f);
+    public float crece = 5f;
     float currTime = 0f;
 
     Vector2 inicio;

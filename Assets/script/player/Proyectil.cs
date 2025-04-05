@@ -9,7 +9,7 @@ public class Proyectil : MonoBehaviour
     public float speed = 20;
     float horizontal;
     float izDe;
-    bool derecha = true;
+    public bool izquierda;
 
     float currTimeExL;
     float cooldownBL = 9f;
@@ -23,27 +23,16 @@ public class Proyectil : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        if (horizontal < 0)
-        {
-            derecha = false;
-        }
-        else if (horizontal > 0)
-        {
-            derecha = true;
-        }
-
-        if (derecha)
-        {
-            izDe = 1f;
-        }
-        if (!derecha)
-        {
-            izDe = -1f;
-        }
         rb = GetComponent<Rigidbody2D>();
 
-        rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
+         if (izquierda) 
+        {
+            rb.velocity = new Vector2(speed * (-1), rb.velocity.y);
+        }
+        if (!izquierda) 
+        {
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+        } 
     }
 
     // Update is called once per frame
@@ -73,8 +62,6 @@ public class Proyectil : MonoBehaviour
         {
             speed = 20f;
         }
-
-        rb.velocity = new Vector2(izDe * speed, rb.velocity.y);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
