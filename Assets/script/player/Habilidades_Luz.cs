@@ -19,6 +19,8 @@ public class Habilidades_Luz : MonoBehaviour
     bool capa;
     public bool derecha;
     public bool suelo;
+    public Animator animatorLuz;
+    public Proyectil proyec;
 
     //Cooldown muro
     bool murCol;
@@ -60,16 +62,21 @@ public class Habilidades_Luz : MonoBehaviour
             derecha = true;
         }
 
-        if(derecha){
-            izDe =1f;
-        }
-        if(!derecha){
+        if (!derecha) 
+        {
             izDe = -1f;
+            proyec.izquierda = true;
+        }
+        if (derecha) 
+        {
+            izDe = 1f;
+            proyec.izquierda = false;
         }
         
         //El muro
         if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimMur == 0)
         {
+            animatorLuz.SetTrigger("lanzar");
             muro = true; 
         }
         if (muro)
@@ -93,8 +100,9 @@ public class Habilidades_Luz : MonoBehaviour
         //Bala normal
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
+            animatorLuz.SetTrigger("lanzar");
             balCol = true;
-            Vector2 direccion = new Vector2(transform.position.x * izDe, transform.position.y - 0.5f);
+            Vector2 direccion = new Vector2(transform.position.x +izDe, transform.position.y - 0.5f);
             GameObject objeto = Instantiate(bala, direccion, transform.rotation);
             objeto.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objeto, 10);
@@ -111,6 +119,7 @@ public class Habilidades_Luz : MonoBehaviour
         //Explotemos algo
         if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo &&currTimExpl == 0)
         {
+            animatorLuz.SetTrigger("lanzar");
             explCol = true;
             Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 1f);
             GameObject booooLuz = Instantiate(boomLuz, direccion, transform.rotation);
@@ -130,6 +139,7 @@ public class Habilidades_Luz : MonoBehaviour
         //Escudo pero sin ser un escudo
         if (Input.GetKeyDown(KeyCode.B) && currTimEsc == 0)
         {
+            animatorLuz.SetTrigger("lanzar");
             escudo = true;
             life.RecuperarVida(); 
         }

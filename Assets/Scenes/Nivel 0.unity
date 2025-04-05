@@ -3232,9 +3232,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1354418891}
     - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: proyec
+      value: 
+      objectReference: {fileID: 7618233675156575774, guid: 176d786ebd27d3e4a9b744b16d9c854b, type: 3}
+    - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: boomLuz
       value: 
       objectReference: {fileID: 3111981469210548407, guid: fb24aae05a2d4554583cb8d74b8947f5, type: 3}
+    - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: escudoJau
+      value: 
+      objectReference: {fileID: 8278084348071848523, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
+    - target: {fileID: 3610097213873920654, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: animatorLuz
+      value: 
+      objectReference: {fileID: 746092929}
     - target: {fileID: 5716247353094173450, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3291,6 +3303,18 @@ PrefabInstance:
       propertyPath: life
       value: 
       objectReference: {fileID: 1354418891}
+    - target: {fileID: 7584460559825978655, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: jaula
+      value: 
+      objectReference: {fileID: 2012447964620362781, guid: ba2d9e30ac520354ea5ed99b932b51df, type: 3}
+    - target: {fileID: 7584460559825978655, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: proyec
+      value: 
+      objectReference: {fileID: 7618233675156575774, guid: ef655cda2760b7648ae6cda86e789de0, type: 3}
+    - target: {fileID: 7584460559825978655, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: animatorOsc
+      value: 
+      objectReference: {fileID: 1638249499}
     - target: {fileID: 7584460559825978655, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: boomOscuridad
       value: 

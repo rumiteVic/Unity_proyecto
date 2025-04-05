@@ -8,6 +8,7 @@ public class HabilidadesSombra : MonoBehaviour
     public GameObject balaOscura;
     public GameObject boomOscuridad;
     public Movimiento suelin;
+    public Proyectil proyec;
     public bool suelo;
     float dirige = 2;
     float izDe;
@@ -39,6 +40,8 @@ public class HabilidadesSombra : MonoBehaviour
     float currTimExpl = 0f;
     float finexPl = 15f;
 
+    public Animator animatorOsc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,19 +54,29 @@ public class HabilidadesSombra : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         if (horizontal < 0) {derecha = false;}
         if (horizontal > 0) {derecha = true;}
-        if (!derecha) {izDe = -1f;}
-        if (derecha) {izDe = 1f;}
+        if (!derecha) 
+        {
+            izDe = -1f;
+            proyec.izquierda = true;
+        }
+        if (derecha) 
+        {
+            izDe = 1f;
+            proyec.izquierda = false;
+        }
+
         
 
         //Jaula
         if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimJau == 0)
         {
+            animatorOsc.SetTrigger("lanzar");
             jaulaa = true;
             jauCol = true;
         }
         if (jaulaa)
         {
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 2f);
+            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 1.5f);
             GameObject tempJaula = Instantiate(jaula, direccion, transform.rotation);
             jaulaa = false;
             Destroy(tempJaula, 4);
@@ -82,8 +95,9 @@ public class HabilidadesSombra : MonoBehaviour
         //Bala oscura
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {
+            animatorOsc.SetTrigger("lanzar");
             balCol = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 0.5f);
+            Vector2 direccion = new Vector2(transform.position.x +izDe, transform.position.y - 0.5f);
             GameObject objetoOscuro = Instantiate(balaOscura, direccion, transform.rotation);
             objetoOscuro.transform.rotation = Quaternion.Euler(0, 0, 90 * izDe);
             Destroy(objetoOscuro, 10);
@@ -102,6 +116,7 @@ public class HabilidadesSombra : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.B) && currTimCap == 0)
         {
+            animatorOsc.SetTrigger("lanzar");
             capa = true;
             capCol = true;
         }
@@ -127,6 +142,7 @@ public class HabilidadesSombra : MonoBehaviour
         //Explotemos algo
         if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo && currTimExpl == 0)
         {
+            animatorOsc.SetTrigger("lanzar");
             explCol = true;
             Vector2 direccion = new Vector2(transform.position.x + dirige * izDe, transform.position.y - 1f);
             GameObject booooOsc = Instantiate(boomOscuridad, direccion, transform.rotation);

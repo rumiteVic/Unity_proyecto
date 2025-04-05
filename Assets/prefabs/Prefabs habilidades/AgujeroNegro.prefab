@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84400770eebe0654a823c0995e623bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCrecimiento: {x: 1.3, y: 1.3}
+  crece: 3
 --- !u!114 &2372614377481178488
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -48,23 +48,37 @@ public class Movimiento : MonoBehaviour
             if(!dash.isdashing) rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,0,0);
             izde = 1f;
-            animatorLuz.SetBool("isRunning", true);
-            animatorOsc.SetBool("isRunning", true);
-
+            if(suelo)
+            {
+                animatorLuz.SetBool("isRunning", true);
+                animatorOsc.SetBool("isRunning", true);
+                animatorLuz.SetBool("isIdle", false);
+                animatorOsc.SetBool("isIdle", false);
+            }
         }
         if (horizontal < 0)
         {
             if(!dash.isdashing)rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             transform.localRotation = Quaternion.Euler(0,180,0);
             izde = -1f;
-            animatorLuz.SetBool("isRunning", true);
-            animatorOsc.SetBool("isRunning", true);
+            if(suelo)
+            {
+                animatorLuz.SetBool("isRunning", true);
+                animatorOsc.SetBool("isRunning", true);
+                animatorLuz.SetBool("isIdle", false);
+                animatorOsc.SetBool("isIdle", false);
+            }
         }
         if (horizontal == 0)
         {
             if(!dash.isdashing)rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
-            animatorLuz.SetBool("isRunning", false);
-            animatorOsc.SetBool("isRunning", false);
+            if(suelo)
+            {
+                animatorLuz.SetBool("isRunning", false);
+                animatorOsc.SetBool("isRunning", false);
+                animatorLuz.SetBool("isIdle", true);
+                animatorOsc.SetBool("isIdle", true);
+            }
         }
 
 
@@ -75,6 +89,10 @@ public class Movimiento : MonoBehaviour
             suelo = false;
             animatorOsc.SetTrigger("jump");
             animatorLuz.SetTrigger("jump");
+            animatorLuz.SetBool("isRunning", false);
+            animatorOsc.SetBool("isRunning", false);
+            animatorLuz.SetBool("isIdle", false);
+            animatorOsc.SetBool("isIdle", false);
         }
         if(jump){
             currTim += Time.deltaTime;

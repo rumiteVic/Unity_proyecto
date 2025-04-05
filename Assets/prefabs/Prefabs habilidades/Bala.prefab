@@ -101,7 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 544569969398622076}
   rb: {fileID: 4162297186108226913}
-  speed: 50
+  speed: 35
+  izquierda: 0
   exPlosion: 0
   expl2: 0
 --- !u!50 &4162297186108226913
