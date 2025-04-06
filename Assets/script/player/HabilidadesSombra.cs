@@ -24,7 +24,7 @@ public class HabilidadesSombra : MonoBehaviour
     //Cooldown capa
     bool capCol;
     float currTimCap = 0f;
-    float finCap = 12f;
+    float finCap = 10f;
 
     //Cooldown jaula
     bool jauCol;
@@ -33,12 +33,12 @@ public class HabilidadesSombra : MonoBehaviour
     //Cooldows bala
     bool balCol;
     float currTimBal = 0f;
-    float finBala = 3f;
+    float finBala = 1.5f;
 
     //Cooldowns explosion
     bool explCol;
     float currTimExpl = 0f;
-    float finexPl = 15f;
+    float finexPl = 10f;
 
     public Animator animatorOsc;
 

@@ -178,14 +178,14 @@ public class Movimiento : MonoBehaviour
     {
         if (collision.CompareTag("BOOM"))
         {
-            speed = 4f;
+            speed = 6f;
         }
     }
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "BOOM")
         {
-            speed = 7.5f;
+            speed = 9f;
         }
     }
     void Muerte()

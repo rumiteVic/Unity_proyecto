@@ -30,12 +30,12 @@ public class Habilidades_Luz : MonoBehaviour
     //Cooldowns bala
     bool balCol;
     float currTimBal = 0f;
-    float finBala = 3f;
+    float finBala = 1.5f;
 
     //Cooldowns explosion
     bool explCol;
     float currTimExpl = 0f;
-    float finexPl = 15f;
+    float finexPl = 10f;
 
     //Cooldowns escudo
     bool escudo;
