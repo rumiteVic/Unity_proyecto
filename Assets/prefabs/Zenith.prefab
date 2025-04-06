@@ -100,7 +100,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 3610097213873920654}
   m_Layer: 0
   m_Name: LuzSkin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 7584460559825978655}
   m_Layer: 0
   m_Name: Luz_Oscuridad
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 7451446702580401433}
   - component: {fileID: 5092952789214210732}
   - component: {fileID: 615909331561625656}
+  - component: {fileID: 3799307327272567622}
   m_Layer: 6
   m_Name: Zenith
   m_TagString: Player
@@ -688,7 +689,7 @@ Transform:
   - {fileID: 8300378428545810954}
   - {fileID: 361400956216730329}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &386243805562751297
 BoxCollider2D:
@@ -791,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf23e9231554344db7c59142213ce46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: {fileID: 0}
+  life: {fileID: 3799307327272567622}
   horizontal: 0
   izde: 0
   speed: 4
@@ -842,3 +843,19 @@ MonoBehaviour:
   oscuridad: {fileID: 5488308469359170703}
   lucecita: {fileID: 3610097213873920654}
   sombra: {fileID: 7584460559825978655}
+--- !u!114 &3799307327272567622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777333369284215096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecb430f1b2b43642bfca8006d6b26d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVidas: 3
+  currentVidas: 0
+  vidas: 3
+  zenith: {fileID: 5777333369284215096}

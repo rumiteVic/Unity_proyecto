@@ -146,6 +146,7 @@ public class Movimiento : MonoBehaviour
             Vector2 direc = new Vector2 (-4, -1);
             transform.position = direc;
             Muerte();
+            life.Muerte();
         }
     }    
     void OnTriggerEnter2D(Collider2D collision){
@@ -153,6 +154,7 @@ public class Movimiento : MonoBehaviour
             Vector2 direc = new Vector2 (-4, -1);
             transform.position = direc;
             Muerte();
+            life.Muerte();
         }
     }
     void OnCollisionExit2D(Collision2D collision){
@@ -177,20 +179,9 @@ public class Movimiento : MonoBehaviour
             speed = 7.5f;
         }
     }
-    public void Muerte()
+    void Muerte()
     {
         animatorOsc.SetTrigger("recieveDamage");
         animatorLuz.SetTrigger("recieveDamage");
-        Life.instance.currentVidas -= 1;
-        if (Life.instance.currentVidas > 0)
-        {
-         
-            rb.velocity = new Vector3(0, 0);
-        }
-        else
-        {
-            Debug.Log(life.currentVidas);
-            Destroy(gameObject);
-        }
     }
 }

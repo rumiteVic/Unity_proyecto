@@ -9,11 +9,12 @@ public class Life : MonoBehaviour
 
     public int maxVidas = 3;
     public int currentVidas;
-    public Slider slider;
     public int vidas = 3;
     float currTime = 0f;
     float cooldown = 8f;
     bool changeVida;
+    HUD hud;
+    public GameObject zenith;
 
     void Awake()
     {
@@ -21,7 +22,7 @@ public class Life : MonoBehaviour
     }
     private void Start()
     {
-        slider.maxValue = maxVidas;
+        hud = FindObjectOfType<HUD>();
         currentVidas = maxVidas;
         vidas = currentVidas;
     }
@@ -29,7 +30,6 @@ public class Life : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.value = currentVidas;
         if(changeVida){
             currentVidas = vidas;
             changeVida = false;
@@ -42,5 +42,14 @@ public class Life : MonoBehaviour
     }
     public void RecuperarVida(){
         changeVida = true;
+    }
+
+    public void Muerte(){
+        currentVidas--;
+        if (hud.vidas[currentVidas] != null) hud.vidas[currentVidas].enabled = false;
+        if (hud.sinVidas[currentVidas] != null) hud.sinVidas[currentVidas].enabled = true;
+        if(currentVidas <= 0){
+            Destroy(zenith);
+        }
     }
 }

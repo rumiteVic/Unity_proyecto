@@ -22,7 +22,7 @@ public class AttackEnemy : MonoBehaviour
       if(collision.tag == "Player")
         {
             enemy.dealDamage = true;
-            collision.GetComponent<Movimiento>().Muerte();
+            collision.GetComponent<Life>().Muerte();
         }
     }
 }
