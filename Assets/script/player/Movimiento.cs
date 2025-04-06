@@ -166,6 +166,13 @@ public class Movimiento : MonoBehaviour
             agachar = false;
         }
     }
+    void OnCollisionStay2D(Collision2D collision){
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
+        {
+            suelo = true;
+            agachar = true;
+        }
+    }
 
     void OnTriggerExit2D(Collider2D collision)
     {

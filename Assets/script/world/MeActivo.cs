@@ -23,7 +23,7 @@ public class MeActivo : MonoBehaviour
         if (collision.tag == "Proyectil")
         {
             col.isTrigger = false;
-            suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 100f);
+            suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1f);
         }
         if (collision.tag == "ProyectilOscuro")
         {
