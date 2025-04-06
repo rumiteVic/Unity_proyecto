@@ -31,6 +31,8 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player =  FindObjectOfType<Movimiento>();
+
         currentDestination = destination1.transform;
         rb = GetComponent<Rigidbody2D>();
         direction = (currentDestination.position - transform.position).normalized;

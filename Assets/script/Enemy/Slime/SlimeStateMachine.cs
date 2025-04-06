@@ -14,8 +14,8 @@ public class BossStateMachine : MonoBehaviour
     private float counter;
     public bool isGrounded;
     public float force;
-
-
+    public Animator slime;
+    public EnemyLife life;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -42,7 +42,7 @@ public class BossStateMachine : MonoBehaviour
     {
 
         counter += Time.deltaTime;
-
+        slime.SetBool("isIdle", true);
         if (counter >= 3f)
         {
             counter = 0;
@@ -51,9 +51,11 @@ public class BossStateMachine : MonoBehaviour
     }
     void updateMoving()
     {
-
+        slime.SetBool("isIdle", false);
+        slime.SetTrigger("jump");
         if (isGrounded)
         {
+            slime.SetBool("isIdle", true);
             isGrounded = false;
             rb.velocity = new Vector3(force * -1, force, 0);
             currentState = slimeStates.IDLE;
@@ -64,5 +66,9 @@ public class BossStateMachine : MonoBehaviour
     {
         isGrounded = true;
         rb.velocity = Vector3.zero;
+        if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional"){
+            life.currentVidas--;
+        }
+
     }
 }

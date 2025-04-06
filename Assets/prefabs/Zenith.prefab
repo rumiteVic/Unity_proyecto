@@ -515,7 +515,7 @@ MonoBehaviour:
   boomLuz: {fileID: 3111981469210548407, guid: fb24aae05a2d4554583cb8d74b8947f5, type: 3}
   escudoJau: {fileID: 8278084348071848523, guid: f5e16db1d85f71c479f6b2ae0e7ab9cf, type: 3}
   suelin: {fileID: 7451446702580401433}
-  life: {fileID: 0}
+  life: {fileID: 3799307327272567622}
   derecha: 0
   suelo: 0
   animatorLuz: {fileID: 1568288708244338411}
@@ -689,7 +689,7 @@ Transform:
   - {fileID: 8300378428545810954}
   - {fileID: 361400956216730329}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &386243805562751297
 BoxCollider2D:
