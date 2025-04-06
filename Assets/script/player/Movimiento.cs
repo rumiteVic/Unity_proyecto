@@ -104,7 +104,6 @@ public class Movimiento : MonoBehaviour
 
         if(Input.GetKey(KeyCode.DownArrow) && agachar)
         {
-            player.isTrigger = true;
             agaching = true;
             agachar = false;
             if (player1.transform.localScale.y == 1f)
@@ -128,7 +127,10 @@ public class Movimiento : MonoBehaviour
 
         if (sombra.capa)
         {
-            rb.gravityScale = 0.4f;
+            if(rb.velocity.y < -3)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, -3, 0);
+            }
         }
         else if(!sombra.capa)
         {

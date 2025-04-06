@@ -68,7 +68,5 @@ public class Enemy : MonoBehaviour
         if(canNotMove){
             movimiento.speed = 0f;
         }
-
     }        
-    
 }
