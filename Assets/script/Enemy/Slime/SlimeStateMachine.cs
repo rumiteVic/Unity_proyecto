@@ -68,6 +68,10 @@ public class BossStateMachine : MonoBehaviour
         rb.velocity = Vector3.zero;
         if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional"){
             life.currentVidas--;
+            if(life.currentVidas <= 0)
+            {
+                life.Muerte();
+            }
         }
 
     }
