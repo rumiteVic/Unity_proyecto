@@ -14,6 +14,7 @@ public class UI : MonoBehaviour
     public GameObject hudMenu;
     public GameObject escMenu;
     public GameObject optionsMenu;
+    public GameObject creditosMenu;
 
     //Options
     public Slider musicSlider;
@@ -27,6 +28,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(false);
         }
         else
         {
@@ -35,6 +37,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(true);
+            creditosMenu.gameObject.SetActive(false);
         }
     }
 
@@ -63,6 +66,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(false);
             Time.timeScale = 0;
         }
         else if (menu == 1)
@@ -72,6 +76,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(true);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(false);
             Time.timeScale = 0;
         }
         else if (menu == 2)
@@ -81,6 +86,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(true);
             hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(false);
             AudioListener.volume = musicSlider.value;
             Time.timeScale = 0;
         }
@@ -91,6 +97,7 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(true);
+            creditosMenu.gameObject.SetActive(false);
             Time.timeScale = 1;
         }
         else if (menu == 4)
@@ -99,6 +106,14 @@ public class UI : MonoBehaviour
             escMenu.gameObject.SetActive(false);
             optionsMenu.gameObject.SetActive(false);
             hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(false);
+        }
+        else if(menu == 5){
+            mainMenu.gameObject.SetActive(false);
+            escMenu.gameObject.SetActive(false);
+            optionsMenu.gameObject.SetActive(false);
+            hudMenu.gameObject.SetActive(false);
+            creditosMenu.gameObject.SetActive(true);
         }
     }
 
@@ -136,5 +151,8 @@ public class UI : MonoBehaviour
     public void ExitGame()
     {
         SceneManager.LoadScene(0);
+    }
+    public void Creditos(){
+        menu = 5;
     }
 }
