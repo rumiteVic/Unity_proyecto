@@ -9,6 +9,10 @@ public class ChangeLight : MonoBehaviour
     public GameObject oscuridad;
     public Habilidades_Luz lucecita;
     public HabilidadesSombra sombra;
+    public Movimiento move;
+
+    private SpriteRenderer sprLuz;
+    private SpriteRenderer sprSombra;
     float cooldownUsoCapa;
     bool capa;
 
@@ -16,7 +20,11 @@ public class ChangeLight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        move = GetComponent<Movimiento>();
+        sprLuz = luz.GetComponent<SpriteRenderer>();
+        sprSombra = oscuridad.GetComponent<SpriteRenderer>();
 
+        move.spr = sprLuz;
     }
 
     // Update is called once per frame
@@ -42,6 +50,7 @@ public class ChangeLight : MonoBehaviour
             lucecita.enabled=true;
             sombra.cooldownUsoCapa = 0f;
             sombra.capa = false;
+            move.spr = sprLuz;
         }
         if (!siLuz)
         {
@@ -49,6 +58,7 @@ public class ChangeLight : MonoBehaviour
             sombra.enabled = true;
             luz.gameObject.SetActive(false);
             lucecita.enabled = false;
+            move.spr = sprSombra;
         }
     }
 }

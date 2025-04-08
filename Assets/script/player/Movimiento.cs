@@ -7,6 +7,9 @@ public class Movimiento : MonoBehaviour
     public Life life;
     public float horizontal;
     public float izde;
+    private bool facingRight = true;
+    public SpriteRenderer spr;
+
     float vertical;
     public float speed;
     public float impulso;
@@ -18,6 +21,9 @@ public class Movimiento : MonoBehaviour
     public ChangeLight change;
     public GameObject player1;
     public Dash dash;
+
+    public float shieldPositionX = 1.34714389f;
+    public GameObject shieldObject;
 
     bool agachar;
     bool agaching;
@@ -46,9 +52,12 @@ public class Movimiento : MonoBehaviour
 
         if (horizontal > 0){
             if(!dash.isdashing) rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            transform.localRotation = Quaternion.Euler(0,0,0);
-            izde = 1f;
-            if(suelo)
+            facingRight = true;
+            spr.flipX = !facingRight;
+            Vector3 shieldPosition = shieldObject.transform.localPosition;
+            shieldPosition.x = shieldPositionX;
+            shieldObject.transform.localPosition = shieldPosition;
+            if (suelo)
             {
                 animatorLuz.SetBool("isRunning", true);
                 animatorOsc.SetBool("isRunning", true);
@@ -59,9 +68,13 @@ public class Movimiento : MonoBehaviour
         if (horizontal < 0)
         {
             if(!dash.isdashing)rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            transform.localRotation = Quaternion.Euler(0,180,0);
-            izde = -1f;
-            if(suelo)
+            facingRight = false;
+            spr.flipX = !facingRight;
+            Vector3 shieldPosition = shieldObject.transform.localPosition;
+            shieldPosition.y = -shieldPositionX;
+            shieldObject.transform.localPosition = shieldPosition;
+            
+            if (suelo)
             {
                 animatorLuz.SetBool("isRunning", true);
                 animatorOsc.SetBool("isRunning", true);
