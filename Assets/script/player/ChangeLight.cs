@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class ChangeLight : MonoBehaviour
 {
     public bool siLuz = true;
-    public GameObject luz;
-    public GameObject oscuridad;
     public Habilidades_Luz lucecita;
     public HabilidadesSombra sombra;
     public Movimiento move;
+    public AnimatorController animationLuz;
+    public AnimatorController animationSombra;
+    public Animator anim;
 
     private SpriteRenderer sprLuz;
     private SpriteRenderer sprSombra;
@@ -21,9 +23,7 @@ public class ChangeLight : MonoBehaviour
     void Start()
     {
         move = GetComponent<Movimiento>();
-        sprLuz = luz.GetComponent<SpriteRenderer>();
-        sprSombra = oscuridad.GetComponent<SpriteRenderer>();
-
+        anim = GetComponent<Animator>();
         move.spr = sprLuz;
     }
 
@@ -44,9 +44,8 @@ public class ChangeLight : MonoBehaviour
 
         if (siLuz)
         {
-            oscuridad.gameObject.SetActive(false);
+            anim.runtimeAnimatorController = animationLuz;
             sombra.enabled = false;
-            luz.gameObject.SetActive(true);
             lucecita.enabled=true;
             sombra.cooldownUsoCapa = 0f;
             sombra.capa = false;
@@ -54,9 +53,8 @@ public class ChangeLight : MonoBehaviour
         }
         if (!siLuz)
         {
-            oscuridad.gameObject.SetActive(true);
+            anim.runtimeAnimatorController = animationSombra;
             sombra.enabled = true;
-            luz.gameObject.SetActive(false);
             lucecita.enabled = false;
             move.spr = sprSombra;
         }
