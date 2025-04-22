@@ -34,8 +34,7 @@ public class Movimiento : MonoBehaviour
     float currTim1 = 0f;
     float cooldown1 = 0.8f;
     //Animation haha
-    public Animator animatorLuz;
-    public Animator animatorOsc;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -59,10 +58,8 @@ public class Movimiento : MonoBehaviour
             shieldObject.transform.localPosition = shieldPosition;
             if (suelo)
             {
-                animatorLuz.SetBool("isRunning", true);
-                animatorOsc.SetBool("isRunning", true);
-                animatorLuz.SetBool("isIdle", false);
-                animatorOsc.SetBool("isIdle", false);
+                animator.SetBool("isRunning", true);
+                animator.SetBool("isIdle", false);
             }
         }
         if (horizontal < 0)
@@ -76,10 +73,10 @@ public class Movimiento : MonoBehaviour
             
             if (suelo)
             {
-                animatorLuz.SetBool("isRunning", true);
-                animatorOsc.SetBool("isRunning", true);
-                animatorLuz.SetBool("isIdle", false);
-                animatorOsc.SetBool("isIdle", false);
+                //animatorLuz.SetBool("isRunning", true);
+                //animatorOsc.SetBool("isRunning", true);
+                //animatorLuz.SetBool("isIdle", false);
+                //animatorOsc.SetBool("isIdle", false);
             }
         }
         if (horizontal == 0)
@@ -87,10 +84,10 @@ public class Movimiento : MonoBehaviour
             if(!dash.isdashing)rb.velocity = new Vector2(horizontal * 0, rb.velocity.y);
             if(suelo)
             {
-                animatorLuz.SetBool("isRunning", false);
-                animatorOsc.SetBool("isRunning", false);
-                animatorLuz.SetBool("isIdle", true);
-                animatorOsc.SetBool("isIdle", true);
+                //animatorLuz.SetBool("isRunning", false);
+                //animatorOsc.SetBool("isRunning", false);
+                //animatorLuz.SetBool("isIdle", true);
+                //animatorOsc.SetBool("isIdle", true);
             }
         }
 
@@ -100,12 +97,12 @@ public class Movimiento : MonoBehaviour
             rb.velocity = new Vector2(0.0f, impulso);
             jump = true;
             suelo = false;
-            animatorOsc.SetTrigger("jump");
-            animatorLuz.SetTrigger("jump");
-            animatorLuz.SetBool("isRunning", false);
-            animatorOsc.SetBool("isRunning", false);
-            animatorLuz.SetBool("isIdle", false);
-            animatorOsc.SetBool("isIdle", false);
+            //animatorOsc.SetTrigger("jump");
+            //animatorLuz.SetTrigger("jump");
+            //animatorLuz.SetBool("isRunning", false);
+            //animatorOsc.SetBool("isRunning", false);
+            //animatorLuz.SetBool("isIdle", false);
+            //animatorOsc.SetBool("isIdle", false);
         }
         if(jump){
             currTim += Time.deltaTime;
@@ -203,7 +200,7 @@ public class Movimiento : MonoBehaviour
     }
     void Muerte()
     {
-        animatorOsc.SetTrigger("recieveDamage");
-        animatorLuz.SetTrigger("recieveDamage");
+        //animatorOsc.SetTrigger("recieveDamage");
+        //animatorLuz.SetTrigger("recieveDamage");
     }
 }
