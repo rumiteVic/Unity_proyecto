@@ -71,7 +71,7 @@ public class Movimiento : MonoBehaviour
             facingRight = false;
             spr.flipX = !facingRight;
             Vector3 shieldPosition = shieldObject.transform.localPosition;
-            shieldPosition.y = -shieldPositionX;
+            shieldPosition.x = -shieldPositionX;
             shieldObject.transform.localPosition = shieldPosition;
             
             if (suelo)
