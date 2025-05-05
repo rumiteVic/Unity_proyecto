@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BossStateMachine : MonoBehaviour
+public class SlimeStateMachine : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -66,9 +66,10 @@ public class BossStateMachine : MonoBehaviour
     {
         isGrounded = true;
         rb.velocity = Vector3.zero;
-        if(collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional"){
+        if (collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional")
+        {
             life.currentVidas--;
-            if(life.currentVidas <= 0)
+            if (life.currentVidas <= 0)
             {
                 life.Muerte();
             }

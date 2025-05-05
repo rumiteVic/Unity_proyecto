@@ -2058,7 +2058,7 @@ GameObject:
   - component: {fileID: 801118195}
   m_Layer: 0
   m_Name: plataforma
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7343,6 +7343,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386243805562751297, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ccff2c1d81e140c448326dc53edc31d0, type: 2}
     - target: {fileID: 5716247353094173450, guid: 62779592d02d4ff4e99990872df6af18, type: 3}
       propertyPath: m_RootOrder
       value: 6

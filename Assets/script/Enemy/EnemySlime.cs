@@ -7,7 +7,7 @@ public class EnemySlime : MonoBehaviour
     //Aqui controlamos el ataque y los debuffs de los enemigos :D
     public GameObject damageSensor;
     public GameObject attackSensor;
-    public BossStateMachine movimiento;
+    public SlimeStateMachine movimiento;
     //Cooldown de hacer daño
     public bool dealDamage = false;
     float cooldown = 1f;

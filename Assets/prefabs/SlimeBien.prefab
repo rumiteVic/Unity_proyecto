@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5500159222014682057}
   - component: {fileID: 6422293405955858332}
   - component: {fileID: 7541648076647703659}
-  - component: {fileID: 8785669860731829747}
   - component: {fileID: 7533718506934286366}
   - component: {fileID: 3849594344697725818}
   - component: {fileID: 4202736187536529449}
   - component: {fileID: 7448210681176801147}
+  - component: {fileID: 3109219641507189884}
   m_Layer: 0
   m_Name: SlimeBien
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6422293405955858332
 SpriteRenderer:
@@ -111,24 +111,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8785669860731829747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224418939335711182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227b7050925124f47affd4fb1165f647, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  ground: {fileID: 3849594344697725818}
-  isGrounded: 0
-  force: 3
-  slime: {fileID: 7541648076647703659}
-  life: {fileID: 4202736187536529449}
 --- !u!61 &7533718506934286366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -262,3 +244,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3109219641507189884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224418939335711182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227b7050925124f47affd4fb1165f647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  ground: {fileID: 3849594344697725818}
+  isGrounded: 0
+  force: 3
+  slime: {fileID: 7541648076647703659}
+  life: {fileID: 4202736187536529449}
