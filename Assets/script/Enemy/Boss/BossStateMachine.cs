@@ -13,7 +13,6 @@ public class BossStateMachine : MonoBehaviour
     public GameObject player;
     public GameObject beegHitbox;
     public GameObject rock;
-    public Animator anim;
 
     private bool rockSpawned = false;
     private float playerX;
@@ -23,7 +22,7 @@ public class BossStateMachine : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -75,27 +74,19 @@ public class BossStateMachine : MonoBehaviour
     }
      void updateMoving()
     {
-        //animatorOsc.SetTrigger("jump");
-        //animatorLuz.SetTrigger("jump");
-        //animatorLuz.SetBool("isRunning", false);
-        anim.SetBool("caminar", true);
 
         counter += Time.deltaTime;
         if(this.transform.position.x - player.transform.position.x > 1)
         {
             bossDirection = -1;
-            GetComponent<SpriteRenderer>().flipX = true;
-            GetComponent<BoxCollider2D>().offset = new Vector2(0.5f, -0.6f);
         }
         else
         {
             bossDirection = 1;
-            GetComponent<SpriteRenderer>().flipX = false;
-            GetComponent<BoxCollider2D>().offset = new Vector2(-0.5f, -0.6f);
         }
         this.transform.position += new Vector3(bossSpeed * bossDirection, 0);
 
-        if(counter >= 3 || Mathf.Abs(this.transform.position.x - player.transform.position.x) < 1)
+        if(counter >= 3)
         {
             counter = 0;
             if(Mathf.Abs(this.transform.position.x - player.transform.position.x) > 3)
@@ -113,13 +104,12 @@ public class BossStateMachine : MonoBehaviour
 
     void updateAttack1()
     {
-        anim.SetBool("caminar", false);
-        anim.SetTrigger("pisada");
+
         counter += Time.deltaTime;
 
         if (counter >= 1 && !rockSpawned)
         {
-            Instantiate(rock, new Vector3(player.transform.position.x, this.gameObject.transform.position.y -1.5f), transform.rotation);
+            Instantiate(rock, new Vector3(player.transform.position.x, -0.5f), transform.rotation);
             rockSpawned = true;
            
         }
@@ -127,16 +117,16 @@ public class BossStateMachine : MonoBehaviour
         {
             currentState = bossStates.IDLE;
         }
+
+
     }
     void updateAttack2()
     {
-        anim.SetBool("caminar", false);
-        anim.SetTrigger("ataque");
         counter += Time.deltaTime;
 
         if (counter >= 1 && !rockSpawned)
         {
-            Instantiate(beegHitbox, new Vector3(this.gameObject.transform.position.x + (bossDirection), this.gameObject.transform.position.y), transform.rotation);
+            Instantiate(beegHitbox, new Vector3(this.gameObject.transform.position.x + (bossDirection), 0f), transform.rotation);
             rockSpawned = true;
         }
         if (counter >= 2)
