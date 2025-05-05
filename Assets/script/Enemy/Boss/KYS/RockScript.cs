@@ -15,7 +15,6 @@ public class RockScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         counter += Time.deltaTime;
         if (counter >= 1)
         {
