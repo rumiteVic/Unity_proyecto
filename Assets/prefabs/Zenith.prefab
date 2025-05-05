@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 5092952789214210732}
   - component: {fileID: 615909331561625656}
   - component: {fileID: 3799307327272567622}
+  - component: {fileID: 898816047729093162}
   m_Layer: 6
   m_Name: Zenith
   m_TagString: Player
@@ -689,7 +690,7 @@ Transform:
   - {fileID: 8300378428545810954}
   - {fileID: 361400956216730329}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &386243805562751297
 BoxCollider2D:
@@ -700,7 +701,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 5777333369284215096}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccff2c1d81e140c448326dc53edc31d0, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -859,3 +860,18 @@ MonoBehaviour:
   currentVidas: 0
   vidas: 3
   zenith: {fileID: 5777333369284215096}
+--- !u!114 &898816047729093162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777333369284215096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b9f544d1c3ba84fb7a11ce0711432a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbSpeed: 5
+  isOnLadder: 0
+  rb: {fileID: 0}
