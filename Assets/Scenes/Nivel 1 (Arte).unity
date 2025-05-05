@@ -1585,7 +1585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -765.7, y: -89.5}
+  m_AnchoredPosition: {x: -765.7, y: 0}
   m_SizeDelta: {x: 223.27466, y: 27.909302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572078533
@@ -4004,8 +4004,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVidas: 3
   currentVidas: 0
-  slider: {fileID: 572078533}
   vidas: 3
+  zenith: {fileID: 0}
 --- !u!4 &1354418892
 Transform:
   m_ObjectHideFlags: 0
