@@ -10,15 +10,7 @@ public class Proyectil : MonoBehaviour
     float horizontal;
     float izDe;
     public bool izquierda;
-
-    float currTimeExL;
-    float cooldownBL = 9f;
     public bool exPlosion;
-
-    public bool expl2;
-    float currTimeExL2;
-    float cooldownBL2 = 9f;
-    float totalDamage;
 
     // Start is called before the first frame update
     void Start()
@@ -40,23 +32,7 @@ public class Proyectil : MonoBehaviour
     {
         if (exPlosion)
         {
-            speed = 0.2f;
-            currTimeExL += Time.deltaTime;
-            if (currTimeExL >= cooldownBL)
-            {
-                exPlosion = false;
-                currTimeExL = 0f;
-            }
-        }
-        else if (expl2)
-        {
             speed = 0f;
-            currTimeExL2 += Time.deltaTime;
-            if (currTimeExL2 >= cooldownBL2)
-            {
-                expl2 = false;
-                currTimeExL2 = 0f;
-            }
         }
         else
         {
@@ -66,23 +42,14 @@ public class Proyectil : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "EnemyDamageSensor")
-        {
+        if (collision.gameObject.tag != "BOOM" || collision.gameObject.tag != "BOOMOSC" || collision.gameObject.tag != "Escudo"){
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "SpawnGround")
-        {
-            Destroy(gameObject);
-        }
+        
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyDamageSensor")
-        {
-            Destroy(gameObject);
-        }
-        if (collision.gameObject.tag == "SpawnGround")
-        {
+        if (collision.gameObject.tag != "BOOM" || collision.gameObject.tag != "BOOMOSC" || collision.gameObject.tag != "Escudo"){
             Destroy(gameObject);
         }
     }
@@ -92,10 +59,8 @@ public class Proyectil : MonoBehaviour
         {
             exPlosion = true;
         }
-        else if (collision.gameObject.tag == "BOOMOSC")
-        {
-            expl2 = true;
-        }
-
+    }
+    void OnTriggerExit2D(Collider2D collision){
+        exPlosion = false;
     }
 }

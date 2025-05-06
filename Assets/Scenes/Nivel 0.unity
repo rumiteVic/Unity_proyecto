@@ -3216,7 +3216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2042590997115874333, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3406660796085563333, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_Name
@@ -3228,7 +3228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508296180455507244, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4146685792783066765, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_IsActive
@@ -3320,15 +3320,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4843385311743049903, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6381982289430195816, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7382985395957537815, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482233353032627945, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7732876679532385536, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_IsActive
@@ -3336,7 +3340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7939158013539541701, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.11
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3731,7 +3735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1110449260
 Transform:
   m_ObjectHideFlags: 0
