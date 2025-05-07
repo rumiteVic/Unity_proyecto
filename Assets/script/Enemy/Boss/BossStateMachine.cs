@@ -14,6 +14,7 @@ public class BossStateMachine : MonoBehaviour
     public GameObject beegHitbox;
     public GameObject rock;
     public Animator anim;
+    public EnemyLife life;
 
     private bool rockSpawned = false;
     private float playerX;
@@ -153,4 +154,15 @@ public class BossStateMachine : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional")
+        {
+            life.currentVidas--;
+            if (life.currentVidas <= 0)
+            {
+                life.Muerte();
+            }
+        }
+    }
 }
