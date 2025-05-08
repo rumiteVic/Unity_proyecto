@@ -16,6 +16,7 @@ public class BossStateMachine : MonoBehaviour
     public Animator anim;
     public EnemyLife life;
 
+    private BossDeath death;
     private bool rockSpawned = false;
     private float playerX;
     public float bossSpeed;
@@ -23,6 +24,7 @@ public class BossStateMachine : MonoBehaviour
     public float counter;
     void Start()
     {
+        death = GetComponent<BossDeath>();
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
     }
@@ -162,6 +164,7 @@ public class BossStateMachine : MonoBehaviour
             if (life.currentVidas <= 0)
             {
                 life.Muerte();
+                death.Win();
             }
         }
     }
