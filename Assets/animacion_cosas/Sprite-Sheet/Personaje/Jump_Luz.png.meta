@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9cab53204295d4c4a9fef8c18a21f59c
+guid: 76281810c22c92345805c7d9ba4f7a68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_Luz_0
+      name: jump_luz_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5135c4d45630e34685ba8c0c1aafb7d
-      internalID: -1457160993
+      spriteID: 1b948b2f109ef284c91d7c07abd0ce2c
+      internalID: 1910198314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Luz_1
+      name: jump_luz_1
       rect:
         serializedVersion: 2
         x: 420
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93cd27e3520400245ae73b318f429ce3
-      internalID: 2059001049
+      spriteID: d683cb9e62e5da04f8b89179a7f4ed9b
+      internalID: 1254799366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Luz_2
+      name: jump_luz_2
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e66ab8c5f3afb43aafff4310dbf842
-      internalID: 720947752
+      spriteID: 44c9722c1f8f21c468bd2d2bda1b2b80
+      internalID: 961880374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Luz_3
+      name: jump_luz_3
       rect:
         serializedVersion: 2
         x: 420
@@ -187,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719e21b6b8a124f4a80afbe36fb70580
-      internalID: 784968660
+      spriteID: 53b84c7654e42ec4d8a8011ffe5210a3
+      internalID: 1638050618
       vertices: []
       indices: 
       edges: []
@@ -204,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_Luz_0: -1457160993
-      Jump_Luz_1: 2059001049
-      Jump_Luz_2: 720947752
-      Jump_Luz_3: 784968660
+      jump_luz_0: 1910198314
+      jump_luz_1: 1254799366
+      jump_luz_2: 961880374
+      jump_luz_3: 1638050618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

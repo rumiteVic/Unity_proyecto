@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e4e1d1bbdea36624daf6b3df11c612f7
+guid: 5c1783a84c1038c4d81205117b642f6e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_0
+      name: lanzar_luz_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f628e478c354f04d92ff717a9a550ae
-      internalID: 2024065438
+      spriteID: 631afd4beddc70245af97bd17f276c75
+      internalID: 577738742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_1
+      name: lanzar_luz_1
       rect:
         serializedVersion: 2
         x: 496
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004a2b36665d9884aa8168bd5611f726
-      internalID: 246575825
+      spriteID: 7d5bad9eb93d4394baea510dc4e3e438
+      internalID: -416687853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_2
+      name: lanzar_luz_2
       rect:
         serializedVersion: 2
         x: 992
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5644f26fb8715314ebda3636cca6c278
-      internalID: 1417610272
+      spriteID: 41e5c2b5fe5b62e449543749159c5ed3
+      internalID: -1643568274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_3
+      name: lanzar_luz_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3eb926d49a9f2c49985afcd43c8eaca
-      internalID: 1878513603
+      spriteID: d9d6afa94949aac4eb7568e972e338e2
+      internalID: -2124182676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_4
+      name: lanzar_luz_4
       rect:
         serializedVersion: 2
         x: 496
@@ -208,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 076f45f36133d8747aba30f196c88bc2
-      internalID: -1136841252
+      spriteID: d9b718ab29377de49a6ab2dd8ad5c25e
+      internalID: 1056775078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Luz_5
+      name: lanzar_luz_5
       rect:
         serializedVersion: 2
         x: 992
@@ -229,8 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132f8d8e1ea705e4abbc2bbe3b96cdd5
-      internalID: 1374184813
+      spriteID: ac5da0d810982f4429b2e64e622e6163
+      internalID: 604959831
       vertices: []
       indices: 
       edges: []
@@ -246,12 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite-sheet lanzar_Luz_0: 2024065438
-      sprite-sheet lanzar_Luz_1: 246575825
-      sprite-sheet lanzar_Luz_2: 1417610272
-      sprite-sheet lanzar_Luz_3: 1878513603
-      sprite-sheet lanzar_Luz_4: -1136841252
-      sprite-sheet lanzar_Luz_5: 1374184813
+      lanzar_luz_0: 577738742
+      lanzar_luz_1: -416687853
+      lanzar_luz_2: -1643568274
+      lanzar_luz_3: -2124182676
+      lanzar_luz_4: 1056775078
+      lanzar_luz_5: 604959831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

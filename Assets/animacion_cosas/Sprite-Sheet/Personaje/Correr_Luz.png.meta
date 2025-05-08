@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 808c749e4cfec1649b768ae31ae8736b
+guid: c042db623060b694ea7ac245e0267056
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_0
+      name: correr_luz_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dccdd5b695f91e46bdeeb5565d6e98b
-      internalID: -1486578955
+      spriteID: 543614843528cb447acd5192ee425314
+      internalID: 1627362631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_1
+      name: correr_luz_1
       rect:
         serializedVersion: 2
         x: 420
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ea908276e197f5499ea01212c9a243e
-      internalID: -1011524235
+      spriteID: 0d5d16aaa9e748740b7c8c83c39687e2
+      internalID: -866989642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_2
+      name: correr_luz_2
       rect:
         serializedVersion: 2
         x: 840
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47622f1fee3d4b14894b8b3aabd33992
-      internalID: -1901523736
+      spriteID: 2d45b05a01b3152409b022e9640ba5c2
+      internalID: -1298121924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_3
+      name: correr_luz_3
       rect:
         serializedVersion: 2
         x: 1260
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 204b595a9d022384b948f02a5e085952
-      internalID: -1930645719
+      spriteID: aab95f24ff1a63448aabedbb024ef3bb
+      internalID: 509827581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_4
+      name: correr_luz_4
       rect:
         serializedVersion: 2
         x: 1680
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a627be451e6e434b83a09f9f9191579
-      internalID: 1364199739
+      spriteID: ed7c6e6ea106cdd41b3f5dbbb3b84b3e
+      internalID: -1113218622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_5
+      name: correr_luz_5
       rect:
         serializedVersion: 2
         x: 0
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c66b8ac06e602184f99b3cc090d062dc
-      internalID: 508255840
+      spriteID: 4d6850331c3c3534a8b0fa457da17b7f
+      internalID: -2064764520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_6
+      name: correr_luz_6
       rect:
         serializedVersion: 2
         x: 420
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bada6cffb20ece048b4f36be902dc37d
-      internalID: 110280469
+      spriteID: 7448c529a1226d144b7550ed266f340b
+      internalID: 871383047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_7
+      name: correr_luz_7
       rect:
         serializedVersion: 2
         x: 840
@@ -297,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dba0fcd5c7578794e85e9dbd9bdd5cee
-      internalID: -516107686
+      spriteID: 72a9c283650f20a44a7ccfbbe4d8a513
+      internalID: -1120982969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_8
+      name: correr_luz_8
       rect:
         serializedVersion: 2
         x: 1260
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b75569f673fe948aeeffe79f1a99c9
-      internalID: 970808302
+      spriteID: 4fd5f5a556e93aa469650574f1b532da
+      internalID: -2076094784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Luz_9
+      name: correr_luz_9
       rect:
         serializedVersion: 2
         x: 1680
@@ -339,8 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9d34734849d52242a4772f2534f07e1
-      internalID: -1648218266
+      spriteID: 2ddd1d81161a38b4481613a4f95db2ef
+      internalID: 1685038544
       vertices: []
       indices: 
       edges: []
@@ -356,16 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-Sheet_Luz_0: -1486578955
-      Sprite-Sheet_Luz_1: -1011524235
-      Sprite-Sheet_Luz_2: -1901523736
-      Sprite-Sheet_Luz_3: -1930645719
-      Sprite-Sheet_Luz_4: 1364199739
-      Sprite-Sheet_Luz_5: 508255840
-      Sprite-Sheet_Luz_6: 110280469
-      Sprite-Sheet_Luz_7: -516107686
-      Sprite-Sheet_Luz_8: 970808302
-      Sprite-Sheet_Luz_9: -1648218266
+      correr_luz_0: 1627362631
+      correr_luz_1: -866989642
+      correr_luz_2: -1298121924
+      correr_luz_3: 509827581
+      correr_luz_4: -1113218622
+      correr_luz_5: -2064764520
+      correr_luz_6: 871383047
+      correr_luz_7: -1120982969
+      correr_luz_8: -2076094784
+      correr_luz_9: 1685038544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

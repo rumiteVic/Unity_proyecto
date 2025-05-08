@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8773185f6aa6e54bb8980888716b767
+guid: 44b4e5da492c86942860ac917fa5ceec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Recieve_Luz_0
+      name: recieve_luz_osc_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd436798a1dff054c9c57966b48ec4d7
-      internalID: 1875429086
+      spriteID: 5ecf10c3345f66740993d8b2d47411f9
+      internalID: 2007151407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recieve_Luz_1
+      name: recieve_luz_osc_1
       rect:
         serializedVersion: 2
         x: 420
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e854f47daf6aa5a48bd5810393ac746a
-      internalID: -301595219
+      spriteID: c0ab98878215114459d44e7f3d143555
+      internalID: -297127250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recieve_Luz_2
+      name: recieve_luz_osc_2
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c8a14e161719f4ca5a68f9e94d837c
-      internalID: -1464688726
+      spriteID: cab98f6625e5e9e48aceb5d009a80448
+      internalID: 2085600310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recieve_Luz_3
+      name: recieve_luz_osc_3
       rect:
         serializedVersion: 2
         x: 420
@@ -187,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 213e8bc0aef6ac84d81685821d00b52a
-      internalID: -7781768
+      spriteID: 00d8563864efd6a4dbc1d4365531ce45
+      internalID: -1278177982
       vertices: []
       indices: 
       edges: []
@@ -204,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Recieve_Luz_0: 1875429086
-      Recieve_Luz_1: -301595219
-      Recieve_Luz_2: -1464688726
-      Recieve_Luz_3: -7781768
+      recieve_luz_osc_0: 2007151407
+      recieve_luz_osc_1: -297127250
+      recieve_luz_osc_2: 2085600310
+      recieve_luz_osc_3: -1278177982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

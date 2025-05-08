@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb5f8c3985c368441a381dc216e1e08a
+guid: 989358e81fb791d4bafe45f737107a65
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_0
+      name: correr_osc_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235e1958fc777a84ab2be35372518dc7
-      internalID: 330215128
+      spriteID: b91c5903633d5704d95dcbc884685b55
+      internalID: 876609248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_1
+      name: correr_osc_1
       rect:
         serializedVersion: 2
         x: 420
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1db5cd6953a69f42b973015ebddc70f
-      internalID: 1456774386
+      spriteID: e9b5e6a8ec89beb4da4d598060f5a4e7
+      internalID: -718093497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_2
+      name: correr_osc_2
       rect:
         serializedVersion: 2
         x: 840
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2bec4ba9fdf74c469de3008620cbe32
-      internalID: -498790776
+      spriteID: ac33696ae1f5416489ed0fdc37f94ec8
+      internalID: -761787177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_3
+      name: correr_osc_3
       rect:
         serializedVersion: 2
         x: 1260
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c2bd2213c4cf844d802573dee6217c8
-      internalID: -478669717
+      spriteID: dbeaf1426002f7d4cb1e88d5dc47daf4
+      internalID: 1082659246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_4
+      name: correr_osc_4
       rect:
         serializedVersion: 2
         x: 1680
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce41b2e7dfba2df45aa75af06184e484
-      internalID: -671655138
+      spriteID: 979270eaa46cfd445a994277011acfde
+      internalID: 1601888094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_5
+      name: correr_osc_5
       rect:
         serializedVersion: 2
         x: 0
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09a446b80df1d864b91d7648d373f88f
-      internalID: 1343518178
+      spriteID: 241aee4f1478f2a4fbfd0467e424da4e
+      internalID: -1023140690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_6
+      name: correr_osc_6
       rect:
         serializedVersion: 2
         x: 420
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 617ee37baf5a04642ab25c2e949881db
-      internalID: 1113945335
+      spriteID: 2d4c81e2de01f3d45abeb65d81716d03
+      internalID: 1485830590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_7
+      name: correr_osc_7
       rect:
         serializedVersion: 2
         x: 840
@@ -297,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 417c68cc7d1c27c4693c46470614094e
-      internalID: -1482277939
+      spriteID: 8daddff44d9cff4488e9e4b1338963f0
+      internalID: 188361239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_8
+      name: correr_osc_8
       rect:
         serializedVersion: 2
         x: 1260
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0e260a23bddc4f4494ac0984365064b
-      internalID: 1762502591
+      spriteID: 8a9a4c0518011004cac236945b387d24
+      internalID: 2111398832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Sheet_Oscuridad_9
+      name: correr_osc_9
       rect:
         serializedVersion: 2
         x: 1680
@@ -339,8 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c215b2c122774e849b732326c8cae966
-      internalID: 1621167167
+      spriteID: eec3ca6221db5af4f929b9de61816dcc
+      internalID: -70757063
       vertices: []
       indices: 
       edges: []
@@ -356,16 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-Sheet_Oscuridad_0: 330215128
-      Sprite-Sheet_Oscuridad_1: 1456774386
-      Sprite-Sheet_Oscuridad_2: -498790776
-      Sprite-Sheet_Oscuridad_3: -478669717
-      Sprite-Sheet_Oscuridad_4: -671655138
-      Sprite-Sheet_Oscuridad_5: 1343518178
-      Sprite-Sheet_Oscuridad_6: 1113945335
-      Sprite-Sheet_Oscuridad_7: -1482277939
-      Sprite-Sheet_Oscuridad_8: 1762502591
-      Sprite-Sheet_Oscuridad_9: 1621167167
+      correr_osc_0: 876609248
+      correr_osc_1: -718093497
+      correr_osc_2: -761787177
+      correr_osc_3: 1082659246
+      correr_osc_4: 1601888094
+      correr_osc_5: -1023140690
+      correr_osc_6: 1485830590
+      correr_osc_7: 188361239
+      correr_osc_8: 2111398832
+      correr_osc_9: -70757063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

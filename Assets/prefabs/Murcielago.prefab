@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.30631256, y: 0.7161081}
+  m_Offset: {x: 0.28087234, y: 0.8178731}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5651321, y: 1.9650326}
+  m_Size: {x: 1.7788391, y: 2.1685627}
   m_EdgeRadius: 0
 --- !u!114 &6871799629479155710
 MonoBehaviour:
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4870309007809300160}
   m_Layer: 0
   m_Name: Murcielago
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2006073001, guid: 8247850c379210241851f74a6e3ecabf, type: 3}
+  m_Sprite: {fileID: -1538384227, guid: 5fd4879ec6b993641986527c30c2e30a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -216,7 +216,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07855034, y: 0.42942882}
+  m_Offset: {x: 0.098903656, y: 0.27169323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -227,7 +227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.636509, y: 2.5211983}
+  m_Size: {x: 1.4940414, y: 2.0225506}
   m_EdgeRadius: 0
 --- !u!50 &4638272507859836588
 Rigidbody2D:
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 2781279273752333688}
   m_Layer: 0
   m_Name: Murcielago
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,7 +462,7 @@ Transform:
   - {fileID: 7370963208514976949}
   - {fileID: 4747364131428123867}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8203747359705422278
 GameObject:

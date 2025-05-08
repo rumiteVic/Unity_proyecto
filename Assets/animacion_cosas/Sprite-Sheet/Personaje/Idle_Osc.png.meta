@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d313dd9ee3a5224fbf5bea43e53ad82
+guid: 561c65af5eb9da34bbbdce627780f747
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_Osc_0
+      name: idle_osc_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8006272231b58a489657eed41bf8949
-      internalID: -1069269150
+      spriteID: 53533a6947b426f44a06de1a0d1b92be
+      internalID: 194537265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Osc_1
+      name: idle_osc_1
       rect:
         serializedVersion: 2
         x: 420
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 751801c0515d2764e8ec847c814fc6f7
-      internalID: 417714768
+      spriteID: 8707c3b2ddbf31948a9f2724d8372177
+      internalID: -1479395048
       vertices: []
       indices: 
       edges: []
@@ -188,8 +188,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_Osc_0: -1069269150
-      Idle_Osc_1: 417714768
+      idle_osc_0: 194537265
+      idle_osc_1: -1479395048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

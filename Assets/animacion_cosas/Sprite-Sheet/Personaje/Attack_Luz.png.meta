@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bb23c781854f1f4eb24261d76ca33a1
+guid: 125fdba4d72371941b5103431c922f7e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_Luz_0
+      name: attack_luz_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a5c38a6bb80144eae893fa26a32e04
-      internalID: 204579517
+      spriteID: 371fe0d491bf22d48b7bff97201a3fc3
+      internalID: 1434150644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_1
+      name: attack_luz_1
       rect:
         serializedVersion: 2
-        x: 495
-        y: 421
+        x: 497
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82c0a75e378b134479af7a5ff60816a7
-      internalID: -1654843289
+      spriteID: e85f2f000e24836479da6a465ee2bf7c
+      internalID: -1719724336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_2
+      name: attack_luz_2
       rect:
         serializedVersion: 2
         x: 994
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b588a27308e6ea4c84e4594cc6097a6
-      internalID: 1584553518
+      spriteID: b927bf1850fae184fa8719ffcf199be0
+      internalID: 1085334373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_3
+      name: attack_luz_3
       rect:
         serializedVersion: 2
         x: 1491
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f61bbbc494a45aa46ba4700a9dcad464
-      internalID: -405006051
+      spriteID: 7e2c381d764ef164a9089f97545ff061
+      internalID: -1376601861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_4
+      name: attack_luz_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
+        y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bf53d4351975a9408d0bd6b6d2e151c
-      internalID: 258509586
+      spriteID: bb3fab7eb1072784fb7d7aa5ad5f64f5
+      internalID: -253903499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_5
+      name: attack_luz_5
       rect:
         serializedVersion: 2
         x: 497
         y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23703d6464e7bb6469eda2fb28ad611a
-      internalID: 2002876352
+      spriteID: 0dbc807b09a5f684eb049ab9bd6343cf
+      internalID: -959553667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Luz_6
+      name: attack_luz_6
       rect:
         serializedVersion: 2
         x: 994
         y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e67fbff89feeab40b7941cbb4408c95
-      internalID: 213446298
+      spriteID: 99705227aea98ad45905461ba490c2f2
+      internalID: 1800952628
       vertices: []
       indices: 
       edges: []
@@ -267,13 +293,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Luz_0: 204579517
-      Attack_Luz_1: -1654843289
-      Attack_Luz_2: 1584553518
-      Attack_Luz_3: -405006051
-      Attack_Luz_4: 258509586
-      Attack_Luz_5: 2002876352
-      Attack_Luz_6: 213446298
+      attack_luz_0: 1434150644
+      attack_luz_1: -1719724336
+      attack_luz_2: 1085334373
+      attack_luz_3: -1376601861
+      attack_luz_4: -253903499
+      attack_luz_5: -959553667
+      attack_luz_6: 1800952628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

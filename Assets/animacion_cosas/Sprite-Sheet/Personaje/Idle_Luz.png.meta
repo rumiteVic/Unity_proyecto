@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 42e703619334d504abce2a4dc9db79a8
+guid: bfc9a2f2a430c224298dbf00e9a54fc3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_Luz_0
+      name: idle_luz_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0873a80e4f1e44188cb86038fdac02
-      internalID: -38180665
+      spriteID: 97d17911118c04c4d9532090f30c4f6a
+      internalID: -1204699942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Luz_1
+      name: idle_luz_1
       rect:
         serializedVersion: 2
         x: 420
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba93ff25bae1cb42b39d0ec7af78241
-      internalID: 868934462
+      spriteID: 5b185e071abd8174fa6dd49a09e0004e
+      internalID: 1648673379
       vertices: []
       indices: 
       edges: []
@@ -188,8 +188,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_Luz_0: -38180665
-      Idle_Luz_1: 868934462
+      idle_luz_0: -1204699942
+      idle_luz_1: 1648673379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

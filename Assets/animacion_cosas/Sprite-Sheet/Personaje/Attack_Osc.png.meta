@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eb173a635a891045bdefd8506b5de9b
+guid: 6b9cf26adb578da49a95933cf45844dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_Osc_0
+      name: attack_osc_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de5803ecf64f80d439cce12d7ac5a037
-      internalID: -1555808706
+      spriteID: 96d1d4857ce689f4eb46309e4f34f0ca
+      internalID: 1049725360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_1
+      name: attack_osc_1
       rect:
         serializedVersion: 2
         x: 497
-        y: 421
+        y: 415
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca9adb091f98d14d83a6b6e30b7b1d4
-      internalID: 918987221
+      spriteID: d203048b36237004dabfe3c54a479c2c
+      internalID: 992422119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_2
+      name: attack_osc_2
       rect:
         serializedVersion: 2
         x: 994
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30133b6cb11aa82479e12b605fd98cd5
-      internalID: -2095775958
+      spriteID: 796fc9fd729457347b631dbe2a34f617
+      internalID: -849972211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_3
+      name: attack_osc_3
       rect:
         serializedVersion: 2
         x: 1491
-        y: 421
+        y: 422
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d884c34e00dcf4478249ee3feaf6ffb
-      internalID: -1055577707
+      spriteID: be122edda56706440be1833beeec8918
+      internalID: 912652771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_4
+      name: attack_osc_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c92384f83b52d494db7422cd0aa0177c
-      internalID: 1773665718
+      spriteID: d2bb3de9e09f4544f9410a3c9e310e4d
+      internalID: 1674385629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_5
+      name: attack_osc_5
       rect:
         serializedVersion: 2
         x: 497
         y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06003904ce25ca44c851a744298e9d08
-      internalID: -410803902
+      spriteID: 902db345912655349a2d41461058c3b3
+      internalID: 1032813264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Osc_6
+      name: attack_osc_6
       rect:
         serializedVersion: 2
         x: 994
         y: 0
         width: 497
-        height: 421
+        height: 422
       alignment: 9
       pivot: {x: 0.35, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5790856d6837c6d448f079e678b040c1
-      internalID: 1910302532
+      spriteID: 40804549e932eaa4d93a718ec6df2537
+      internalID: -617716257
       vertices: []
       indices: 
       edges: []
@@ -267,13 +293,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Osc_0: -1555808706
-      Attack_Osc_1: 918987221
-      Attack_Osc_2: -2095775958
-      Attack_Osc_3: -1055577707
-      Attack_Osc_4: 1773665718
-      Attack_Osc_5: -410803902
-      Attack_Osc_6: 1910302532
+      attack_osc_0: 1049725360
+      attack_osc_1: 992422119
+      attack_osc_2: -849972211
+      attack_osc_3: 912652771
+      attack_osc_4: 1674385629
+      attack_osc_5: 1032813264
+      attack_osc_6: -617716257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

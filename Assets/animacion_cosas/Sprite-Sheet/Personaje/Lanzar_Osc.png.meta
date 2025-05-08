@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c06384a4276a23a4fbd1e30d25f46500
+guid: 705fd8136d602084dbedb3a14c4b003c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_0
+      name: lanzar_osc_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e8e2a6c3bc688a4c9c45a78d8be7fca
-      internalID: -267106122
+      spriteID: 45bd087a62b712448b637df77f576a9d
+      internalID: -512488275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_1
+      name: lanzar_osc_1
       rect:
         serializedVersion: 2
         x: 496
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bcefc1b9df3f7c4db922aad10903f92
-      internalID: 322954133
+      spriteID: c4641c5c270e95844a69dcbc66d74ef8
+      internalID: -1454426196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_2
+      name: lanzar_osc_2
       rect:
         serializedVersion: 2
         x: 992
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03c7441c8f687f94ab4ffb44b00d75b9
-      internalID: -378598111
+      spriteID: e499697cbdc0fc546b3d9a9a857acb93
+      internalID: -146635093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_3
+      name: lanzar_osc_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a4404cce002ab14cbc0e37d2fa28f07
-      internalID: -548553759
+      spriteID: 3e3b8c3ee4fe38f42adf8dffcf4f86a3
+      internalID: -463873321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_4
+      name: lanzar_osc_4
       rect:
         serializedVersion: 2
         x: 496
@@ -208,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a349d97f68ea345b0783bb55279793
-      internalID: 1167742303
+      spriteID: 5f8afafce5bef6c44a95e05379adb08b
+      internalID: -566317044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet lanzar_Osc_5
+      name: lanzar_osc_5
       rect:
         serializedVersion: 2
         x: 992
@@ -229,8 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f523add293b6ca2469c70c140d145ad7
-      internalID: -1841987148
+      spriteID: ee4184e193e8a59448d1d530491de008
+      internalID: 284663855
       vertices: []
       indices: 
       edges: []
@@ -246,12 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite-sheet lanzar_Osc_0: -267106122
-      sprite-sheet lanzar_Osc_1: 322954133
-      sprite-sheet lanzar_Osc_2: -378598111
-      sprite-sheet lanzar_Osc_3: -548553759
-      sprite-sheet lanzar_Osc_4: 1167742303
-      sprite-sheet lanzar_Osc_5: -1841987148
+      lanzar_osc_0: -512488275
+      lanzar_osc_1: -1454426196
+      lanzar_osc_2: -146635093
+      lanzar_osc_3: -463873321
+      lanzar_osc_4: -566317044
+      lanzar_osc_5: 284663855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
