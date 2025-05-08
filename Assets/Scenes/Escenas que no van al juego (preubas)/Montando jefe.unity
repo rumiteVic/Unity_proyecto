@@ -349,6 +349,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1527437501454552346, guid: 98584390b59ccff46b2aa84b435e6ca5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2003439060}
+    - targetCorrespondingSourceObject: {fileID: 1527437501454552346, guid: 98584390b59ccff46b2aa84b435e6ca5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2003439062}
   m_SourcePrefab: {fileID: 100100000, guid: 98584390b59ccff46b2aa84b435e6ca5, type: 3}
 --- !u!1 &2003439055 stripped
 GameObject:
@@ -373,6 +376,7 @@ MonoBehaviour:
   beegHitbox: {fileID: 5319321538435169137, guid: e6f2bf87b86de8e47945ea3c714bb360, type: 3}
   rock: {fileID: 7632726859585265685, guid: a7b719cd535b31c4f9a49e1b55281c81, type: 3}
   anim: {fileID: 0}
+  life: {fileID: 2003439062}
   bossSpeed: 0.005
   counter: 0
 --- !u!61 &2003439060
@@ -447,6 +451,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2003439062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003439055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400df6c5ae6774c46bc3da535ecaad2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVidas: 20
+  currentVidas: 0
+  enemy: {fileID: 2003439055}
+  totalDamage: 0
 --- !u!1 &2083668965
 GameObject:
   m_ObjectHideFlags: 0
