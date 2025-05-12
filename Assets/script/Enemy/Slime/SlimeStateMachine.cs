@@ -74,6 +74,5 @@ public class SlimeStateMachine : MonoBehaviour
                 life.Muerte();
             }
         }
-
     }
 }
