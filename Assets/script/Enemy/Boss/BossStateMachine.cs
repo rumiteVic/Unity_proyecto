@@ -84,7 +84,7 @@ public class BossStateMachine : MonoBehaviour
         anim.SetBool("caminar", true);
 
         counter += Time.deltaTime;
-        if(this.transform.position.x - player.transform.position.x > 1)
+        if(this.transform.position.x - player.transform.position.x > 2)
         {
             bossDirection = -1;
             GetComponent<SpriteRenderer>().flipX = true;
@@ -98,10 +98,10 @@ public class BossStateMachine : MonoBehaviour
         }
         this.transform.position += new Vector3(bossSpeed * bossDirection, 0);
 
-        if(counter >= 3 || Mathf.Abs(this.transform.position.x - player.transform.position.x) < 1)
+        if(counter >= 3 || Mathf.Abs(this.transform.position.x - player.transform.position.x) < 2)
         {
             counter = 0;
-            if(Mathf.Abs(this.transform.position.x - player.transform.position.x) > 3)
+            if(Mathf.Abs(this.transform.position.x - player.transform.position.x) > 6)
             {
                 currentState = bossStates.ATTACK1;
             }
@@ -122,7 +122,7 @@ public class BossStateMachine : MonoBehaviour
 
         if (counter >= 1 && !rockSpawned)
         {
-            Instantiate(rock, new Vector3(player.transform.position.x, this.gameObject.transform.position.y -1.5f), transform.rotation);
+            Instantiate(rock, new Vector3(player.transform.position.x, this.gameObject.transform.position.y -3f), transform.rotation);
             rockSpawned = true;
            
         }
