@@ -7259,6 +7259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Activame (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007566726225917472, guid: 770e632ee919b3f4b864018995e63057, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5759031427119008862, guid: 770e632ee919b3f4b864018995e63057, type: 3}
       propertyPath: m_RootOrder
       value: 45
