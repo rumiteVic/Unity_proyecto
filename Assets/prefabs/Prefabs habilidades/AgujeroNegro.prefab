@@ -4842,6 +4842,7 @@ GameObject:
   - component: {fileID: 7097419956850912226}
   - component: {fileID: 3276759213710295349}
   - component: {fileID: 2372614377481178488}
+  - component: {fileID: 3080793633088272601}
   m_Layer: 0
   m_Name: AgujeroNegro
   m_TagString: BOOMOSC
@@ -4905,7 +4906,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: d70e1da3a215ab94cac26235e627e131, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4933,7 +4934,7 @@ CircleCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 6
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5005,3 +5006,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337ab8afe320efd47985772324c4eb34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3080793633088272601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5845228760672845823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59f51ea807e0ee4893a516159b3d4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agujero: {fileID: 0}
