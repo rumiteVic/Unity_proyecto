@@ -5,97 +5,130 @@ using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
+[Header("Referencias")]
     public Transform enemigo;
-    public Rigidbody2D rb;
     public GameObject destination1;
     public GameObject destination2;
-    private Transform currentDestination;
     public Movimiento player;
     public Enemy enemy;
     public RecieveDamageEnemy recibe;
-    Vector2 direction;
-    float cooldown = 5;
-    float x;
-    float y;
-    float currTime = 0;
+
+    [Header("Movimiento")]
+    public float speed = 5f;
+    private Transform currentDestination;
+    private Rigidbody2D rb;
+    private Vector2 direction;
+
+    [Header("Estados")]
     public bool empujado;
-    float currTime1 = 0f;
-    float cooldown2 = 0.3f;
+    public bool vuela;
+    public bool normal;
 
-    float currTime2 = 0f;
-    float cooldown3 = 0.1f;
+    private float x, y;
 
-    public bool vuela = false;
-    public bool normal = false;
-    // Start is called before the first frame update
+    // Tiempos y cooldowns
+    private float currTimeEmpuje;
+    private float currTimeVuelo;
+
+    private float cooldownEmpuje = 0.3f;
+    private float cooldownVuelo = 0.1f;
+    float direccionLanzar = 1;
+
     void Start()
     {
-        player =  FindObjectOfType<Movimiento>();
+        rb = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<Movimiento>();
 
         currentDestination = destination1.transform;
-        rb = GetComponent<Rigidbody2D>();
         direction = (currentDestination.position - transform.position).normalized;
+
         x = enemigo.position.x;
         y = enemigo.position.y;
     }
-    
-    // Update is called once per frame
+
     void Update()
-    {        
-        if(!enemy.rebaja && !enemy.muro &&!enemy.canNotMove && !vuela)speed = 5;
-        rb.velocity = direction*speed;
-        currTime += Time.deltaTime;
-        if(currTime >= cooldown){
-            x = enemigo.position.x;
-            y = enemigo.position.y;
-            currTime = 0;
+    {
+        if(player.srLuz.flipX || player.srOsc.flipX){
+            direccionLanzar = 1f;
         }
-        Vector2 direccion = new Vector2 (player.izde * 50f, 0);
-        if(empujado){
-             rb.AddForce(direccion);
-             currTime1 += Time.deltaTime;
-             if(currTime1 >= cooldown2){
-                currTime1 = 0f;
-                empujado = false;
-             }
+        else if(!player.srLuz.flipX || !player.srOsc.flipX){
+            direccionLanzar = -1f;
         }
-        if(vuela){
-            rb.gravityScale = -700;
-            currTime2 += Time.deltaTime;
-            speed = 0f;
-            if(currTime2 >= cooldown3){
-                rb.gravityScale = 300;
-                currTime2 = 0f;
-                vuela = false;
-                recibe.recibe = true;
-            }
+        if (!enemy.rebaja && !enemy.muro && !enemy.canNotMove && !vuela)
+            speed = 5f;
+
+        rb.velocity = direction * speed;
+
+
+        HandleEmpuje();
+        HandleVuelo();
+        HandleNormal();
+
+        ChangeDirection();
+    }
+
+    void HandleEmpuje()
+    {
+        if (!empujado) return;
+
+        Vector2 fuerza = new Vector2(direccionLanzar * 50f, 0);
+        rb.AddForce(fuerza);
+
+        currTimeEmpuje += Time.deltaTime;
+        if (currTimeEmpuje >= cooldownEmpuje)
+        {
+            currTimeEmpuje = 0f;
+            empujado = false;
         }
-        if(normal){
+    }
+
+    void HandleVuelo()
+    {
+        if (!vuela) return;
+
+        rb.gravityScale = -700;
+        speed = 0f;
+
+        currTimeVuelo += Time.deltaTime;
+        if (currTimeVuelo >= cooldownVuelo)
+        {
+            rb.gravityScale = 300;
+            currTimeVuelo = 0f;
+            vuela = false;
+            recibe.recibe = true;
+        }
+    }
+
+    void HandleNormal()
+    {
+        if (normal)
+        {
             rb.gravityScale = 1f;
             normal = false;
         }
-       
-        ChangeDirection();
     }
 
     void ChangeDirection()
     {
-        if (Vector2.Distance(transform.position, currentDestination.position) < 1.5f && currentDestination.position == destination1.transform.position)
+        if (Vector2.Distance(transform.position, currentDestination.position) < 1.5f)
         {
-            currentDestination = destination2.transform;
-            transform.localRotation = Quaternion.Euler(0,180,0);
-            direction = (currentDestination.position - transform.position).normalized;
-        }
-        else if(Vector2.Distance(transform.position, currentDestination.position) < 1.5f && currentDestination.position == destination2.transform.position)
-        {
-            currentDestination = destination1.transform;
-            transform.localRotation = Quaternion.Euler(0,0,0);
+            if (currentDestination == destination1.transform)
+            {
+                currentDestination = destination2.transform;
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+            else
+            {
+                currentDestination = destination1.transform;
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+
             direction = (currentDestination.position - transform.position).normalized;
         }
     }
 
-    public void ReinicioTiempo(){
+    public void ReinicioTiempo()
+    {
         transform.position = new Vector3(x, y);
     }
 }

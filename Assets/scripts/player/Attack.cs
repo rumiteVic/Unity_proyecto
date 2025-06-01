@@ -4,64 +4,58 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public Transform attackAreaLuz;
-    public Transform attackAreaOscuridad;
-    public ChangeLight change;
-    private float cooldown = 0.25f;
-    float currTime = 0f;
-    bool isAttack = false;
-    float horizontal;
-    private float cooldownattack = 0.8f;
-    bool isAttacking = false;
-    float currAtt = 0f;
+    public Transform attackArea;
+    public bool attacking;
+    float timeAtt = 0.2f;
+    float cooldown = 1f;
+    float currentTime = 0;
 
-    public Animator animatorLuz;
-    public Animator animatorOsc;
+    public GameObject player;
+    public Movimiento mov;
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        attackAreaLuz.gameObject.SetActive(false);
-        attackAreaOscuridad.gameObject.SetActive(false);
-
+        attackArea.gameObject.SetActive(false);
     }
     void Update()
     {
-        attack();
+        if(mov.srLuz.flipX || mov.srOsc.flipX){
+            attackArea.transform.position = new Vector2(player.transform.position.x - 2.2f, player.transform.position.y);
+        }
+        else if(!mov.srLuz.flipX || !mov.srOsc.flipX){
+            attackArea.transform.position = new Vector2(player.transform.position.x + 1.9f, player.transform.position.y);
+        }
+        Ataque();
     }
 
-    void attack()
-    {
-        
-        if (Input.GetKeyDown(KeyCode.X) && currAtt == 0)
-        {
-            isAttack = true;
-            if(change.siLuz)attackAreaLuz.gameObject.SetActive(true);
-            else attackAreaOscuridad.gameObject.SetActive(true);
-            isAttacking = true;
-            animatorOsc.SetTrigger("attack");
-            animatorLuz.SetTrigger("attack");
-            
+    public void Ataque(){        
+        if(Input.GetKeyDown(KeyCode.X)&&currentTime == 0){
+            attacking = true;
+            animator.SetTrigger("attack");
         }
-        if (isAttack)
-        {
-            currTime += Time.deltaTime;
 
-            if (currTime >= cooldown)
-            {
-                if(change.siLuz)attackAreaLuz.gameObject.SetActive(false);
-                else attackAreaOscuridad.gameObject.SetActive(false);
-                isAttack = false;
-                currTime = 0f;
+        if(attacking){
+            currentTime += Time.deltaTime;
+            if(currentTime >= cooldown){
+                attacking = false;
+                currentTime = 0;
             }
+            else if(currentTime >= timeAtt){
+                attackArea.gameObject.SetActive(false);
+            }
+
         }
-        if(isAttacking){
-             currAtt +=Time.deltaTime;
-             if(currAtt >= cooldownattack){
-                isAttacking = false;
-                currAtt = 0f;
-             }
-        }
+    }
+
+    void ActivarAtaque(){
+        attackArea.gameObject.SetActive(true);
+        Debug.Log("hey");
+    }
+    void DeactivateAtaque(){
+        attackArea.gameObject.SetActive(false);
     }
 }
 

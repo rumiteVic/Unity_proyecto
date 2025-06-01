@@ -4,39 +4,43 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
+    [Header("Referencias")]
+    public HabilidadesSombra sombra;
+    public ChangeLight change;
+    public GameObject player1;
+    public Dash dash;
     public Life life;
+    public Rigidbody2D rb;
+    public Collider2D player;
+
+    [Header("Movimiento")]
     public float horizontal;
-    public float izde;
     float vertical;
     public float speed;
     public float impulso;
     public bool suelo;
     public bool jump = false;
-    public Rigidbody2D rb;
-    public Collider2D player;
-    public HabilidadesSombra sombra;
-    public ChangeLight change;
-    public GameObject player1;
-    public Dash dash;
-
     bool agachar;
     bool agaching;
 
+    [Header("Tiners")]
     float currTim = 0f;
     float cooldown = 0.5f;
 
     float currTim1 = 0f;
     float cooldown1 = 0.8f;
-    //Animation haha
+    [Header("Animators")]
     public Animator animatorLuz;
     public Animator animatorOsc;
+
+    public SpriteRenderer srLuz;
+    public SpriteRenderer srOsc;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GetComponent<Collider2D>();
-        player.isTrigger = false;
     }
 
     // Update is called once per frame
@@ -46,8 +50,9 @@ public class Movimiento : MonoBehaviour
 
         if (horizontal > 0){
             if(!dash.isdashing) rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            transform.localRotation = Quaternion.Euler(0,0,0);
-            izde = 1f;
+            srLuz.flipX = false;
+            srOsc.flipX = false;
+            player.offset = new Vector2(0, 1.27f);
             if(suelo)
             {
                 animatorLuz.SetBool("isRunning", true);
@@ -57,8 +62,9 @@ public class Movimiento : MonoBehaviour
         if (horizontal < 0)
         {
             if(!dash.isdashing)rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            transform.localRotation = Quaternion.Euler(0,180,0);
-            izde = -1f;
+            srLuz.flipX = true;
+            srOsc.flipX = true;
+            player.offset = new Vector2(-1.05f, 1.27f);
             if(suelo)
             {
                 animatorLuz.SetBool("isRunning", true);
@@ -74,8 +80,12 @@ public class Movimiento : MonoBehaviour
                 animatorOsc.SetBool("isRunning", false);
             }
         }
+        Jump();
+        Agachar();
+        Capa();
+    }
 
-
+    void Jump(){
         if (Input.GetKey(KeyCode.UpArrow) && suelo && currTim == 0f)
         {
             rb.velocity = new Vector2(0.0f, impulso);
@@ -91,7 +101,9 @@ public class Movimiento : MonoBehaviour
                 jump = false;
             }
         }
+    }
 
+    void Agachar(){
         if(Input.GetKey(KeyCode.DownArrow) && agachar)
         {
             agaching = true;
@@ -107,14 +119,15 @@ public class Movimiento : MonoBehaviour
             if(currTim1 >= cooldown1){
                 currTim1 = 0f;
                 agaching = false;
-                player.isTrigger = false;
                 if (player1.transform.localScale.y < 1f)
                 {
                     player1.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * 2f, transform.localScale.z);
                 }
             }
         }
+    }
 
+    void Capa(){
         if (sombra.capa)
         {
             if(rb.velocity.y < -3)
@@ -126,8 +139,8 @@ public class Movimiento : MonoBehaviour
         {
             rb.gravityScale = 1f;
         }
-
     }
+
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
         {

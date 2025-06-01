@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 561c65af5eb9da34bbbdce627780f747
+guid: 0a6759737abe5514c9f38707427a12a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,32 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -150,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53533a6947b426f44a06de1a0d1b92be
-      internalID: 194537265
+      spriteID: 67f40132b5e335a45be47b876d797291
+      internalID: 929927570
       vertices: []
       indices: 
       edges: []
@@ -171,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8707c3b2ddbf31948a9f2724d8372177
-      internalID: -1479395048
+      spriteID: bee33922c6fe1194180b173748c98a18
+      internalID: -1263739030
       vertices: []
       indices: 
       edges: []
@@ -188,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_osc_0: 194537265
-      idle_osc_1: -1479395048
+      idle_osc_0: 929927570
+      idle_osc_1: -1263739030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
