@@ -6,6 +6,7 @@ public class Movimiento : MonoBehaviour
 {
     [Header("Referencias")]
     public HabilidadesSombra sombra;
+    public Habilidades_Luz luz;
     public ChangeLight change;
     public GameObject player1;
     public Dash dash;
@@ -29,12 +30,18 @@ public class Movimiento : MonoBehaviour
 
     float currTim1 = 0f;
     float cooldown1 = 0.8f;
+
+    public float currTimeEscudo = 0f;
+    float cooldown2 = 5f;
+    public bool escudoActivo = false;
     [Header("Animators")]
     public Animator animatorLuz;
     public Animator animatorOsc;
 
     public SpriteRenderer srLuz;
     public SpriteRenderer srOsc;
+
+    public Vector2 spawnPlace;
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +90,7 @@ public class Movimiento : MonoBehaviour
         Jump();
         Agachar();
         Capa();
+        Escudo();
     }
 
     void Jump(){
@@ -141,6 +149,17 @@ public class Movimiento : MonoBehaviour
         }
     }
 
+    void Escudo(){
+        if(escudoActivo){
+            currTimeEscudo += Time.deltaTime;
+            if(currTimeEscudo >= cooldown2){
+                currTimeEscudo = 0;
+                escudoActivo = false;
+                luz.escudoJau.gameObject.SetActive(false);
+            }
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "SpawnGround")
         {
@@ -156,7 +175,7 @@ public class Movimiento : MonoBehaviour
     }    
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "Abismo"){
-            Vector2 direc = new Vector2 (-4, -1);
+            Vector2 direc = spawnPlace;
             transform.position = direc;
             Muerte();
             life.Muerte();

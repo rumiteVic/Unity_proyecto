@@ -61,33 +61,6 @@ public class HabilidadesSombra : MonoBehaviour
             proyec.izquierda = false;
         }
 
-        
-
-        //Jaula
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimJau == 0)
-        {
-            animatorOsc.SetTrigger("lanzar");
-            jaulaa = true;
-            jauCol = true;
-        }
-        if (jaulaa)
-        {
-            Vector2 direccion = new Vector2(transform.position.x + dirige * direccionMirar, transform.position.y - 1.5f);
-            GameObject tempJaula = Instantiate(jaula, direccion, transform.rotation);
-            jaulaa = false;
-            Destroy(tempJaula, 4);
-        }
-
-        if(jauCol)
-        {
-            currTimJau += Time.deltaTime;
-            if(currTimJau  >= finCap)
-            {
-                currTimJau  = 0;
-                jauCol = false;
-            }
-        }
-
         //Bala oscura
         if (Input.GetKeyDown(KeyCode.Z) && currTimBal == 0)
         {

@@ -8,7 +8,6 @@ public class HUD : MonoBehaviour
     public Image[] vidas;
     public Image[] sinVidas;
 
-    public GameObject restart;
 
     public AudioSource uiSound;
     // Start is called before the first frame update
@@ -17,20 +16,13 @@ public class HUD : MonoBehaviour
         sinVidas[0].enabled = false;
         sinVidas[1].enabled = false;
         sinVidas[2].enabled = false;
-        restart.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Life.instance.currentVidas <= 0){
-            restart.SetActive(true);
-        }
+
     }
 
-    public void RestartLevel(){
-        uiSound.Play();
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
-    }
+
 }

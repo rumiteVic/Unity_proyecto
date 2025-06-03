@@ -37,12 +37,12 @@ public class Habilidades_Luz : MonoBehaviour
     bool escudo;
     bool usoEscudo;
     float currTimEsc = 0f;
-    float finEsc = 8f;
+    float finEsc = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        escudoJau.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -58,30 +58,6 @@ public class Habilidades_Luz : MonoBehaviour
         {
             direccionMirar = 1f;
             proyec.izquierda = false;
-        }
-        
-        //El muro
-        if (Input.GetKeyDown(KeyCode.S) &&suelin.suelo && currTimMur == 0)
-        {
-            animatorLuz.SetTrigger("lanzar");
-            muro = true; 
-        }
-        if (muro)
-        {
-            murCol = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * direccionMirar, transform.position.y);
-            GameObject tempMuro = Instantiate(muroDeLuz, direccion, transform.rotation);
-            muro = false;
-            Destroy(tempMuro, 7);
-        }
-
-        if(murCol)
-        {
-            currTimMur += Time.deltaTime;
-            if(currTimMur  >= finMur){
-                currTimMur  = 0;
-                murCol = false;
-            }
         }
  
         //Bala normal
@@ -128,15 +104,13 @@ public class Habilidades_Luz : MonoBehaviour
         {
             animatorLuz.SetTrigger("lanzar");
             escudo = true;
-            life.RecuperarVida(); 
+            escudoJau.gameObject.SetActive(true);
         }
         if (escudo)
         {
             usoEscudo = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * direccionMirar, transform.position.y - 0.8f);
-            GameObject tempEscudo = Instantiate(escudoJau, direccion, transform.rotation);
             escudo = false;
-            Destroy(tempEscudo, 5);
+            suelin.escudoActivo = true;
         }
 
         if(usoEscudo)

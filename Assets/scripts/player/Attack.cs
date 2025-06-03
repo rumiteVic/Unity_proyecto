@@ -52,7 +52,6 @@ public class Attack : MonoBehaviour
 
     void ActivarAtaque(){
         attackArea.gameObject.SetActive(true);
-        Debug.Log("hey");
     }
     void DeactivateAtaque(){
         attackArea.gameObject.SetActive(false);

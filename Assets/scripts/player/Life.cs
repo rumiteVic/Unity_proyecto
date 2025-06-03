@@ -9,13 +9,11 @@ public class Life : MonoBehaviour
 
     public int maxVidas = 3;
     public int currentVidas;
-    public int vidas = 3;
-    float currTime = 0f;
-    float cooldown = 8f;
-    bool changeVida;
+
     HUD hud;
     public AudioSource audio;
     public GameObject zenith;
+    public Movimiento mov;
 
     void Awake()
     {
@@ -25,24 +23,12 @@ public class Life : MonoBehaviour
     {
         hud = FindObjectOfType<HUD>();
         currentVidas = maxVidas;
-        vidas = currentVidas;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(changeVida){
-            currentVidas = vidas;
-            changeVida = false;
-        }
-        currTime += Time.deltaTime;
-        if(currTime >= cooldown){
-            vidas = currentVidas;
-            currTime = 0;
-        }
-    }
-    public void RecuperarVida(){
-        changeVida = true;
+
     }
 
     public void Muerte(){
@@ -51,7 +37,13 @@ public class Life : MonoBehaviour
         if (hud.vidas[currentVidas] != null) hud.vidas[currentVidas].enabled = false;
         if (hud.sinVidas[currentVidas] != null) hud.sinVidas[currentVidas].enabled = true;
         if(currentVidas <= 0){
-            Destroy(zenith, audio.clip.length);
+            zenith.transform.position = mov.spawnPlace;
+            currentVidas = maxVidas;
+            for (int i = 0; i < maxVidas; i++)
+            {
+                if (hud.vidas[i] != null) hud.vidas[i].enabled = true;
+                if (hud.sinVidas[i] != null) hud.sinVidas[i].enabled = false;
+            }
         }
     }
 }
