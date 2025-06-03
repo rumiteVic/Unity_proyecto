@@ -2347,6 +2347,7 @@ GameObject:
   - component: {fileID: 594631851}
   - component: {fileID: 594631856}
   - component: {fileID: 594631857}
+  - component: {fileID: 594631858}
   m_Layer: 0
   m_Name: Activame
   m_TagString: SpawnGround
@@ -2368,6 +2369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 594631857}
   suelo: {fileID: 594631850}
+  animator: {fileID: 594631858}
 --- !u!212 &594631854
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2409,7 +2411,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 792b2f3fd8cab324498204cdb597e738, type: 3}
+  m_Sprite: {fileID: -1149375091, guid: e755b66e7c8ede848a4262af5b10b27c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2490,7 +2492,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.51, y: 4.29}
+    oldSize: {x: 15.509999, y: 4.544922}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2499,6 +2501,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.158115, y: 4.602733}
   m_EdgeRadius: 0
+--- !u!95 &594631858
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594631850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949ea6f1de688d14a90bd5981dd1b6d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &596600943
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,6 +5170,7 @@ GameObject:
   - component: {fileID: 1432352396}
   - component: {fileID: 1432352395}
   - component: {fileID: 1432352394}
+  - component: {fileID: 1432352398}
   m_Layer: 0
   m_Name: Activame (1)
   m_TagString: SpawnGround
@@ -5205,7 +5229,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.51, y: 4.29}
+    oldSize: {x: 15.509999, y: 4.544922}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5247,6 +5271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 1432352394}
   suelo: {fileID: 1432352392}
+  animator: {fileID: 1432352398}
 --- !u!212 &1432352397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5288,7 +5313,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 792b2f3fd8cab324498204cdb597e738, type: 3}
+  m_Sprite: {fileID: -1149375091, guid: e755b66e7c8ede848a4262af5b10b27c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5299,6 +5324,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1432352398
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432352392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949ea6f1de688d14a90bd5981dd1b6d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1439123939
 GameObject:
   m_ObjectHideFlags: 0
