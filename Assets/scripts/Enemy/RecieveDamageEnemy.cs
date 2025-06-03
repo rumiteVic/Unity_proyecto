@@ -58,13 +58,7 @@ public class RecieveDamageEnemy : MonoBehaviour
         }
     }
     private void OnTriggerStay2D(Collider2D collision){
-        if (collision.gameObject.tag == "Muro")
-        {
-            life.totalDamage = 0.03f;
-            enemy.muro = true;
-            life.Muerte();            
-        }
-        else if (collision.gameObject.tag == "BOOM")
+        if (collision.gameObject.tag == "BOOM")
         {
             enemy.canNotMove = true;          
         }
@@ -79,9 +73,6 @@ public class RecieveDamageEnemy : MonoBehaviour
         }
     }
     private void OnTriggerExit2D(Collider2D collision){
-        if(collision.CompareTag("Muro")){
-            enemy.muro = false;
-        }
         if(collision.CompareTag("BOOM")){
             enemy.canNotMove = false;
         }

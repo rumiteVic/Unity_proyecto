@@ -33,6 +33,8 @@ public class Movement : MonoBehaviour
     private float cooldownEmpuje = 0.3f;
     private float cooldownVuelo = 0.1f;
     float direccionLanzar = 1;
+    
+    public SpriteRenderer sr;
 
     void Start()
     {
@@ -54,14 +56,11 @@ public class Movement : MonoBehaviour
         else if(!player.srLuz.flipX || !player.srOsc.flipX){
             direccionLanzar = -1f;
         }
-        if (!enemy.rebaja && !enemy.muro && !enemy.canNotMove && !vuela)
+        if (!enemy.rebaja && !enemy.canNotMove && !vuela)
             speed = 5f;
 
         rb.velocity = direction * speed;
-
-
         HandleEmpuje();
-        HandleVuelo();
         HandleNormal();
 
         ChangeDirection();
@@ -82,22 +81,6 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void HandleVuelo()
-    {
-        if (!vuela) return;
-
-        rb.gravityScale = -700;
-        speed = 0f;
-
-        currTimeVuelo += Time.deltaTime;
-        if (currTimeVuelo >= cooldownVuelo)
-        {
-            rb.gravityScale = 300;
-            currTimeVuelo = 0f;
-            vuela = false;
-            recibe.recibe = true;
-        }
-    }
 
     void HandleNormal()
     {
@@ -115,12 +98,12 @@ public class Movement : MonoBehaviour
             if (currentDestination == destination1.transform)
             {
                 currentDestination = destination2.transform;
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
+                sr.flipX = false;
             }
             else
             {
                 currentDestination = destination1.transform;
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
+                sr.flipX = true;
             }
 
             direction = (currentDestination.position - transform.position).normalized;

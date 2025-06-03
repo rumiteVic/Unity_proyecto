@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyLife : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EnemyLife : MonoBehaviour
     public float currentVidas;
     public GameObject enemy;
     public float totalDamage;
+    public Slider slideLife;
 
     public AudioSource audio;
 
@@ -18,12 +20,14 @@ public class EnemyLife : MonoBehaviour
     private void Start()
     {
         currentVidas = maxVidas;
+        slideLife.maxValue = maxVidas;
+        slideLife.value = maxVidas;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        slideLife.value = currentVidas;
     }
     public void Muerte()
     {

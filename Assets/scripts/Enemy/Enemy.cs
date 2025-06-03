@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour
     float currTimeVel;
     float cooldownVel = 2f;
     public bool canNotMove;
-    public bool muro = false;
 
     
     // Start is called before the first frame update
@@ -61,9 +60,6 @@ public class Enemy : MonoBehaviour
                 rebaja = false;
                 currTimeVel = 0f;
             }
-        }
-        if(muro){
-            movimiento.speed = 0.3f;
         }
         if(canNotMove){
             movimiento.speed = 0f;
