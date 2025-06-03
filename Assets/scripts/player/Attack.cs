@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
     public Transform attackArea;
     public bool attacking;
-    float timeAtt = 0.2f;
+    float timeAtt = 0.35f;
     float cooldown = 1f;
     float currentTime = 0;
 

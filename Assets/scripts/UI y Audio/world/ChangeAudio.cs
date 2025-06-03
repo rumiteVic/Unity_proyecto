@@ -8,9 +8,12 @@ public class ChangeAudio : MonoBehaviour
     [SerializeField]public AudioClip music;
     [SerializeField]public AudioClip musicEnemy;
 
+    public Collider2D coll;
+
     public void Music(){
         audio.clip = music;
         audio.Play();
+        coll.GetComponent<Collider2D>();
     }
 
     public void MusicEnemy(){
@@ -18,12 +21,20 @@ public class ChangeAudio : MonoBehaviour
         audio.Play();
     }
 
+    void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.tag == "Player")MusicEnemy();
+    }
+
+    void OnCollisionExit2D(Collision2D collision){
+        if(collision.gameObject.tag == "Player") Music();
+    }
+
     void OnTriggerEnter2D(Collider2D collision){
-        MusicEnemy();
+        if(collision.gameObject.tag == "Player")MusicEnemy();
     }
 
     void OnTriggerExit2D(Collider2D collision){
-        Music();
+        if(collision.gameObject.tag == "Player") Music();
     }
 
 }

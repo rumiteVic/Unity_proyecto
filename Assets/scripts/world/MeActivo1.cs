@@ -6,11 +6,12 @@ public class MeActivo1 : MonoBehaviour
 {
     // Start is called before the first frame update
     public Collider2D col;
-    public GameObject suelo;
+    public GameObject objeto;
+    bool once = false;
+    public Animator animator;
     void Start()
     {
         col.isTrigger = false;
-        suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1f);
     }
 
     // Update is called once per frame
@@ -22,8 +23,15 @@ public class MeActivo1 : MonoBehaviour
     {
         if (collision.tag == "ProyectilOscuro")
         {
-            col.isTrigger = true;
-            suelo.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 0.5f);
+            if(!once){
+                once = true;
+                col.isTrigger = true;
+                animator.SetBool("destruir", true);
+            } 
         }
+    }
+
+    void Destruir(){
+        Destroy(objeto);
     }
 }

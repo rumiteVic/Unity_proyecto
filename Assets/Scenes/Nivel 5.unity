@@ -1025,6 +1025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 341057481}
   suelo: {fileID: 341057480}
+  animator: {fileID: 0}
 --- !u!212 &341057484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4003,6 +4004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 1087243940}
   suelo: {fileID: 1087243939}
+  animator: {fileID: 0}
 --- !u!212 &1087243943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7493,6 +7495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 1998178444}
   suelo: {fileID: 1998178443}
+  animator: {fileID: 0}
 --- !u!212 &1998178447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7602,7 +7605,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8, g: 0.8039216, b: 0.8117647, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -48,7 +48,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 183
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.110349655, y: 2.7943373}
+  m_Offset: {x: -0.110349655, y: 4.381638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 32.51183, y: 9.528675}
+  m_Size: {x: 32.51183, y: 12.703277}
   m_EdgeRadius: 0
 --- !u!114 &4506878463311169364
 MonoBehaviour:
@@ -93,6 +93,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   music: {fileID: 8300000, guid: 0382e9fccf11b4940b22bb45ad23d1de, type: 3}
   musicEnemy: {fileID: 8300000, guid: a31cfe85c5d92e041a388e2b8bf1f02c, type: 3}
+  coll: {fileID: 7222095857641888252}
 --- !u!1 &1648458156196053541
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ RectTransform:
   m_GameObject: {fileID: 2913682732605665875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.2, y: 4, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 60005968836103163}
@@ -327,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.570057, y: 45.435024}
+  m_AnchoredPosition: {x: -37.570057, y: 54.07502}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000853689443676197
@@ -705,7 +706,6 @@ MonoBehaviour:
   canNotSee: 0
   rebaja: 0
   canNotMove: 0
-  muro: 0
 --- !u!114 &5141194344508714831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,7 +1077,7 @@ Transform:
   - {fileID: 5346087576508605547}
   - {fileID: 1365543588431215827}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8501077620205521032
 GameObject:
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6320754, g: 0.37864897, b: 0.37864897, a: 1}
+  m_Color: {r: 0.6745098, g: 0.9490196, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
