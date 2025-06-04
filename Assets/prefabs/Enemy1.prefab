@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4229602374871827773}
   - component: {fileID: 7222095857641888252}
   - component: {fileID: 4506878463311169364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChangeMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,6 +189,8 @@ MonoBehaviour:
   enemy: {fileID: 3395955330216828564}
   movimiento: {fileID: 637920469588205221}
   recibe: 0
+  one: {fileID: 2604017788007041076, guid: a09aa242934884746bce677512664c1d, type: 3}
+  three: {fileID: 1372491022511947891, guid: 52b1ad43352e52d4cad6f515c42cdde2, type: 3}
 --- !u!1 &1903884205799414884
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +372,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 5420500062673336389}
   m_HandleRect: {fileID: 0}

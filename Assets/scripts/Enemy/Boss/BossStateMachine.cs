@@ -22,6 +22,10 @@ public class BossStateMachine : MonoBehaviour
     public float bossSpeed;
     private float bossDirection;
     public float counter;
+
+    Vector2 where;
+    public GameObject one;
+    public GameObject three;
     void Start()
     {
         death = GetComponent<BossDeath>();
@@ -158,14 +162,24 @@ public class BossStateMachine : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional")
+        where = new Vector2 (transform.position.x, transform.position.y +2f);
+
+        if (collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro")
         {
+            GameObject instancia = Instantiate(one, where, transform.rotation);
             life.currentVidas--;
-            if (life.currentVidas <= 0)
+        }
+        if(collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad"){
+            life.currentVidas -= 3;
+            GameObject instancia = Instantiate(three, where, transform.rotation);
+        }
+        if(collision.gameObject.tag == "Abismo" ){
+            life.currentVidas = -1;
+        }
+        if (life.currentVidas <= 0)
             {
                 life.Muerte();
                 death.Win();
             }
-        }
     }
 }

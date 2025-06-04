@@ -424,6 +424,7 @@ MonoBehaviour:
   totalDamage: 0
   slideLife: {fileID: 1489425656280387865}
   audio: {fileID: 4194229086410023129}
+  particulas: {fileID: 0}
 --- !u!95 &4870309007809300160
 Animator:
   serializedVersion: 5
@@ -665,7 +666,7 @@ GameObject:
   - component: {fileID: 3679418542031211010}
   - component: {fileID: 1803078675477502698}
   - component: {fileID: 6770574693176048105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChangeMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,6 +844,8 @@ MonoBehaviour:
   enemy: {fileID: 1254464365343966688}
   movimiento: {fileID: 6081507000800813599}
   recibe: 0
+  one: {fileID: 2604017788007041076, guid: a09aa242934884746bce677512664c1d, type: 3}
+  three: {fileID: 1372491022511947891, guid: 52b1ad43352e52d4cad6f515c42cdde2, type: 3}
 --- !u!1 &5917755224830439926
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1000,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 8996033038803429731}
   m_HandleRect: {fileID: 0}

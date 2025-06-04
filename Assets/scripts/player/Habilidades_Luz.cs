@@ -28,11 +28,6 @@ public class Habilidades_Luz : MonoBehaviour
     float currTimBal = 0f;
     float finBala = 1.5f;
 
-    //Cooldowns explosion
-    bool explCol;
-    float currTimExpl = 0f;
-    float finexPl = 10f;
-
     //Cooldowns escudo
     bool escudo;
     bool usoEscudo;
@@ -76,26 +71,6 @@ public class Habilidades_Luz : MonoBehaviour
             if(currTimBal  >= finBala){
                 currTimBal  = 0;
                 balCol = false;
-            }
-        }
-
-        //Explotemos algo
-        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo &&currTimExpl == 0)
-        {
-            animatorLuz.SetTrigger("lanzar");
-            explCol = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * direccionMirar, transform.position.y - 1f);
-            GameObject booooLuz = Instantiate(boomLuz, direccion, transform.rotation);
-            booooLuz.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
-            Destroy(booooLuz, 10);
-        }
-
-        if(explCol)
-        {
-            currTimExpl += Time.deltaTime;
-            if(currTimExpl  >= finexPl){
-                currTimExpl  = 0;
-                explCol = false;
             }
         }
 

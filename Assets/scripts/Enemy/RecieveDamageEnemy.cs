@@ -12,6 +12,10 @@ public class RecieveDamageEnemy : MonoBehaviour
     float currTime = 0f;
     float cooldown = 0.4f;
     public bool recibe = false;
+
+    public GameObject one;
+    public GameObject three;
+    Vector2 where;
     void Start()
     {
         enemycoll = GetComponent<Collider2D>();
@@ -29,15 +33,10 @@ public class RecieveDamageEnemy : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "BOOM")
-        {
-            life.totalDamage = 7f;
-            enemy.canNotMove = true;
-            life.Muerte();
-        }
-        else if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
-            enemy.canNotSee = true;
+        where = new Vector2 (transform.position.x, transform.position.y +2f);
+        if(collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" ){
             life.totalDamage = 1f;
+            GameObject instancia = Instantiate(one, where, transform.rotation);
             life.Muerte();
         }
         else if(collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad")
@@ -45,6 +44,7 @@ public class RecieveDamageEnemy : MonoBehaviour
             life.totalDamage = 3f;
             if(collision.gameObject.tag == "AttackPlayerLuz") enemy.rebaja = true;
             if(collision.gameObject.tag == "AttackPlayerOscuridad") movimiento.empujado = true;
+            GameObject instancia = Instantiate(three, where, transform.rotation);
             life.Muerte();
         }
         else if (collision.gameObject.tag == "Ground"){

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6524537795399276783}
   - component: {fileID: 7318100468396082720}
   - component: {fileID: 7338023117179092048}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,6 +215,8 @@ MonoBehaviour:
   life: {fileID: 9110997626342652188}
   bossSpeed: 0.005
   counter: 0
+  one: {fileID: 2604017788007041076, guid: a09aa242934884746bce677512664c1d, type: 3}
+  three: {fileID: 1372491022511947891, guid: 52b1ad43352e52d4cad6f515c42cdde2, type: 3}
 --- !u!50 &5015156265822355343
 Rigidbody2D:
   serializedVersion: 4
@@ -657,7 +659,7 @@ GameObject:
   - component: {fileID: 3670246707340636599}
   - component: {fileID: 3303656704061559528}
   - component: {fileID: 1865938334957696965}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7706593161276474082}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +772,7 @@ GameObject:
   - component: {fileID: 1616166563541136240}
   - component: {fileID: 3374032442417693020}
   - component: {fileID: 4490578941678041416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChangeMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2272703386416273569}
   - component: {fileID: 8397373718238320578}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +881,7 @@ RectTransform:
   m_GameObject: {fileID: 8361340187340482812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.23851562, y: 0.23851562, z: 0.23851562}
+  m_LocalScale: {x: 0.19677538, y: 0.23851562, z: 0.23851562}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3670246707340636599}
@@ -931,7 +933,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 6524537795399276783}
   m_HandleRect: {fileID: 0}
@@ -955,7 +957,7 @@ GameObject:
   - component: {fileID: 936686903260268002}
   - component: {fileID: 1592937774837121357}
   - component: {fileID: 1748797651083429133}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

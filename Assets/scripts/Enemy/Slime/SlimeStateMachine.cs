@@ -16,6 +16,10 @@ public class SlimeStateMachine : MonoBehaviour
     public float force;
     public Animator slime;
     public EnemyLife life;
+
+    public GameObject one;
+    public GameObject three;
+    Vector2 where;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -64,11 +68,28 @@ public class SlimeStateMachine : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        where = new Vector2 (transform.position.x, transform.position.y +2f);
         isGrounded = true;
         rb.velocity = Vector3.zero;
-        if (collision.gameObject.tag == "BOOM" || collision.gameObject.tag == "BOOMOSC" || collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro" || collision.gameObject.tag == "Muro" || collision.gameObject.tag == "Jaula" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad" || collision.gameObject.tag == "Gravitacional")
+        if (collision.gameObject.tag == "Proyectil" || collision.gameObject.tag == "ProyectilOscuro")
         {
+            GameObject instancia = Instantiate(one, where, transform.rotation);
             life.currentVidas--;
+            if (life.currentVidas <= 0)
+            {
+                life.Muerte();
+            }
+        }
+        if(collision.gameObject.tag == "AttackPlayerLuz" || collision.gameObject.tag == "AttackPlayerOscuridad"){
+            life.currentVidas -= 3;
+            GameObject instancia = Instantiate(three, where, transform.rotation);
+            if (life.currentVidas <= 0)
+            {
+                life.Muerte();
+            }
+        }
+        if(collision.gameObject.tag == "Abismo" ){
+            life.currentVidas = -1;
             if (life.currentVidas <= 0)
             {
                 life.Muerte();

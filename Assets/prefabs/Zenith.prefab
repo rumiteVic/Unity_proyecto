@@ -1029,7 +1029,7 @@ Transform:
   - {fileID: 6802419850147397084}
   - {fileID: 8300378428545810954}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &386243805562751297
 BoxCollider2D:
@@ -1187,6 +1187,7 @@ MonoBehaviour:
   zenith: {fileID: 5777333369284215096}
   mov: {fileID: 7451446702580401433}
   particulasDamage: {fileID: 5225278819840447021, guid: ecd0731bbd3629d4ba4af55795d0dd99, type: 3}
+  one: {fileID: 5738135072057984245, guid: f35bc5b608fb1f947969fdacc9e47ac5, type: 3}
 --- !u!114 &898816047729093162
 MonoBehaviour:
   m_ObjectHideFlags: 0

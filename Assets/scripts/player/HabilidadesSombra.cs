@@ -33,11 +33,6 @@ public class HabilidadesSombra : MonoBehaviour
     float currTimBal = 0f;
     float finBala = 1.5f;
 
-    //Cooldowns explosion
-    bool explCol;
-    float currTimExpl = 0f;
-    float finexPl = 10f;
-
     public Animator animatorOsc;
 
     // Start is called before the first frame update
@@ -105,25 +100,6 @@ public class HabilidadesSombra : MonoBehaviour
             if(currTimCap  >= finCap){
                 currTimCap  = 0;
                 capCol = false;
-            }
-        }
-
-        //Explotemos algo
-        if (Input.GetKeyDown(KeyCode.A) &&suelin.suelo && currTimExpl == 0)
-        {
-            animatorOsc.SetTrigger("lanzar");
-            explCol = true;
-            Vector2 direccion = new Vector2(transform.position.x + dirige * direccionMirar, transform.position.y - 1f);
-            GameObject booooOsc = Instantiate(boomOscuridad, direccion, transform.rotation);
-            booooOsc.transform.localScale = new Vector2 (transform.localScale.x * 0.1f, transform.localScale.y * 0.1f);
-            Destroy(booooOsc, 10);
-        }
-        if(explCol)
-        {
-            currTimExpl += Time.deltaTime;
-            if(currTimExpl  >= finexPl){
-                currTimExpl  = 0;
-                explCol = false;
             }
         }
     }

@@ -269,6 +269,8 @@ MonoBehaviour:
   force: 3
   slime: {fileID: 7541648076647703659}
   life: {fileID: 4202736187536529449}
+  one: {fileID: 2604017788007041076, guid: a09aa242934884746bce677512664c1d, type: 3}
+  three: {fileID: 1372491022511947891, guid: 52b1ad43352e52d4cad6f515c42cdde2, type: 3}
 --- !u!82 &5149468012390125571
 AudioSource:
   m_ObjectHideFlags: 0
@@ -696,7 +698,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 5335768054456787218}
   m_HandleRect: {fileID: 0}
