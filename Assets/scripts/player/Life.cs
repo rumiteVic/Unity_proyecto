@@ -15,6 +15,8 @@ public class Life : MonoBehaviour
     public GameObject zenith;
     public Movimiento mov;
 
+    public GameObject particulasDamage;
+
     void Awake()
     {
         instance = this; 
@@ -28,6 +30,7 @@ public class Life : MonoBehaviour
     public void Muerte(){
         audio.Play();
         currentVidas--;
+        GameObject instancia = Instantiate(particulasDamage, transform.position, transform.rotation);
         if (hud.vidas[currentVidas] != null) hud.vidas[currentVidas].enabled = false;
         if (hud.sinVidas[currentVidas] != null) hud.sinVidas[currentVidas].enabled = true;
     }

@@ -724,6 +724,7 @@ MonoBehaviour:
   totalDamage: 0
   slideLife: {fileID: 1000853689443676197}
   audio: {fileID: 6405555484515485556}
+  particulas: {fileID: 5225278819840447021, guid: 0e2c6b97dc09ba943be014cd70384f65, type: 3}
 --- !u!95 &3651253674137877904
 Animator:
   serializedVersion: 5

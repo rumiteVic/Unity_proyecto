@@ -24,8 +24,6 @@ public class Movement : MonoBehaviour
     public bool vuela;
     public bool normal;
 
-    private float x, y;
-
     // Tiempos y cooldowns
     private float currTimeEmpuje;
     private float currTimeVuelo;
@@ -43,9 +41,6 @@ public class Movement : MonoBehaviour
 
         currentDestination = destination1.transform;
         direction = (currentDestination.position - transform.position).normalized;
-
-        x = enemigo.position.x;
-        y = enemigo.position.y;
     }
 
     void Update()
@@ -110,8 +105,4 @@ public class Movement : MonoBehaviour
         }
     }
 
-    public void ReinicioTiempo()
-    {
-        transform.position = new Vector3(x, y);
-    }
 }

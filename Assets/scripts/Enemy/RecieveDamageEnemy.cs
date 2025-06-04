@@ -47,12 +47,6 @@ public class RecieveDamageEnemy : MonoBehaviour
             if(collision.gameObject.tag == "AttackPlayerOscuridad") movimiento.empujado = true;
             life.Muerte();
         }
-        else if(collision.gameObject.tag == "Escudo"){
-            movimiento.ReinicioTiempo();
-        }
-        else if (collision.gameObject.tag == "Gravitacional"){
-            movimiento.vuela = true;
-        }
         else if (collision.gameObject.tag == "Ground"){
             movimiento.normal = true;
         }

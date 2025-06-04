@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &701793067369272969
 ParticleSystem:
@@ -1325,8 +1325,8 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 15420
-        atime2: 52621
+        atime1: 19661
+        atime2: 44911
         atime3: 65535
         atime4: 0
         atime5: 0

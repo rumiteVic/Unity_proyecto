@@ -12,7 +12,7 @@ public class EnemyLife : MonoBehaviour
     public Slider slideLife;
 
     public AudioSource audio;
-
+    public GameObject particulas;
     void Awake()
     {
         
@@ -35,6 +35,7 @@ public class EnemyLife : MonoBehaviour
         currentVidas = currentVidas - totalDamage;
         if (currentVidas <= 0)
         {
+            GameObject instancia = Instantiate(particulas, transform.position, transform.rotation);
             Destroy(enemy, audio.clip.length);
         }
     }

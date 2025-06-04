@@ -28,6 +28,8 @@ public class HUD : MonoBehaviour
     {
         if(lifePlayer.currentVidas <= 0){
             restart.gameObject.SetActive(true);
+            lifePlayer.zenith.gameObject.SetActive(false);
+            Time.timeScale = 0;
         }
     }
 

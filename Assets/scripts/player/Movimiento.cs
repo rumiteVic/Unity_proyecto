@@ -31,9 +31,6 @@ public class Movimiento : MonoBehaviour
     float currTim1 = 0f;
     float cooldown1 = 0.8f;
 
-    public float currTimeEscudo = 0f;
-    float cooldown2 = 5f;
-    public bool escudoActivo = false;
     [Header("Animators")]
     public Animator animatorLuz;
     public Animator animatorOsc;
@@ -90,7 +87,6 @@ public class Movimiento : MonoBehaviour
         Jump();
         Agachar();
         Capa();
-        Escudo();
     }
 
     void Jump(){
@@ -146,17 +142,6 @@ public class Movimiento : MonoBehaviour
         else if(!sombra.capa)
         {
             rb.gravityScale = 1f;
-        }
-    }
-
-    void Escudo(){
-        if(escudoActivo){
-            currTimeEscudo += Time.deltaTime;
-            if(currTimeEscudo >= cooldown2){
-                currTimeEscudo = 0;
-                escudoActivo = false;
-                luz.escudoJau.gameObject.SetActive(false);
-            }
         }
     }
 

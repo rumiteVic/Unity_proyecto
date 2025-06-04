@@ -42,7 +42,7 @@ public class Habilidades_Luz : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        escudoJau.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -103,14 +103,7 @@ public class Habilidades_Luz : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B) && currTimEsc == 0)
         {
             animatorLuz.SetTrigger("lanzar");
-            escudo = true;
-            escudoJau.gameObject.SetActive(true);
-        }
-        if (escudo)
-        {
-            usoEscudo = true;
-            escudo = false;
-            suelin.escudoActivo = true;
+            GameObject escudo1 = Instantiate(escudoJau, transform.position, transform.rotation);
         }
 
         if(usoEscudo)

@@ -23,10 +23,10 @@ public class Attack : MonoBehaviour
     void Update()
     {
         if(mov.srLuz.flipX || mov.srOsc.flipX){
-            attackArea.transform.position = new Vector2(player.transform.position.x - 2.2f, player.transform.position.y);
+            attackArea.transform.position = new Vector2(player.transform.position.x -1.9f, player.transform.position.y);
         }
         else if(!mov.srLuz.flipX || !mov.srOsc.flipX){
-            attackArea.transform.position = new Vector2(player.transform.position.x + 1.9f, player.transform.position.y);
+            attackArea.transform.position = new Vector2(player.transform.position.x + 2f, player.transform.position.y);
         }
         Ataque();
     }
