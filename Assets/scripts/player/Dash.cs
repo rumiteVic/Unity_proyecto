@@ -41,7 +41,6 @@ public class Dash : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C) && !dashOnCD)
         {
             isdashing = true;
-
         }
 
         if (isdashing )

@@ -15,6 +15,7 @@ public class HabilidadesSombra : MonoBehaviour
     bool jaulaa;
     public bool capa;
 
+    public GameObject particula;
     //Tiempo de uso de capa
     public float cooldownUsoCapa = 0f;
     float fin = 7f;
@@ -38,7 +39,7 @@ public class HabilidadesSombra : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        particula.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -83,14 +84,15 @@ public class HabilidadesSombra : MonoBehaviour
             animatorOsc.SetTrigger("lanzar");
             capa = true;
             capCol = true;
+            
         }
         if(capa){
             cooldownUsoCapa  += Time.deltaTime;
-
+            particula.gameObject.SetActive(true);
             if(cooldownUsoCapa  >= fin){
                 cooldownUsoCapa  = 0;
                 capa = false;
-                
+                particula.gameObject.SetActive(false);
             }
         }
         
