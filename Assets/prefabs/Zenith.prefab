@@ -1029,7 +1029,7 @@ Transform:
   - {fileID: 6802419850147397084}
   - {fileID: 8300378428545810954}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &386243805562751297
 BoxCollider2D:
@@ -1046,7 +1046,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2304
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1128,6 +1128,7 @@ MonoBehaviour:
   impulso: 10
   suelo: 0
   jump: 1
+  canMove: 1
   animatorLuz: {fileID: 1568288708244338411}
   animatorOsc: {fileID: 21470072563093926}
   srLuz: {fileID: 4077370331955148542}

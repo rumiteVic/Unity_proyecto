@@ -23,6 +23,7 @@ public class Movimiento : MonoBehaviour
     public bool jump = false;
     bool agachar;
     bool agaching;
+    public bool canMove = true;
 
     [Header("Tiners")]
     float currTim = 0f;
@@ -50,8 +51,13 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-
+        if(!canMove) {
+            rb.velocity = new Vector2 (0, 0);
+            animatorLuz.SetBool("isRunning", false);
+            animatorOsc.SetBool("isRunning", false);
+        }
+        else if(canMove){
+            horizontal = Input.GetAxis("Horizontal");
         if (horizontal > 0){
             if(!dash.isdashing) rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
             srLuz.flipX = false;
@@ -87,6 +93,7 @@ public class Movimiento : MonoBehaviour
         Jump();
         Agachar();
         Capa();
+        }
     }
 
     void Jump(){
@@ -152,7 +159,7 @@ public class Movimiento : MonoBehaviour
             agachar = true;
         }
         else if(collision.gameObject.tag == "Abismo"){
-            Vector2 direc = new Vector2 (-4, -1);
+            Vector2 direc = spawnPlace;
             transform.position = direc;
             Muerte();
             life.Muerte();

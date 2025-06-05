@@ -10,9 +10,13 @@ public class MeActivo : MonoBehaviour
 
     public Animator animator;
     bool notOtraVez = true;
+    Pintar pinta;
+    TextChanger change;
     void Start()
     {
         col.isTrigger = true;
+        pinta = FindObjectOfType<Pintar>();
+        change = FindObjectOfType<TextChanger>();
     }
 
     // Update is called once per frame
@@ -27,6 +31,8 @@ public class MeActivo : MonoBehaviour
             if(notOtraVez){
                 col.isTrigger = false;
                 animator.SetBool("change", true);
+                pinta.SumarPintados();
+                change.ChangePintados();
                 notOtraVez = false;
             }
             

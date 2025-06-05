@@ -9,9 +9,13 @@ public class MeActivo1 : MonoBehaviour
     public GameObject objeto;
     bool once = false;
     public Animator animator;
+    Pintar pinta;
+    TextChanger change;
     void Start()
     {
         col.isTrigger = false;
+        pinta = FindObjectOfType<Pintar>();
+        change = FindObjectOfType<TextChanger>();
     }
 
     // Update is called once per frame
@@ -24,9 +28,11 @@ public class MeActivo1 : MonoBehaviour
         if (collision.tag == "ProyectilOscuro")
         {
             if(!once){
-                once = true;
                 col.isTrigger = true;
                 animator.SetBool("destruir", true);
+                pinta.SumarDestruidos();
+                change.ChangeDestruidos();
+                once = true;
             } 
         }
     }
