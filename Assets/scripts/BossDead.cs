@@ -19,4 +19,15 @@ public class BossDead : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if(pinta.objetosDestruidos >= pinta.destruirObjetos && pinta.objetosPintado >= pinta.pintarObjetos &&bossDead){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+            }
+        }
+
+    }
 }

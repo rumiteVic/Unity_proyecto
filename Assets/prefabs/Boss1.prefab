@@ -118,7 +118,7 @@ Transform:
   - {fileID: 1616166563541136240}
   - {fileID: 6600995972926129002}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8079296165646962172
 SpriteRenderer:
@@ -839,7 +839,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   music: {fileID: 8300000, guid: 684f05f930f32ce41a57c7da27ef2397, type: 3}
   musicEnemy: {fileID: 8300000, guid: 299e359451e564146b79da43185c583a, type: 3}
-  coll: {fileID: 0}
+  coll: {fileID: 3374032442417693020}
 --- !u!1 &8361340187340482812
 GameObject:
   m_ObjectHideFlags: 0

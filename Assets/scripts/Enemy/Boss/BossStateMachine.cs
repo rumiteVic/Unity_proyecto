@@ -28,7 +28,7 @@ public class BossStateMachine : MonoBehaviour
     public GameObject three;
     void Start()
     {
-        death = GetComponent<BossDead>();
+        death =  FindObjectOfType<BossDead>();
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
     }
@@ -178,8 +178,8 @@ public class BossStateMachine : MonoBehaviour
         }
         if (life.currentVidas <= 0)
             {
-                life.Muerte();
                 death.bossDead = true;
+                life.Muerte();
             }
     }
 }

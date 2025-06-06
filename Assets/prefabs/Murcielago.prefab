@@ -352,7 +352,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -363,7 +363,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!114 &6081507000800813599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,11 +420,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVidas: 5
   currentVidas: 0
-  enemy: {fileID: 2277324498491271762}
+  enemy: {fileID: 7713645838062217265}
   totalDamage: 0
   slideLife: {fileID: 1489425656280387865}
   audio: {fileID: 4194229086410023129}
-  particulas: {fileID: 0}
+  particulas: {fileID: 5225278819840447021, guid: ecd0731bbd3629d4ba4af55795d0dd99, type: 3}
 --- !u!95 &4870309007809300160
 Animator:
   serializedVersion: 5
@@ -458,7 +458,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1756485557889107890, guid: bc12e6f080139234bb5cb33ace3351e6, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3fdf3e22849bb58408bfb89960b1ef65, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.76
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
   audio: {fileID: 0}
   music: {fileID: 8300000, guid: 25177a549900e884db448c57da3977fc, type: 3}
   musicEnemy: {fileID: 8300000, guid: 137c251ea6c7f0b40b292991616a9c8e, type: 3}
-  coll: {fileID: 0}
+  coll: {fileID: 1803078675477502698}
 --- !u!1 &5165511647954931179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8876064287832708334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9579418, y: -0.66, z: 0}
+  m_LocalPosition: {x: 11.956542, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1246,7 +1246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8983805011464125641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.23, y: -0.65999997, z: 0}
+  m_LocalPosition: {x: 3.0165443, y: -0.65999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 60121512}
   - component: {fileID: 60121511}
   - component: {fileID: 60121510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 32b302965eaf51342b832232661ed7f5, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 101930029}
   - component: {fileID: 101930028}
   - component: {fileID: 101930027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1561,7 +1561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172298928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.759476, y: 5.3131104, z: 0}
+  m_LocalPosition: {x: -29.759476, y: 5.19311, z: 0}
   m_LocalScale: {x: 59.912, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2347,7 +2347,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 32b302965eaf51342b832232661ed7f5, type: 3}
   m_Color: {r: 0.8901961, g: 0.8235294, b: 0.29803923, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -2468,7 +2468,7 @@ GameObject:
   - component: {fileID: 375210297}
   - component: {fileID: 375210296}
   - component: {fileID: 375210295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3397,7 +3397,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 32b302965eaf51342b832232661ed7f5, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -3414,7 +3414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485059599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -175.32, y: 7.26, z: 4}
+  m_LocalPosition: {x: -175.32, y: 7.15, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3518,7 +3518,7 @@ GameObject:
   - component: {fileID: 494598718}
   - component: {fileID: 494598717}
   - component: {fileID: 494598716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5118,7 +5118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col: {fileID: 679771590}
   suelo: {fileID: 679771588}
-  animator: {fileID: 0}
+  animator: {fileID: 679771594}
 --- !u!212 &679771593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5264,6 +5264,17 @@ Transform:
   m_Father: {fileID: 1511851881}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689339320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2590070661164424830, guid: bae0b3bc0f555e44da57e764ce315b31, type: 3}
+  m_PrefabInstance: {fileID: 1439611969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &690811195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6101,9 +6112,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e052bad4d02df1842b5eb5ca1a2360fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7520c050ae899024786a62c7b1322cfe, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -6120,8 +6131,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727055340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -260.281, y: 12.128693, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -260.24, y: 12.09, z: 4}
+  m_LocalScale: {x: 1, y: 1.0375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1965079382}
@@ -6224,7 +6235,7 @@ GameObject:
   - component: {fileID: 755773684}
   - component: {fileID: 755773683}
   - component: {fileID: 755773682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6469,7 +6480,7 @@ GameObject:
   - component: {fileID: 760958967}
   - component: {fileID: 760958966}
   - component: {fileID: 760958965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7567,7 +7578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905597026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -195.77, y: 7.09, z: 4}
+  m_LocalPosition: {x: -195.73999, y: 7.09, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7984,7 +7995,7 @@ GameObject:
   - component: {fileID: 937559727}
   - component: {fileID: 937559726}
   - component: {fileID: 937559725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10065,9 +10076,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e052bad4d02df1842b5eb5ca1a2360fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7520c050ae899024786a62c7b1322cfe, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -10473,7 +10484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527265330792438480, guid: 14ff6859bcc5e7e43a605cc945631d5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 256.13998
+      value: 253.86
       objectReference: {fileID: 0}
     - target: {fileID: 5527265330792438480, guid: 14ff6859bcc5e7e43a605cc945631d5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11013,7 +11024,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 32b302965eaf51342b832232661ed7f5, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -11030,7 +11041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182673455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -300.853, y: 12.157027, z: 4}
+  m_LocalPosition: {x: -300.853, y: 12.09, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11514,7 +11525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5500159222014682057, guid: 3a5bcc524ada500449165c517c626dc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.275925
+      value: 82.56
       objectReference: {fileID: 0}
     - target: {fileID: 5500159222014682057, guid: 3a5bcc524ada500449165c517c626dc2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13330,7 +13341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434134855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.040535, y: 0.1531105, z: 0}
+  m_LocalPosition: {x: 74.040535, y: 0.03311014, z: 0}
   m_LocalScale: {x: 35.21094, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13927,7 +13938,7 @@ GameObject:
   - component: {fileID: 1515571196}
   - component: {fileID: 1515571195}
   - component: {fileID: 1515571194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14713,7 +14724,7 @@ GameObject:
   - component: {fileID: 1584692262}
   - component: {fileID: 1584692261}
   - component: {fileID: 1584692260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15022,8 +15033,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586065113}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -85.53679, y: 4.19, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -85.58, y: 4.1700006, z: 4}
+  m_LocalScale: {x: 1, y: 1.0375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1088527128}
@@ -15503,7 +15514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618034238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.280525, y: 0.1531105, z: 0}
+  m_LocalPosition: {x: 116.280525, y: -0.14688969, z: 0}
   m_LocalScale: {x: 33.33486, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15905,7 +15916,7 @@ GameObject:
   - component: {fileID: 1663449801}
   - component: {fileID: 1663449800}
   - component: {fileID: 1663449799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16150,7 +16161,7 @@ GameObject:
   - component: {fileID: 1670652323}
   - component: {fileID: 1670652322}
   - component: {fileID: 1670652321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16897,7 +16908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetosAPintar: {fileID: 1439611972}
   objetosPintados: {fileID: 1439611971}
-  objetosADestruir: {fileID: 1439611970}
+  objetosADestruir: {fileID: 689339320}
   objetosDestruidos: {fileID: 1439611970}
 --- !u!114 &1692065796
 MonoBehaviour:
@@ -16928,7 +16939,7 @@ GameObject:
   - component: {fileID: 1702560966}
   - component: {fileID: 1702560965}
   - component: {fileID: 1702560964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17430,7 +17441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736344847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 189.42053, y: -2.7268896, z: 0}
+  m_LocalPosition: {x: 189.42053, y: -3.0868902, z: 0}
   m_LocalScale: {x: 45.418747, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17714,9 +17725,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 7520c050ae899024786a62c7b1322cfe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e052bad4d02df1842b5eb5ca1a2360fd, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -17733,7 +17744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762545135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -311.0802, y: 12.16, z: 4}
+  m_LocalPosition: {x: -311.06, y: 12.09, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17753,7 +17764,7 @@ GameObject:
   - component: {fileID: 1763483303}
   - component: {fileID: 1763483302}
   - component: {fileID: 1763483301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18166,7 +18177,7 @@ GameObject:
   - component: {fileID: 1783065461}
   - component: {fileID: 1783065460}
   - component: {fileID: 1783065459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arbusto (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19191,7 +19202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891922661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.6568, y: 4.1900005, z: 4}
+  m_LocalPosition: {x: -73.6568, y: 4.19, z: 4}
   m_LocalScale: {x: 1.3374, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19859,7 +19870,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 32b302965eaf51342b832232661ed7f5, type: 3}
   m_Color: {r: 0.9098039, g: 0.9372549, b: 0.3764706, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 10.24}
@@ -20202,7 +20213,7 @@ GameObject:
   - component: {fileID: 8818692041121470611}
   - component: {fileID: 8818692041121470612}
   - component: {fileID: 8818692041121470613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CajitaMusica
   m_TagString: Untagged
   m_Icon: {fileID: 0}

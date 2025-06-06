@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2342291342077500025}
   - component: {fileID: 2500977214666297259}
   - component: {fileID: 883069700552772501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 203329217738235174}
   - component: {fileID: 5452163972195241013}
   - component: {fileID: 4633162417560959902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

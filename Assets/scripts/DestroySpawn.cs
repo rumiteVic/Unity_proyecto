@@ -14,6 +14,7 @@ public class DestroySpawn : MonoBehaviour
 
     // Update is called once per frame
     void OnDestroy(){
-        GameObject slimey = Instantiate(slime, transform.position, transform.rotation);
+        Quaternion rotation = Quaternion.Euler(0, 0, 0);
+        GameObject slimey = Instantiate(slime, transform.position, rotation);
     }
 }

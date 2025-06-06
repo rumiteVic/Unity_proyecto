@@ -148,6 +148,7 @@ public class Movimiento : MonoBehaviour
         }
         else if(!sombra.capa)
         {
+            sombra.particula.gameObject.SetActive(false);
             rb.gravityScale = 1f;
         }
     }
